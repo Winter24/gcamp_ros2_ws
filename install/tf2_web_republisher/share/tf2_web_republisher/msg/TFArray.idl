@@ -1,1 +1,13 @@
-/home/winter24/gcamp_ros2_ws/build/tf2_web_republisher/rosidl_adapter/tf2_web_republisher/msg/TFArray.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tf2_web_republisher/msg/TFArray.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/TransformStamped.idl"
+
+module tf2_web_republisher {
+  module msg {
+    struct TFArray {
+      sequence<geometry_msgs::msg::TransformStamped> transforms;
+    };
+  };
+};

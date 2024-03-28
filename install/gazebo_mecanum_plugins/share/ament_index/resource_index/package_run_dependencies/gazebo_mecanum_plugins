@@ -1,1 +1,1 @@
-/home/winter24/gcamp_ros2_ws/build/gazebo_mecanum_plugins/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/gazebo_mecanum_plugins
+geometry_msgs;nav_msgs;tf2_geometry_msgs;tf2_ros;gazebo_dev;gazebo_msgs;gazebo_ros;rclcpp;ament_cmake_gtest;ament_lint_auto;ament_lint_common

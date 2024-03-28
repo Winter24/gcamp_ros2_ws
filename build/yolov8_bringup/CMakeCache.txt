@@ -25,7 +25,7 @@ AMENT_CMAKE_ENVIRONMENT_PARENT_PREFIX_PATH_GENERATION:BOOL=ON
 
 //Replace the CMake install command with a custom implementation
 // using symlinks instead of copying resources
-AMENT_CMAKE_SYMLINK_INSTALL:BOOL=1
+AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
 
 //Generate an uninstall target to revert the effects of the install
 // step
@@ -299,7 +299,7 @@ yolov8_bringup_BINARY_DIR:STATIC=/home/winter24/gcamp_ros2_ws/build/yolov8_bring
 yolov8_bringup_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-yolov8_bringup_SOURCE_DIR:STATIC=/home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_bringup
+yolov8_bringup_SOURCE_DIR:STATIC=/home/winter24/gcamp_ros2_ws/yolov8_bringup
 
 
 ########################
@@ -386,7 +386,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_bringup
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/winter24/gcamp_ros2_ws/yolov8_bringup
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -457,6 +457,4 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10(3)
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-//Index for unique symlink install targets
-__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=0
 

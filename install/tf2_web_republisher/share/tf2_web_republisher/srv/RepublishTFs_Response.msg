@@ -1,1 +1,3 @@
-/home/winter24/gcamp_ros2_ws/build/tf2_web_republisher/rosidl_cmake/srv/RepublishTFs_Response.msg
+
+# response
+string topic_name # a topic of type geometry_msgs/TransformStamped[] that publishes the requested transforms

@@ -1,0 +1,24 @@
+[4.296s] Invoking command in '/home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_ros': PYTHONPATH=/home/winter24/gcamp_ros2_ws/build/yolov8_ros/prefix_override:/home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov8_ros build --build-base /home/winter24/gcamp_ros2_ws/build/yolov8_ros/build install --record /home/winter24/gcamp_ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed
+[4.664s] running egg_info
+[4.664s] writing ../../build/yolov8_ros/yolov8_ros.egg-info/PKG-INFO
+[4.664s] writing dependency_links to ../../build/yolov8_ros/yolov8_ros.egg-info/dependency_links.txt
+[4.665s] writing entry points to ../../build/yolov8_ros/yolov8_ros.egg-info/entry_points.txt
+[4.665s] writing requirements to ../../build/yolov8_ros/yolov8_ros.egg-info/requires.txt
+[4.665s] writing top-level names to ../../build/yolov8_ros/yolov8_ros.egg-info/top_level.txt
+[4.665s] reading manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[4.665s] writing manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[4.665s] running build
+[4.665s] running build_py
+[4.665s] running install
+[4.666s] running install_lib
+[4.666s] running install_data
+[4.666s] running install_egg_info
+[4.666s] removing '/home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info' (and everything under it)
+[4.666s] Copying ../../build/yolov8_ros/yolov8_ros.egg-info to /home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info
+[4.666s] running install_scripts
+[4.666s] Installing debug_node script to /home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[4.666s] Installing detect_3d_node script to /home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[4.667s] Installing tracking_node script to /home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[4.667s] Installing yolov8_node script to /home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[4.667s] writing list of installed files to '/home/winter24/gcamp_ros2_ws/build/yolov8_ros/install.log'
+[5.170s] Invoked command in '/home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_ros' returned '0': PYTHONPATH=/home/winter24/gcamp_ros2_ws/build/yolov8_ros/prefix_override:/home/winter24/gcamp_ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/yolov8_ros build --build-base /home/winter24/gcamp_ros2_ws/build/yolov8_ros/build install --record /home/winter24/gcamp_ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed

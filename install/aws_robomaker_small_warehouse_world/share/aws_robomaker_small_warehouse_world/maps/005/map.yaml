@@ -1,1 +1,8 @@
-/home/winter24/gcamp_ros2_ws/zm_robot-ros2/aws-robomaker-small-warehouse-world/maps/005/map.yaml
+image: map_rotated.png
+resolution: 0.050000
+origin: [-7.000, -10.500000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
+# -3.071 3.583

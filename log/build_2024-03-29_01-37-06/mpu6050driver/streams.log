@@ -1,0 +1,30 @@
+[0.387s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/mpu6050driver -- -j16 -l16
+[0.911s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[0.911s] [ 66%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o[0m
+[4.905s] [100%] [32m[1mLinking CXX executable mpu6050driver[0m
+[5.042s] [100%] Built target mpu6050driver
+[5.051s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/mpu6050driver -- -j16 -l16
+[5.090s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/mpu6050driver
+[5.113s] -- Install configuration: ""
+[5.113s] -- Installing: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/lib/mpu6050driver/mpu6050driver
+[5.114s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/mpu6050driver/lib/mpu6050driver/mpu6050driver" to ""
+[5.114s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver//launch
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver//launch/mpu6050driver_launch.py
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver//params
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver//params/mpu6050.yaml
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/ament_index/resource_index/package_run_dependencies/mpu6050driver
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/ament_index/resource_index/parent_prefix_path/mpu6050driver
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.sh
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.dsv
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/environment/path.sh
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/environment/path.dsv
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/local_setup.bash
+[5.115s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/local_setup.sh
+[5.116s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/local_setup.zsh
+[5.116s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/local_setup.dsv
+[5.116s] -- Installing: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/package.dsv
+[5.116s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/ament_index/resource_index/packages/mpu6050driver
+[5.116s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig.cmake
+[5.116s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig-version.cmake
+[5.116s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/mpu6050driver/share/mpu6050driver/package.xml
+[5.121s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/mpu6050driver

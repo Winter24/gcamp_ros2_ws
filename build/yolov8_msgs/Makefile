@@ -57,7 +57,7 @@ RM = /home/winter24/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/winter24/gcamp_ros2_ws/build/yolov8_msgs
@@ -379,293 +379,53 @@ yolov8_msgs__py/fast:
 	$(MAKE) $(MAKESILENT) -f /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/build.make /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/build
 .PHONY : yolov8_msgs__py/fast
 
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.o
+rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.o
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.o
 
 # target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.o
+rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.o
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.o
 
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.i
+rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.i
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.i
+rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.i
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.i
 
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.s
+rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.s
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.s
+rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.s
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.s
 
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.o
+rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.o
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.o
 
 # target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.o
+rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.o
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.o
 
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.i
+rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.i
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.i
+rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.i
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.i
 
-rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.s
+rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.s
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.s
-
-rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.o: rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.o
-
-# target to build an object file
-rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.o
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.o
-
-rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.i: rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.i
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.i
-
-rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.s: rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.s
-.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.s
+rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.s
+.PHONY : rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.s
 
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c.o
 .PHONY : rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.o
@@ -739,2021 +499,341 @@ rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspecti
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.o: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.o
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.o: rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.o
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.o
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.o
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.o
 
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.i: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.i
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.i: rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.i
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.i
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.i
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.i
 
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.s: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.s
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.s: rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.s
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.s
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.s
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.s
 
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.o: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.o
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.o: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.o
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.o
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.o
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.o
 
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.i: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.i
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.i: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.i
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.i
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.i
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.i
 
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.s: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.s
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.s: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.s
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.s
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.s
+.PHONY : rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.s
 
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.o: rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.o
+rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.o
+rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.i: rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.i
+rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.i
+rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.s: rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.s
+rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.s
+rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.o: rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_s.o
+rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.o
+rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.i: rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_s.i
+rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.i
+rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.s: rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_s.s
+rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.s
+rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.o: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.o
+rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.o
+rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.i: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.i
+rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.i
+rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.s: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.s
+rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.s
+rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.o: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.o
+rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.o
+rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.i: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.i
+rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.i
+rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.s: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.s
+rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.s
+rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.o: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.o
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.o
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.i: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.i
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.i
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.s: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.s
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.s
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.o: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.o
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.o
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.i: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.i
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.i
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.s: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.s
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.s
+rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.o: rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_mask_s.o
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.o
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.i: rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_mask_s.i
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.i
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.s: rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_mask_s.s
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.s
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.o: rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.o
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.o
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.o
 
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.i: rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.i
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.i
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.i
 
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.s: rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.s
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.s
+rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.s
 
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.o: rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.o
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.o
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o
 
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.i: rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.i
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.i
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.i
 
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.s: rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.s
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.s
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.s
 
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.o: rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_vector2_s.o
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.o
 
 # target to build an object file
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.o
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.o
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o
 
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.i: rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_vector2_s.i
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.i
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.i
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.i
 
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.s: rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_vector2_s.s
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__python.dir/build.make CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.s
-.PHONY : rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.s
+rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.s
 
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.o
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.o
 
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.i
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.i
 
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.s
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.s
 
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.o
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.o
 
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.i
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.i
 
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.s
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.s
-
-rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.o: rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.o
-
-rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.i: rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.i
-
-rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.s: rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.s
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.o: rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.o
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.i: rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.i
-
-rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.s: rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.o: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.i: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.s: rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.o: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.i: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.s: rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.s
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.o: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.o
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.i: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.i
-
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.s: rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.o: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.i: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.s: rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.s
 
 # Help Target
 help:
@@ -2784,42 +864,12 @@ help:
 	@echo "... yolov8_msgs__rosidl_typesupport_introspection_c"
 	@echo "... yolov8_msgs__rosidl_typesupport_introspection_c__pyext"
 	@echo "... yolov8_msgs__rosidl_typesupport_introspection_cpp"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.s"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.o"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.i"
-	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.s"
+	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.o"
+	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.i"
+	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.s"
+	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.o"
+	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.i"
+	@echo "... rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.s"
 	@echo "... rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.s"
@@ -2829,258 +879,48 @@ help:
 	@echo "... rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_detection_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_detection_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_detection_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_mask_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_mask_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_mask_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.s"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_vector2_s.o"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_vector2_s.i"
-	@echo "... rosidl_generator_py/yolov8_msgs/msg/_vector2_s.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.s"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.o"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.i"
-	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.s"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.o"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.i"
-	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.s"
+	@echo "... rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.o"
+	@echo "... rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.i"
+	@echo "... rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.s"
+	@echo "... rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.o"
+	@echo "... rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.i"
+	@echo "... rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.s"
+	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.o"
+	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.i"
+	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.s"
+	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.o"
+	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.i"
+	@echo "... rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.s"
+	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.o"
+	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.i"
+	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.s"
+	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.o"
+	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.i"
+	@echo "... rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.s"
 .PHONY : help
 
 

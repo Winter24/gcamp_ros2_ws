@@ -660,6 +660,21 @@ get_service_type_support_handle<tf2_web_republisher::action::TFSubscription_Send
 
 }  // namespace rosidl_typesupport_cpp
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_CPP_PUBLIC
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_cpp, tf2_web_republisher, action, TFSubscription_SendGoal)() {
+  return ::rosidl_typesupport_cpp::get_service_type_support_handle<tf2_web_republisher::action::TFSubscription_SendGoal>();
+}
+
+#ifdef __cplusplus
+}
+#endif
+
 // already included above
 // #include "cstddef"
 // already included above
@@ -988,6 +1003,21 @@ get_service_type_support_handle<tf2_web_republisher::action::TFSubscription_GetR
 
 }  // namespace rosidl_typesupport_cpp
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_CPP_PUBLIC
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_cpp, tf2_web_republisher, action, TFSubscription_GetResult)() {
+  return ::rosidl_typesupport_cpp::get_service_type_support_handle<tf2_web_republisher::action::TFSubscription_GetResult>();
+}
+
+#ifdef __cplusplus
+}
+#endif
+
 // already included above
 // #include "cstddef"
 // already included above
@@ -1152,3 +1182,18 @@ get_action_type_support_handle<tf2_web_republisher::action::TFSubscription>()
 }
 
 }  // namespace rosidl_typesupport_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_CPP_PUBLIC
+const rosidl_action_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(rosidl_typesupport_cpp, tf2_web_republisher, action, TFSubscription)() {
+  return ::rosidl_typesupport_cpp::get_action_type_support_handle<tf2_web_republisher::action::TFSubscription>();
+}
+
+#ifdef __cplusplus
+}
+#endif

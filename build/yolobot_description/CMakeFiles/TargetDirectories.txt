@@ -1,0 +1,9 @@
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/uninstall.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/yolobot_description_uninstall.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/test.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/edit_cache.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/rebuild_cache.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/list_install_components.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/install.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/install/local.dir
+/home/winter24/gcamp_ros2_ws/build/yolobot_description/CMakeFiles/install/strip.dir

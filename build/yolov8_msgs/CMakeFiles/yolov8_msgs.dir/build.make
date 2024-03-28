@@ -53,7 +53,7 @@ RM = /home/winter24/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/winter24/gcamp_ros2_ws/build/yolov8_msgs
@@ -66,18 +66,8 @@ include CMakeFiles/yolov8_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/yolov8_msgs.dir/progress.make
 
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/Point2D.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/Vector2.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/Pose2D.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/BoundingBox2D.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/BoundingBox3D.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/Mask.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/KeyPoint2D.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/KeyPoint2DArray.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/KeyPoint3D.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/KeyPoint3DArray.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/Detection.msg
-CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs/msg/DetectionArray.msg
+CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_msgs/msg/InferenceResult.msg
+CMakeFiles/yolov8_msgs: /home/winter24/gcamp_ros2_ws/yolov8_msgs/msg/Yolov8Inference.msg
 CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -108,35 +98,6 @@ CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
 CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
 CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
 CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Inertia.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/InertiaStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Point.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Point32.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/PointStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Polygon.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/PolygonStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Pose.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Pose2D.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/PoseArray.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/PoseStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovariance.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Quaternion.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/QuaternionStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Transform.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/TransformStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Twist.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/TwistStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovariance.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Vector3.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
-CMakeFiles/yolov8_msgs: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
 
 yolov8_msgs: CMakeFiles/yolov8_msgs
 yolov8_msgs: CMakeFiles/yolov8_msgs.dir/build.make
@@ -151,6 +112,6 @@ CMakeFiles/yolov8_msgs.dir/clean:
 .PHONY : CMakeFiles/yolov8_msgs.dir/clean
 
 CMakeFiles/yolov8_msgs.dir/depend:
-	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_msgs /home/winter24/gcamp_ros2_ws/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/yolov8_msgs.dir/depend
 

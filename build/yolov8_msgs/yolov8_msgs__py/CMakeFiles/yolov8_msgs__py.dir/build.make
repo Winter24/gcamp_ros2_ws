@@ -53,7 +53,7 @@ RM = /home/winter24/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/winter24/gcamp_ros2_ws/build/yolov8_msgs
@@ -69,31 +69,11 @@ include /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFile
 /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c
 /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_point2_d.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_vector2.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_pose2_d.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_mask.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection_array.py
+/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_inference_result.py
+/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference.py
 /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/__init__.py
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_mask_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection_s.c
-/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c
+/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c
+/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c
 
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_py/__init__.py
@@ -108,18 +88,8 @@ rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/Point2D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/Vector2.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/Pose2D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/BoundingBox2D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/BoundingBox3D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/Mask.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/KeyPoint2D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/KeyPoint2DArray.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/KeyPoint3D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/KeyPoint3DArray.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/Detection.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/DetectionArray.idl
+rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/InferenceResult.idl
+rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/yolov8_msgs/msg/Yolov8Inference.idl
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -152,35 +122,6 @@ rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Inertia.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/InertiaStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Point.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Point32.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/PointStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Polygon.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/PolygonStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Pose.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Pose2D.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/PoseArray.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/PoseStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovariance.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Quaternion.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/QuaternionStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Transform.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/TransformStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Twist.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/TwistStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovariance.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Vector3.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Vector3Stamped.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Wrench.idl
-rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/WrenchStamped.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -190,109 +131,29 @@ rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspecti
 rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/yolov8_msgs/msg/_point2_d.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_point2_d.py
+rosidl_generator_py/yolov8_msgs/msg/_inference_result.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_inference_result.py
 
-rosidl_generator_py/yolov8_msgs/msg/_vector2.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_vector2.py
-
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_pose2_d.py
-
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d.py
-
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d.py
-
-rosidl_generator_py/yolov8_msgs/msg/_mask.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_mask.py
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point2_d.py
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array.py
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point3_d.py
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array.py
-
-rosidl_generator_py/yolov8_msgs/msg/_detection.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_detection.py
-
-rosidl_generator_py/yolov8_msgs/msg/_detection_array.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_detection_array.py
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference.py
 
 rosidl_generator_py/yolov8_msgs/msg/__init__.py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/__init__.py
 
-rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c
+rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c
 
-rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_mask_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_mask_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_detection_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_detection_s.c
-
-rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c
+rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c
 
 yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c
 yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c
 yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/__init__.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection_array.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_detection_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_mask.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_mask_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_point2_d.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_pose2_d.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_vector2.py
-yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c
+yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_inference_result.py
+yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c
+yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference.py
+yolov8_msgs__py: rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c
 yolov8_msgs__py: /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py
 yolov8_msgs__py: /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/build.make
 .PHONY : yolov8_msgs__py
@@ -306,6 +167,6 @@ yolov8_msgs__py: /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/
 .PHONY : /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/clean
 
 /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/depend:
-	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/yolov8_msgs__py/CMakeFiles/yolov8_msgs__py.dir/depend
 

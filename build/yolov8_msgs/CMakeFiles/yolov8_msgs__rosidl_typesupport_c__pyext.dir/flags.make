@@ -6,5 +6,5 @@ C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"yolov8_msgs\" 
 
 C_INCLUDES = -I/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/rosidl_generator_c -I/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include
 
-C_FLAGS = -fPIC -Wall -Wextra
+C_FLAGS = -std=gnu99 -fPIC -Wall -Wextra
 

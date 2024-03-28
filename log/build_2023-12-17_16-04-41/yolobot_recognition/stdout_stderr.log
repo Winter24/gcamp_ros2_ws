@@ -1,0 +1,66 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:19 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/winter24/gcamp_ros2_ws/build/yolobot_recognition
+-- Install configuration: ""
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitattributes
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.dockerignore
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8_ros2_subscriber.py
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8n.pt
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitignore
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8_ros2_pt.py
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//launch
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//launch/launch_yolov8.launch.py
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/lib/yolobot_recognition/yolov8_ros2_pt.py
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/lib/yolobot_recognition/yolov8_ros2_subscriber.py
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/lib/yolobot_recognition/launch_yolov8.launch.py
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/ament_index/resource_index/package_run_dependencies/yolobot_recognition
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/ament_index/resource_index/parent_prefix_path/yolobot_recognition
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.sh
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.dsv
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/path.sh
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/path.dsv
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.bash
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.sh
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.zsh
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.dsv
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/package.dsv
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/ament_index/resource_index/packages/yolobot_recognition
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig.cmake
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig-version.cmake
+-- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/package.xml

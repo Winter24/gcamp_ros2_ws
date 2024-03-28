@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="tarkbot_robot">
+
+    <!-- Robot bottom center origin -->
+    <link name="base_footprint">
+        <visual>
+            <geometry>
+                <sphere radius="0.001" />
+            </geometry>
+        </visual>
+    </link>
+
+    <!-- Robot chassis -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://tarkbot_description/meshes/base_r10_twd.stl" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="base_color">
+                <color rgba="0.8 0.8 0.8 1" />
+            </material>
+        </visual>
+    </link>    
+
+        <!-- Robot Lidar -->
+    <link name="laser_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://tarkbot_description/meshes/laser.stl" />
+            </geometry>
+            <origin xyz="0 0 -0.06" rpy="0 0 0" />
+            <material name="laser_color">
+                <color rgba="0.4 0.4 0.4 1" />
+            </material>
+        </visual>
+    </link> 
+
+    <!-- Robot camera -->
+    <link name="camera_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://tarkbot_description/meshes/depthcamera.stl" />
+            </geometry>
+            <origin xyz="-0.037 0 0" rpy="0 0 0" />
+            <material name="camera_color">
+                <color rgba="0.15 0.15 0.15 1" />
+            </material>
+        </visual>
+    </link>
+
+    <!-- Robot IMU sensor -->
+    <link name="imu_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.010" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="imu_color">
+                <color rgba="1 1 0 1" />
+            </material>
+        </visual>
+    </link>
+
+    <!-- The joint connecting the chassis to the origin -->
+    <joint name="baselink2footprint" type="fixed">
+        <origin xyz="0 0 0.0994" rpy="0 0 0"/>
+        <parent link="base_footprint" />
+        <child  link="base_link" />
+    </joint>
+
+    <!-- Lidar to the joint connected to the chassis -->
+    <joint name="laser2base" type="fixed">
+        <origin xyz="0 0 0.06" rpy="0 0 0"/>
+        <parent link="base_link" />
+        <child  link="laser_link" />
+    </joint>
+
+    <!-- The joint connecting the depth camera to the chassis -->
+    <joint name="camera2base" type="fixed">
+        <origin xyz="0.089 0 0.0285" rpy="0 0 0"/>
+        <parent link="base_link" />
+        <child  link="camera_link" />
+    </joint>
+
+    <!-- The joint connecting the IMU sensor to the chassis -->
+    <joint name="imu2base" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="base_link" />
+        <child  link="imu_link" />
+    </joint>
+
+</robot>

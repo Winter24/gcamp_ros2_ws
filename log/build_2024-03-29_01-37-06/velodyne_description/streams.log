@@ -1,0 +1,206 @@
+[0.064s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/velodyne_simulator/velodyne_description -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/velodyne_description
+[0.896s] -- The C compiler identification is GNU 11.4.0
+[0.896s] -- The CXX compiler identification is GNU 9.4.0
+[0.896s] -- Detecting C compiler ABI info
+[0.896s] -- Detecting C compiler ABI info - done
+[0.897s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.897s] -- Detecting C compile features
+[0.897s] -- Detecting C compile features - done
+[0.897s] -- Detecting CXX compiler ABI info
+[0.897s] -- Detecting CXX compiler ABI info - done
+[0.897s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.897s] -- Detecting CXX compile features
+[0.897s] -- Detecting CXX compile features - done
+[0.897s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.897s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.898s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.898s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[0.898s] -- Checking for module 'bullet>=2.82'
+[0.898s] --   Found bullet, version 2.88
+[0.901s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.902s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.902s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.902s]   the cmake_policy command to set the policy and suppress this warning.
+[0.902s] 
+[0.902s] Call Stack (most recent call first):
+[0.902s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.902s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.902s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.902s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.902s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.902s]   CMakeLists.txt:4 (find_package)
+[0.903s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.903s] [0m
+[1.192s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[1.319s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[1.418s] -- Found assimp: /usr/include (found version "5.0.0") 
+[1.471s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.965s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.001s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[2.010s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.027s] -- Searching for dependencies of ignition-math6
+[2.029s] -- Looking for OGRE...
+[2.030s] -- OGRE_PREFIX_WATCH changed.
+[2.036s] -- Checking for module 'OGRE'
+[2.069s] --   Found OGRE, version 1.9.0
+[2.121s] -- Found Ogre Ghadamon (1.9.0)
+[2.151s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.167s] -- Looking for OGRE_Paging...
+[2.185s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.186s] -- Looking for OGRE_Terrain...
+[2.202s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.203s] -- Looking for OGRE_Property...
+[2.219s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.219s] -- Looking for OGRE_RTShaderSystem...
+[2.236s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.237s] -- Looking for OGRE_Volume...
+[2.253s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.254s] -- Looking for OGRE_Overlay...
+[2.277s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.716s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.722s] -- Looking for ignition-transport8 -- found version 8.5.0
+[2.737s] -- Searching for dependencies of ignition-transport8
+[2.764s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.770s] -- Checking for module 'libzmq >= 4'
+[2.788s] --   Found libzmq , version 4.3.2
+[2.825s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.832s] -- Checking for module 'uuid'
+[2.853s] --   Found uuid, version 2.34.0
+[2.892s] -- Found UUID: TRUE  
+[2.894s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[2.895s] -- Searching for dependencies of ignition-msgs5
+[2.914s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[2.915s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.922s] -- Checking for module 'tinyxml2'
+[2.940s] --   Found tinyxml2, version 6.2.0
+[2.988s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[2.992s] -- Looking for ignition-common3 -- found version 3.17.0
+[2.993s] -- Searching for dependencies of ignition-common3
+[2.993s] -- Looking for dlfcn.h - found
+[2.995s] -- Looking for libdl - found
+[2.997s] -- Found DL: TRUE  
+[3.010s] -- Searching for <ignition-common3> component [graphics]
+[3.014s] -- Looking for ignition-common3-graphics -- found version 3.17.0
+[3.014s] -- Searching for dependencies of ignition-common3-graphics
+[3.015s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.020s] -- Looking for ignition-fuel_tools4 -- found version 4.9.1
+[3.020s] -- Searching for dependencies of ignition-fuel_tools4
+[3.122s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[3.134s] -- Checking for module 'jsoncpp'
+[3.154s] --   Found jsoncpp, version 1.7.4
+[3.215s] -- Found JSONCPP: TRUE  
+[3.225s] -- Checking for module 'libzip'
+[3.245s] --   Found libzip, version 1.5.1
+[3.300s] -- Found ZIP: TRUE  
+[3.300s] -- Looking for ignition-common3 -- found version 3.17.0
+[3.300s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.300s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[3.304s] -- Found gazebo_ros_pkgs: 3.5.3 (/opt/ros/foxy/share/gazebo_ros_pkgs/cmake)
+[3.390s] -- Configuring done (3.3s)
+[3.395s] -- Generating done (0.0s)
+[3.398s] -- Build files have been written to: /home/winter24/gcamp_ros2_ws/build/velodyne_description
+[3.411s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/velodyne_simulator/velodyne_description -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/velodyne_description
+[3.415s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/velodyne_description -- -j16 -l16
+[3.483s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/velodyne_description -- -j16 -l16
+[3.546s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/velodyne_description
+[3.580s] -- Install configuration: ""
+[3.580s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description
+[3.580s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description
+[3.580s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/environment/path.sh
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/environment/path.dsv
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.bash
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.sh
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.zsh
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.dsv
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/package.dsv
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description
+[3.581s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/package.xml
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/launch
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/launch/example-launch.py
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae
+[3.582s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae
+[3.583s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl
+[3.583s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl
+[3.583s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae
+[3.583s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl
+[3.583s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/rviz
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/rviz/example.rviz
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/urdf
+[3.584s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-32C.urdf.xacro
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/world
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/world/lio_sam.model
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/world/example.world
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot
+[3.585s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/rs_robot.sdf
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/model.config
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_base
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_base/YDlidar_base.stl
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/rear_lrf
+[3.586s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/rear_lrf/rear_lrf.stl
+[3.587s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gim30
+[3.587s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gim30/gim30.stl
+[3.594s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/front_lrf
+[3.594s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/front_lrf/front_lrf.stl
+[3.600s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gps
+[3.600s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/sensors/gps/gps.stl
+[3.602s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_head
+[3.602s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/lidar_head/YDlidar_head v4.stl
+[3.602s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension
+[3.602s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/FRONT_RIGHT_LINKSTL.stl
+[3.603s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/sus_link.stl
+[3.603s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/REAR_LEFT_LINKSTL.stl
+[3.603s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/REAR_RIGHT_LINKSTL.stl
+[3.604s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/suspension/FRONT_LEFT_LINKSTL.stl
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/wheel
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/wheel/robot_wheel.stl
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/base
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/base/base_link_old.stl
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/STL/base/base_link.stl
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_base
+[3.606s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_base/YDlidar_base.dae
+[3.607s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors
+[3.607s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf
+[3.607s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf/urg_texture.png
+[3.607s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/rear_lrf/rear_lrf.dae
+[3.609s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/camera
+[3.610s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/camera/camera.dae
+[3.610s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30
+[3.610s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30/gim30.dae
+[3.631s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gim30/gim30_lrf_texture.png
+[3.631s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf
+[3.631s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf/lrf_texture.png
+[3.632s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/front_lrf/front_lrf.dae
+[3.643s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps
+[3.643s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps/gps_texture.png
+[3.643s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/sensors/gps/gps.dae
+[3.647s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_head
+[3.647s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/lidar_head/YDlidar_head.dae
+[3.647s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension
+[3.647s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/rear_right_link.dae
+[3.648s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/front_left_link.dae
+[3.650s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/front_right_link.dae
+[3.651s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/suspension/rear_left_link.dae
+[3.653s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/wheel
+[3.653s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/wheel/wheel_link.dae
+[3.654s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/base
+[3.655s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/base/base_link.dae
+[3.661s] -- Installing: /home/winter24/gcamp_ros2_ws/install/velodyne_description/share/velodyne_description/models/rs_robot/meshes/DAE/base/base_linkOLD.dae
+[3.675s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/velodyne_description

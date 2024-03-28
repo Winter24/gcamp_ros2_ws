@@ -57,7 +57,7 @@ RM = /home/winter24/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/winter24/gcamp_ros2_ws/build/yolov8_msgs

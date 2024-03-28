@@ -1,0 +1,315 @@
+[1.190s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/zm_robot-ros2/aws-robomaker-small-warehouse-world -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world
+[1.730s] -- The C compiler identification is GNU 11.4.0
+[1.730s] -- The CXX compiler identification is GNU 9.4.0
+[1.730s] -- Detecting C compiler ABI info
+[1.730s] -- Detecting C compiler ABI info - done
+[1.730s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.731s] -- Detecting C compile features
+[1.731s] -- Detecting C compile features - done
+[1.731s] -- Detecting CXX compiler ABI info
+[1.731s] -- Detecting CXX compiler ABI info - done
+[1.732s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.732s] -- Detecting CXX compile features
+[1.732s] -- Detecting CXX compile features - done
+[1.732s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.732s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.732s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.732s] -- Found gazebo_ros: 3.5.3 (/opt/ros/foxy/share/gazebo_ros/cmake)
+[1.732s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.732s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.732s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.734s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[1.734s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.734s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.734s]   the cmake_policy command to set the policy and suppress this warning.
+[1.734s] 
+[1.735s] Call Stack (most recent call first):
+[1.735s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[1.735s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[1.735s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.735s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.735s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.735s]   CMakeLists.txt:10 (find_package)
+[1.735s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.735s] [0m
+[1.753s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.857s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.946s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.950s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.951s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.077s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.077s] -- Looking for pthread_create in pthreads
+[2.149s] -- Looking for pthread_create in pthreads - not found
+[2.150s] -- Looking for pthread_create in pthread
+[2.295s] -- Looking for pthread_create in pthread - found
+[2.297s] -- Found Threads: TRUE  
+[2.555s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[2.558s] -- Checking for module 'bullet>=2.82'
+[2.583s] --   Found bullet, version 2.88
+[2.757s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[2.815s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[2.864s] -- Found assimp: /usr/include (found version "5.0.0") 
+[2.895s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.928s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.955s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[2.961s] -- Looking for ignition-math6 -- found version 6.15.0
+[2.970s] -- Searching for dependencies of ignition-math6
+[2.972s] -- Looking for OGRE...
+[2.972s] -- OGRE_PREFIX_WATCH changed.
+[2.977s] -- Checking for module 'OGRE'
+[2.991s] --   Found OGRE, version 1.9.0
+[3.020s] -- Found Ogre Ghadamon (1.9.0)
+[3.030s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[3.039s] -- Looking for OGRE_Paging...
+[3.047s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[3.047s] -- Looking for OGRE_Terrain...
+[3.056s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[3.056s] -- Looking for OGRE_Property...
+[3.064s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[3.065s] -- Looking for OGRE_RTShaderSystem...
+[3.072s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[3.073s] -- Looking for OGRE_Volume...
+[3.080s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[3.081s] -- Looking for OGRE_Overlay...
+[3.089s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[3.246s] -- Looking for ignition-math6 -- found version 6.15.0
+[3.248s] -- Looking for ignition-transport8 -- found version 8.4.0
+[3.248s] -- Searching for dependencies of ignition-transport8
+[3.263s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[3.276s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.280s] -- Checking for module 'libzmq >= 4'
+[3.292s] --   Found libzmq , version 4.3.2
+[3.323s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[3.330s] -- Checking for module 'uuid'
+[3.341s] --   Found uuid, version 2.34.0
+[3.366s] -- Found UUID: TRUE  
+[3.367s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[3.367s] -- Searching for dependencies of ignition-msgs5
+[3.382s] -- Looking for ignition-math6 -- found version 6.15.0
+[3.386s] -- Checking for module 'tinyxml2'
+[3.398s] --   Found tinyxml2, version 6.2.0
+[3.431s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[3.433s] -- Looking for ignition-common3 -- found version 3.16.0
+[3.433s] -- Searching for dependencies of ignition-common3
+[3.434s] -- Looking for dlfcn.h - found
+[3.438s] -- Looking for libdl - found
+[3.439s] -- Found DL: TRUE  
+[3.451s] -- Searching for <ignition-common3> component [graphics]
+[3.456s] -- Looking for ignition-common3-graphics -- found version 3.16.0
+[3.456s] -- Searching for dependencies of ignition-common3-graphics
+[3.457s] -- Looking for ignition-math6 -- found version 6.15.0
+[3.461s] -- Looking for ignition-fuel_tools4 -- found version 4.9.0
+[3.465s] -- Searching for dependencies of ignition-fuel_tools4
+[3.557s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[3.570s] -- Checking for module 'jsoncpp'
+[3.580s] --   Found jsoncpp, version 1.7.4
+[3.611s] -- Found JSONCPP: TRUE  
+[3.617s] -- Checking for module 'libzip'
+[3.633s] --   Found libzip, version 1.5.1
+[3.670s] -- Found ZIP: TRUE  
+[3.670s] -- Looking for ignition-common3 -- found version 3.16.0
+[3.672s] -- Looking for ignition-math6 -- found version 6.15.0
+[3.672s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[3.673s] -- Gazebo version: 11.14
+[3.733s] -- Configuring done (2.5s)
+[3.738s] -- Generating done (0.0s)
+[3.742s] -- Build files have been written to: /home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world
+[4.178s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/zm_robot-ros2/aws-robomaker-small-warehouse-world -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world
+[4.179s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world -- -j16 -l16
+[5.072s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world -- -j16 -l16
+[5.414s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world
+[5.457s] -- Install configuration: ""
+[5.458s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/launch
+[5.458s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/launch/no_roof_small_warehouse.launch.py
+[5.458s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/launch/small_warehouse.launch.py
+[5.458s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models
+[5.458s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/model.config
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/model.sdf
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/meshes
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/materials
+[5.459s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures
+[5.460s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png
+[5.460s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png
+[5.460s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01
+[5.460s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/model.config
+[5.460s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/model.sdf
+[5.460s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/meshes
+[5.461s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE
+[5.461s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE
+[5.461s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/materials
+[5.461s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures
+[5.461s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png
+[5.461s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png
+[5.462s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01
+[5.462s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/model.config
+[5.462s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/model.sdf
+[5.462s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/meshes
+[5.462s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE
+[5.463s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE
+[5.463s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials
+[5.463s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/textures
+[5.463s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png
+[5.463s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd
+[5.465s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png
+[5.466s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png
+[5.469s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png
+[5.470s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/model.config
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/model.sdf
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/meshes
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE
+[5.471s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials
+[5.472s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/model.config
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/model.sdf
+[5.473s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/meshes
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/materials
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/model.config
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/model.sdf
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/meshes
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE
+[5.474s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE
+[5.475s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/materials
+[5.475s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures
+[5.475s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png
+[5.487s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/model.config
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/model.sdf
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/meshes
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE
+[5.488s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE
+[5.493s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/materials
+[5.493s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/materials/textures
+[5.493s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png
+[5.493s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01
+[5.493s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/model.config
+[5.493s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/model.sdf
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/meshes
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials/textures
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfE_01/.DS_Store
+[5.494s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/.DS_Store
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/model.config
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/model.sdf
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/meshes
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/materials
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/materials/textures
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/model.config
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/model.sdf
+[5.495s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/meshes
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/materials
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/materials/textures
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/model.config
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/model.sdf
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/meshes
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/materials
+[5.496s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/materials/textures
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/model.config
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/model.sdf
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/meshes
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/materials
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/materials/textures
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png
+[5.497s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_Bucket_01/.DS_Store
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/model.config
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/model.sdf
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/meshes
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/materials
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/materials/textures
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png
+[5.498s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01
+[5.499s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/model.config
+[5.499s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/model.sdf
+[5.499s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/meshes
+[5.499s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE
+[5.499s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE
+[5.500s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/materials
+[5.500s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/materials/textures
+[5.500s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png
+[5.500s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png
+[5.501s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png
+[5.501s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds
+[5.501s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds/small_warehouse
+[5.501s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds/small_warehouse/small_warehouse.world
+[5.501s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds/no_roof_small_warehouse
+[5.501s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds/no_roof_small_warehouse/no_roof_small_warehouse.world
+[5.502s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps
+[5.502s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/002
+[5.502s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/002/map.pgm
+[5.504s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/002/map.yaml
+[5.504s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/005
+[5.504s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/005/map.pgm
+[5.504s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/005/map.yaml
+[5.505s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/005/map_rotated.png
+[5.505s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/005/map_rotated.pgm
+[5.505s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/maps/.DS_Store
+[5.505s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/rviz
+[5.505s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/rviz/basic_data.rviz
+[5.505s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/environment/aws_robomaker_small_warehouse_world.dsv
+[5.506s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/ament_index/resource_index/package_run_dependencies/aws_robomaker_small_warehouse_world
+[5.506s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/ament_index/resource_index/parent_prefix_path/aws_robomaker_small_warehouse_world
+[5.506s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/environment/ament_prefix_path.sh
+[5.506s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/environment/ament_prefix_path.dsv
+[5.506s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/environment/path.sh
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/environment/path.dsv
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/local_setup.bash
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/local_setup.sh
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/local_setup.zsh
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/local_setup.dsv
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/package.dsv
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/ament_index/resource_index/packages/aws_robomaker_small_warehouse_world
+[5.507s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.508s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/cmake/aws_robomaker_small_warehouse_worldConfig.cmake
+[5.508s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/cmake/aws_robomaker_small_warehouse_worldConfig-version.cmake
+[5.508s] -- Installing: /home/winter24/gcamp_ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/package.xml
+[5.538s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world

@@ -53,7 +53,7 @@ RM = /home/winter24/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/winter24/gcamp_ros2_ws/build/yolov8_msgs
@@ -98,11 +98,6 @@ rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/librmw.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: libyolov8_msgs__rosidl_generator_c.so
-rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
-rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
@@ -122,7 +117,6 @@ rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/share/std_msgs/cmake/../../../lib/libstd_msgs__python.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/share/builtin_interfaces/cmake/../../../lib/libbuiltin_interfaces__python.so
-rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: /opt/ros/foxy/share/geometry_msgs/cmake/../../../lib/libgeometry_msgs__python.so
 rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so: CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/winter24/gcamp_ros2_ws/build/yolov8_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/link.txt --verbose=$(VERBOSE)
@@ -136,6 +130,6 @@ CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/clean:
 .PHONY : CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/clean
 
 CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/depend:
-	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/winter24/gcamp_ros2_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_msgs /home/winter24/gcamp_ros2_ws/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs /home/winter24/gcamp_ros2_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/depend
 

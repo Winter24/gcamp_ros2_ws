@@ -317,3 +317,18 @@ get_service_type_support_handle<tf2_web_republisher::srv::RepublishTFs>()
 }
 
 }  // namespace rosidl_typesupport_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_CPP_PUBLIC
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_cpp, tf2_web_republisher, srv, RepublishTFs)() {
+  return ::rosidl_typesupport_cpp::get_service_type_support_handle<tf2_web_republisher::srv::RepublishTFs>();
+}
+
+#ifdef __cplusplus
+}
+#endif

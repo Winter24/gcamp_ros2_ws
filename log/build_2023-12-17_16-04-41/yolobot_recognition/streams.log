@@ -1,0 +1,72 @@
+[0.865s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/yolobot_recognition
+[0.955s] -- The C compiler identification is GNU 11.4.0
+[1.045s] -- The CXX compiler identification is GNU 9.4.0
+[1.078s] -- Detecting C compiler ABI info
+[1.175s] -- Detecting C compiler ABI info - done
+[1.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.211s] -- Detecting C compile features
+[1.212s] -- Detecting C compile features - done
+[1.232s] -- Detecting CXX compiler ABI info
+[1.409s] -- Detecting CXX compiler ABI info - done
+[1.434s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.435s] -- Detecting CXX compile features
+[1.435s] -- Detecting CXX compile features - done
+[1.439s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.445s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[1.445s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.445s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.445s]   the cmake_policy command to set the policy and suppress this warning.
+[1.445s] 
+[1.445s] Call Stack (most recent call first):
+[1.445s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[1.445s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[1.445s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.445s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.445s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.445s]   CMakeLists.txt:19 (find_package)
+[1.445s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.445s] [0m
+[1.483s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.484s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.805s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.901s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.904s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.905s] -- Added test 'lint_cmake' to check CMake code style
+[1.905s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.907s] -- Added test 'xmllint' to check XML markup files
+[1.910s] -- Configuring done (1.0s)
+[1.914s] -- Generating done (0.0s)
+[1.914s] -- Build files have been written to: /home/winter24/gcamp_ros2_ws/build/yolobot_recognition
+[2.559s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/yolobot_recognition
+[2.562s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/yolobot_recognition -- -j16 -l16
+[2.632s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/yolobot_recognition -- -j16 -l16
+[3.131s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/yolobot_recognition
+[3.311s] -- Install configuration: ""
+[3.311s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts
+[3.311s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitattributes
+[3.312s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.dockerignore
+[3.312s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8_ros2_subscriber.py
+[3.312s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8n.pt
+[3.312s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitignore
+[3.312s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8_ros2_pt.py
+[3.312s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//launch
+[3.314s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition//launch/launch_yolov8.launch.py
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/lib/yolobot_recognition/yolov8_ros2_pt.py
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/lib/yolobot_recognition/yolov8_ros2_subscriber.py
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/lib/yolobot_recognition/launch_yolov8.launch.py
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/ament_index/resource_index/package_run_dependencies/yolobot_recognition
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/ament_index/resource_index/parent_prefix_path/yolobot_recognition
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.sh
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.dsv
+[3.315s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/path.sh
+[3.316s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/environment/path.dsv
+[3.316s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.bash
+[3.316s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.sh
+[3.316s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.zsh
+[3.317s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.dsv
+[3.318s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/package.dsv
+[3.320s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/ament_index/resource_index/packages/yolobot_recognition
+[3.320s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig.cmake
+[3.321s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig-version.cmake
+[3.322s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_recognition/share/yolobot_recognition/package.xml
+[3.589s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/yolobot_recognition

@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/winter24/gcamp_ros2_ws/build/aws_robomaker_small_warehouse_world/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

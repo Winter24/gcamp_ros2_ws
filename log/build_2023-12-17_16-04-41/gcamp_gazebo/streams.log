@@ -1,0 +1,101 @@
+[1.146s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/gcamp_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/src -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/gcamp_gazebo
+[1.492s] -- The C compiler identification is GNU 11.4.0
+[1.492s] -- The CXX compiler identification is GNU 9.4.0
+[1.492s] -- Detecting C compiler ABI info
+[1.492s] -- Detecting C compiler ABI info - done
+[1.493s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.493s] -- Detecting C compile features
+[1.493s] -- Detecting C compile features - done
+[1.493s] -- Detecting CXX compiler ABI info
+[1.493s] -- Detecting CXX compiler ABI info - done
+[1.493s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.493s] -- Detecting CXX compile features
+[1.493s] -- Detecting CXX compile features - done
+[1.493s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.494s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.494s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.495s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[1.495s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.496s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.496s]   the cmake_policy command to set the policy and suppress this warning.
+[1.496s] 
+[1.496s] Call Stack (most recent call first):
+[1.496s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[1.496s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[1.496s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.496s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.497s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.497s]   CMakeLists.txt:19 (find_package)
+[1.497s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.497s] [0m
+[1.578s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.665s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.670s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.671s] -- Added test 'lint_cmake' to check CMake code style
+[1.673s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.675s] -- Added test 'xmllint' to check XML markup files
+[1.677s] -- Configuring done (0.5s)
+[1.680s] -- Generating done (0.0s)
+[1.682s] -- Build files have been written to: /home/winter24/gcamp_ros2_ws/build/gcamp_gazebo
+[1.697s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/gcamp_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/src -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/gcamp_gazebo
+[1.698s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/gcamp_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/gcamp_gazebo -- -j16 -l16
+[2.433s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/gcamp_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/gcamp_gazebo -- -j16 -l16
+[3.193s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/gcamp_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/gcamp_gazebo
+[3.216s] -- Install configuration: ""
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/map.rviz
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/gaz_ros2_ctl_use_sim.yaml
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/main.rviz
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/my_controllers.yaml
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/mapper_params_online_async.yaml
+[3.220s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/ball_tracker_params_robot.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/gazebo_params.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/joystick.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/view_bot.rviz
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/twist_mux.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/empty.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/drive_bot.rviz
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/ball_tracker_params_sim.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/config/nav2_params.yaml
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/robot.urdf.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/lidar.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/camera.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/depth_camera.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/inertial_macros.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/gazebo_control.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/robot_core.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/face.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/ros2_control.xacro
+[3.221s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch
+[3.222s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/launch_sim.launch.py
+[3.222s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/joystick.launch.py
+[3.222s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/localization_launch.py
+[3.222s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/rplidar.launch.py
+[3.223s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/launch_robot.launch.py
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/camera.launch.py
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/online_async_launch.py
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/rsp.launch.py
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/ball_tracker.launch.py
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/navigation_launch.py
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/worlds
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/worlds/obstacles.world
+[3.225s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/worlds/gcamp_world2.world
+[3.226s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/worlds/empty.world
+[3.226s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/worlds/gcamp_world.world
+[3.226s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/ament_index/resource_index/package_run_dependencies/gcamp_gazebo
+[3.226s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/ament_index/resource_index/parent_prefix_path/gcamp_gazebo
+[3.229s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/environment/ament_prefix_path.sh
+[3.231s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/environment/ament_prefix_path.dsv
+[3.231s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/environment/path.sh
+[3.232s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/environment/path.dsv
+[3.232s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/local_setup.bash
+[3.232s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/local_setup.sh
+[3.233s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/local_setup.zsh
+[3.233s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/local_setup.dsv
+[3.233s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/package.dsv
+[3.234s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/ament_index/resource_index/packages/gcamp_gazebo
+[3.234s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/cmake/gcamp_gazeboConfig.cmake
+[3.234s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/cmake/gcamp_gazeboConfig-version.cmake
+[3.234s] -- Installing: /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/package.xml
+[3.238s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/gcamp_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/gcamp_gazebo

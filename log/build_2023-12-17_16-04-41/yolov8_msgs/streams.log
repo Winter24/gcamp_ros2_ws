@@ -1,0 +1,287 @@
+[0.798s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/yolov8_msgs -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/yolov8_msgs
+[1.016s] -- The C compiler identification is GNU 11.4.0
+[1.016s] -- The CXX compiler identification is GNU 9.4.0
+[1.032s] -- Detecting C compiler ABI info
+[1.174s] -- Detecting C compiler ABI info - done
+[1.192s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.192s] -- Detecting C compile features
+[1.193s] -- Detecting C compile features - done
+[1.225s] -- Detecting CXX compiler ABI info
+[1.427s] -- Detecting CXX compiler ABI info - done
+[1.476s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.476s] -- Detecting CXX compile features
+[1.477s] -- Detecting CXX compile features - done
+[1.480s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.487s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[1.487s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.487s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.487s]   the cmake_policy command to set the policy and suppress this warning.
+[1.487s] 
+[1.487s] Call Stack (most recent call first):
+[1.487s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[1.487s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[1.487s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.487s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.487s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.487s]   CMakeLists.txt:19 (find_package)
+[1.487s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.488s] [0m
+[1.515s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.515s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.796s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[1.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.843s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.912s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.954s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.034s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.070s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.079s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[2.079s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.079s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.079s]   the cmake_policy command to set the policy and suppress this warning.
+[2.079s] 
+[2.079s] Call Stack (most recent call first):
+[2.079s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[2.079s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[2.079s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.079s] [0m
+[2.096s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.268s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[2.456s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.541s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.559s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.559s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.559s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.559s]   the cmake_policy command to set the policy and suppress this warning.
+[2.559s] 
+[2.559s] Call Stack (most recent call first):
+[2.559s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.560s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.560s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[2.560s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.560s] [0m
+[2.572s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.574s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.575s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+[2.576s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.576s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.576s]   the cmake_policy command to set the policy and suppress this warning.
+[2.576s] 
+[2.576s] Call Stack (most recent call first):
+[2.577s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.577s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.577s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.577s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[2.577s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.577s] [0m
+[2.603s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+[2.604s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.605s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.605s]   the cmake_policy command to set the policy and suppress this warning.
+[2.606s] 
+[2.606s] Call Stack (most recent call first):
+[2.607s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.607s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.608s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.608s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[2.610s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.610s] [0m
+[2.614s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.615s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.616s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.616s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.643s] -- Found PythonExtra: .so  
+[2.733s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.755s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.756s] -- Added test 'lint_cmake' to check CMake code style
+[2.757s] -- Added test 'xmllint' to check XML markup files
+[2.759s] -- Configuring done (1.9s)
+[2.804s] -- Generating done (0.0s)
+[2.808s] -- Build files have been written to: /home/winter24/gcamp_ros2_ws/build/yolov8_msgs
+[3.256s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake /home/winter24/gcamp_ros2_ws/yolov8_msgs -DCMAKE_INSTALL_PREFIX=/home/winter24/gcamp_ros2_ws/install/yolov8_msgs
+[3.257s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/yolov8_msgs -- -j16 -l16
+[3.517s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.517s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.615s] [  7%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.o[0m
+[3.616s] [ 10%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.o[0m
+[3.629s] [ 10%] Built target yolov8_msgs__cpp
+[3.632s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.633s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.633s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.666s] [ 20%] [32m[1mLinking C shared library libyolov8_msgs__rosidl_generator_c.so[0m
+[3.696s] [ 20%] Built target yolov8_msgs__rosidl_generator_c
+[3.700s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.700s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.827s] [ 30%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.o[0m
+[3.827s] [ 30%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o[0m
+[3.922s] [ 35%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.o[0m
+[3.922s] [ 35%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.o[0m
+[3.924s] [ 38%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o[0m
+[3.925s] [ 41%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o[0m
+[3.951s] [ 43%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.o[0m
+[3.951s] [ 46%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.o[0m
+[3.956s] [ 48%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_c.so[0m
+[3.982s] [ 51%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o[0m
+[3.982s] [ 53%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o[0m
+[3.994s] [ 53%] Built target yolov8_msgs__rosidl_typesupport_c
+[4.025s] [ 56%] [32m[1mLinking C shared library libyolov8_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.093s] [ 56%] Built target yolov8_msgs__rosidl_typesupport_introspection_c
+[4.229s] [ 58%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_cpp.so[0m
+[4.270s] [ 58%] Built target yolov8_msgs__rosidl_typesupport_cpp
+[4.416s] [ 61%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.448s] [ 64%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.480s] [ 64%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_cpp
+[4.483s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.533s] [ 66%] Built target yolov8_msgs__rosidl_typesupport_introspection_cpp
+[4.752s] [ 69%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.o[0m
+[4.754s] [ 71%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.o[0m
+[5.193s] [ 74%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.254s] [ 74%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c
+[5.261s] [ 74%] Built target yolov8_msgs
+[5.268s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.636s] [ 76%] Built target yolov8_msgs__py
+[5.641s] [ 79%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.o[0m
+[5.642s] [ 82%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.o[0m
+[5.726s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/yolov8_msgs/libyolov8_msgs__python.so[0m
+[5.752s] [ 84%] Built target yolov8_msgs__python
+[5.760s] [ 87%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.760s] [ 89%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.761s] [ 92%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.845s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.847s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.860s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.881s] [100%] Built target yolov8_msgs__rosidl_typesupport_c__pyext
+[5.885s] [100%] Built target yolov8_msgs__rosidl_typesupport_introspection_c__pyext
+[5.928s] [100%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext
+[6.045s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/yolov8_msgs -- -j16 -l16
+[6.269s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/yolov8_msgs
+[6.291s] -- Install configuration: ""
+[6.291s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs
+[6.291s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs
+[6.291s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_generator_c__visibility_control.h
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/inference_result.h
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__functions.c
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__type_support.h
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__type_support.h
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__functions.h
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__struct.h
+[6.292s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__functions.h
+[6.293s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__struct.h
+[6.293s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__functions.c
+[6.293s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/yolov8_inference.h
+[6.293s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.sh
+[6.293s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.dsv
+[6.293s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so
+[6.293s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so" to ""
+[6.293s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs
+[6.294s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg
+[6.294s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.294s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail
+[6.294s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_fastrtps_c.h
+[6.294s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_fastrtps_c.h
+[6.294s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so
+[6.294s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[6.294s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs
+[6.294s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg
+[6.295s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_fastrtps_cpp.hpp
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_fastrtps_cpp.hpp
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/dds_fastrtps
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.295s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.295s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs
+[6.295s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.295s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__type_support.c
+[6.295s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_introspection_c.h
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__type_support.c
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_introspection_c.h
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so
+[6.296s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so" to ""
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so
+[6.296s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so" to ""
+[6.296s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs
+[6.296s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/inference_result.hpp
+[6.296s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__type_support.hpp
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__builder.hpp
+[6.296s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__type_support.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__struct.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__traits.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__struct.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__traits.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__builder.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/yolov8_inference.hpp
+[6.297s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs
+[6.297s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg
+[6.297s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_introspection_cpp.hpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp
+[6.297s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_introspection_cpp.hpp
+[6.298s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/inference_result__type_support.cpp
+[6.298s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so
+[6.298s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[6.298s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so
+[6.298s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so" to ""
+[6.298s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.sh
+[6.298s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.dsv
+[6.298s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/__init__.py
+[6.320s] Compiling '/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/__init__.py'...
+[6.324s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg
+[6.325s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_inference_result.py
+[6.326s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_yolov8_inference_s.c
+[6.327s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_inference_result_s.c
+[6.327s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_yolov8_inference.py
+[6.328s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/__init__.py
+[6.328s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[6.329s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[6.329s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[6.330s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[6.331s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[6.331s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[6.332s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__python.so
+[6.332s] -- Set runtime path of "/home/winter24/gcamp_ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__python.so" to ""
+[6.333s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.idl
+[6.333s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.idl
+[6.334s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.msg
+[6.334s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.msg
+[6.334s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs
+[6.334s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs
+[6.334s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.sh
+[6.334s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.dsv
+[6.335s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.sh
+[6.335s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.dsv
+[6.335s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.bash
+[6.335s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.sh
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.zsh
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.dsv
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/packages/yolov8_msgs
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cExport.cmake
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cExport-noconfig.cmake
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.336s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cppExport.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake-extras.cmake
+[6.337s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig-version.cmake
+[6.338s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.xml
+[6.433s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/yolov8_msgs

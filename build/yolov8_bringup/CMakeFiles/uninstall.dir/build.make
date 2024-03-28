@@ -53,7 +53,7 @@ RM = /home/winter24/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_bringup
+CMAKE_SOURCE_DIR = /home/winter24/gcamp_ros2_ws/yolov8_bringup
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/winter24/gcamp_ros2_ws/build/yolov8_bringup
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/winter24/gcamp_ros2_ws/build/yolov8_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_bringup /home/winter24/gcamp_ros2_ws/yolov8_ros/yolov8_bringup /home/winter24/gcamp_ros2_ws/build/yolov8_bringup /home/winter24/gcamp_ros2_ws/build/yolov8_bringup /home/winter24/gcamp_ros2_ws/build/yolov8_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/winter24/gcamp_ros2_ws/build/yolov8_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/winter24/gcamp_ros2_ws/yolov8_bringup /home/winter24/gcamp_ros2_ws/yolov8_bringup /home/winter24/gcamp_ros2_ws/build/yolov8_bringup /home/winter24/gcamp_ros2_ws/build/yolov8_bringup /home/winter24/gcamp_ros2_ws/build/yolov8_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 
