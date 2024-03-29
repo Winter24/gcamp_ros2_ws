@@ -1,0 +1,7 @@
+{
+  "package_name": "lio_sam",
+  "non_idl_tuples": [
+    "/home/winter24/gcamp_ros2_ws/LIO-SAM-ros2:msg/CloudInfo.msg",
+    "/home/winter24/gcamp_ros2_ws/LIO-SAM-ros2:srv/SaveMap.srv"
+  ]
+}

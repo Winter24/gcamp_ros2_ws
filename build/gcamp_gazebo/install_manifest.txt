@@ -20,6 +20,7 @@
 /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/inertial_macros.xacro
 /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/gazebo_control.xacro
 /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/robot_core.xacro
+/home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/imu.xacro
 /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/face.xacro
 /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/description/ros2_control.xacro
 /home/winter24/gcamp_ros2_ws/install/gcamp_gazebo/share/gcamp_gazebo/launch/launch_sim.launch.py

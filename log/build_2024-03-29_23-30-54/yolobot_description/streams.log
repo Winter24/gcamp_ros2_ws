@@ -1,0 +1,26 @@
+[0.468s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/yolobot_description -- -j16 -l16
+[0.526s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/yolobot_description -- -j16 -l16
+[0.641s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/yolobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/yolobot_description
+[0.727s] -- Install configuration: ""
+[0.728s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description//launch
+[0.728s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description//launch/spawn_yolobot.py
+[0.728s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description//launch/spawn_yolobot_launch.launch.py
+[0.728s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description//robot
+[0.729s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description//robot/yolobot.urdf
+[0.729s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/lib/yolobot_description/spawn_yolobot.py
+[0.729s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/ament_index/resource_index/package_run_dependencies/yolobot_description
+[0.729s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/ament_index/resource_index/parent_prefix_path/yolobot_description
+[0.729s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/environment/ament_prefix_path.sh
+[0.730s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/environment/ament_prefix_path.dsv
+[0.730s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/environment/path.sh
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/environment/path.dsv
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/local_setup.bash
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/local_setup.sh
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/local_setup.zsh
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/local_setup.dsv
+[0.731s] -- Installing: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/package.dsv
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/ament_index/resource_index/packages/yolobot_description
+[0.731s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/cmake/yolobot_descriptionConfig.cmake
+[0.732s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/cmake/yolobot_descriptionConfig-version.cmake
+[0.732s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/yolobot_description/share/yolobot_description/package.xml
+[0.800s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/yolobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/yolobot_description
