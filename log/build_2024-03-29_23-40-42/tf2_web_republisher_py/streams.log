@@ -1,0 +1,21 @@
+[0.863s] Invoking command in '/home/winter24/gcamp_ros2_ws/tf2_web_republisher_py/tf2_web_republisher_py': PYTHONPATH=/home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/prefix_override:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tf2_web_republisher_py build --build-base /home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/build install --record /home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/install.log --install-scripts $base/lib/tf2_web_republisher_py --single-version-externally-managed install_data
+[0.988s] running egg_info
+[0.989s] writing ../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/PKG-INFO
+[0.989s] writing dependency_links to ../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/dependency_links.txt
+[0.991s] writing entry points to ../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/entry_points.txt
+[0.991s] writing requirements to ../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/requires.txt
+[0.992s] writing top-level names to ../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/top_level.txt
+[1.019s] reading manifest file '../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/SOURCES.txt'
+[1.019s] writing manifest file '../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info/SOURCES.txt'
+[1.019s] running build
+[1.019s] running build_py
+[1.019s] running install
+[1.019s] running install_lib
+[1.019s] running install_data
+[1.019s] running install_egg_info
+[1.019s] removing '/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py/lib/python3.8/site-packages/tf2_web_republisher_py-0.0.0-py3.8.egg-info' (and everything under it)
+[1.019s] Copying ../../build/tf2_web_republisher_py/tf2_web_republisher_py.egg-info to /home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py/lib/python3.8/site-packages/tf2_web_republisher_py-0.0.0-py3.8.egg-info
+[1.019s] running install_scripts
+[1.022s] Installing tf2_web_republisher script to /home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py/lib/tf2_web_republisher_py
+[1.022s] writing list of installed files to '/home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/install.log'
+[1.041s] Invoked command in '/home/winter24/gcamp_ros2_ws/tf2_web_republisher_py/tf2_web_republisher_py' returned '0': PYTHONPATH=/home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/prefix_override:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tf2_web_republisher_py build --build-base /home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/build install --record /home/winter24/gcamp_ros2_ws/build/tf2_web_republisher_py/install.log --install-scripts $base/lib/tf2_web_republisher_py --single-version-externally-managed install_data

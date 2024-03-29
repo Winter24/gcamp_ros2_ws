@@ -1,0 +1,42 @@
+[0.308s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/tarkbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/tarkbot_description -- -j16 -l16
+[0.507s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/tarkbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --build /home/winter24/gcamp_ros2_ws/build/tarkbot_description -- -j16 -l16
+[0.588s] Invoking command in '/home/winter24/gcamp_ros2_ws/build/tarkbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/tarkbot_description
+[0.679s] -- Install configuration: ""
+[0.679s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/launch
+[0.679s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/launch/model.launch.py
+[0.679s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf
+[0.679s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r10_mec.urdf
+[0.679s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r20_fwd.urdf
+[0.679s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r20_mec.urdf
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r20_akm.urdf
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r10_akm.urdf
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r10_fwd.urdf
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r10_omni.urdf
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/urdf/tarkbot_r10_twd.urdf
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r20_fwd.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/laser.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/depthcamera.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r10_akm.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r20_akm.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r20_mec.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r10_twd.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r10_omni.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r10_mec.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/meshes/base_r10_fwd.stl
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/ament_index/resource_index/package_run_dependencies/tarkbot_description
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/ament_index/resource_index/parent_prefix_path/tarkbot_description
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/environment/ament_prefix_path.sh
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/environment/ament_prefix_path.dsv
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/environment/path.sh
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/environment/path.dsv
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/local_setup.bash
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/local_setup.sh
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/local_setup.zsh
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/local_setup.dsv
+[0.680s] -- Installing: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/package.dsv
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/ament_index/resource_index/packages/tarkbot_description
+[0.680s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/cmake/tarkbot_descriptionConfig.cmake
+[0.681s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/cmake/tarkbot_descriptionConfig-version.cmake
+[0.681s] -- Up-to-date: /home/winter24/gcamp_ros2_ws/install/tarkbot_description/share/tarkbot_description/package.xml
+[0.722s] Invoked command in '/home/winter24/gcamp_ros2_ws/build/tarkbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/winter24/gcamp_ros2_ws/install/yolov8_ros:/home/winter24/gcamp_ros2_ws/install/tf2_web_republisher_py:/home/winter24/gcamp_ros2_ws/install/ball_tracker:/opt/ros/foxy /home/winter24/.local/bin/cmake --install /home/winter24/gcamp_ros2_ws/build/tarkbot_description
