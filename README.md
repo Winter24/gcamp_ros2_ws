@@ -68,8 +68,8 @@ Things i added:
 - Lidar 3d (VLP - 16)
 - An IMU sensor for the robot model
   
-*Update: Fixed wrong frame subcribe 
-(Actually it not really a bug, everything go well but it's funny that went i use the joystick to drive the robot the wheel of the robot seperate from the chassis and go opposite direction :))))))). As an OCD person, i fixed it)
+*Update: TF_OLD_DATA ignoring data from the past for frame base_link at time 746.980000 according to authority Authority undetectable 
+(Actually it not really a bug, everything go well but it's funny that went i use the joystick to drive the robot the wheel of the robot seperate from the chassis and go opposite direction :))))))). As an OCD person, i'll try fixed it)
 
 To run LIO-SAM: 
 - First make sure you comment the 2d lidar xacro file <code>lidar.xacro</code> in the <code>./description/robot.urdf.xacro</code> file and enable the <code>vlp_16.xacro</code> and the <code>imu.xacro</code>.
