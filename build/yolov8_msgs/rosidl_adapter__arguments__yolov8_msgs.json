@@ -1,7 +1,0 @@
-{
-  "package_name": "yolov8_msgs",
-  "non_idl_tuples": [
-    "/home/winter24/gcamp_ros2_ws/yolov8_msgs:msg/InferenceResult.msg",
-    "/home/winter24/gcamp_ros2_ws/yolov8_msgs:msg/Yolov8Inference.msg"
-  ]
-}
