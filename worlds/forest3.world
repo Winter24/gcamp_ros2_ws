@@ -1,0 +1,2653 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <plugin name='mrs_gazebo_static_transform_republisher_plugin' filename='libMrsGazeboCommonResources_StaticTransformRepublisher.so'/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>47.3977</latitude_deg>
+      <longitude_deg>8.54559</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <physics name='default_physics' default='0' type='ode'>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+          <sor>1</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>1000</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+    </physics>
+    <scene>
+      <shadows>0</shadows>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+    </scene>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>250 250 600 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>250 250</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='grass'>
+          <pose>0 0 0 0 -0 0</pose>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>150 250</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/Gazebo.material</uri>
+              <name>Gazebo/Grass</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gui fullscreen='0'>
+      <camera name='camera'>
+        <pose>-40.7324 -1.96122 29.2764 0 0.6258 -0.22236</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <plugin name='mrs_gazebo_rviz_cam_synchronizer' filename='libMrsGazeboCommonResources_RvizCameraSynchronizer.so'>
+      <target_frame_id>gazebo_user_camera</target_frame_id>
+      <world_origin_frame_id>uav1/gps_origin</world_origin_frame_id>
+      <frame_to_follow>uav1::base_link</frame_to_follow>
+    </plugin>
+    <gravity>0 0 -9.8066</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <state world_name='default'>
+      <sim_time>3983 668000000</sim_time>
+      <real_time>504 394834585</real_time>
+      <wall_time>1726020221 442093784</wall_time>
+      <iterations>125862</iterations>
+      <model name='Tree 7_clone'>
+        <pose>3.22505 -6.54935 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.22505 -6.54935 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_0'>
+        <pose>3.25289 -10.0043 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.25289 -10.0043 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_1'>
+        <pose>3.25822 -13.1409 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.25822 -13.1409 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_10'>
+        <pose>-2.78929 -13.4307 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.78929 -13.4307 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_11'>
+        <pose>-2.62162 -16.4008 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.62162 -16.4008 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_12'>
+        <pose>-2.49171 -20.096 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.49171 -20.096 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_13'>
+        <pose>-2.27782 -23.7102 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.27782 -23.7102 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_14'>
+        <pose>-2.11831 -27.671 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.11831 -27.671 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_15'>
+        <pose>-2.0843 -31.5131 -1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.0843 -31.5131 -1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_16'>
+        <pose>3.11165 -34.2131 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.11165 -34.2131 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_17'>
+        <pose>-2.2589 -34.9144 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.2589 -34.9144 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_18'>
+        <pose>-9.04142 -3.12791 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9.04142 -3.12791 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_19'>
+        <pose>-9.13972 -6.54933 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9.13972 -6.54933 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_2'>
+        <pose>3.36644 -16.6834 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.36644 -16.6834 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_20'>
+        <pose>-9.25765 -10.2698 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9.25765 -10.2698 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_21'>
+        <pose>-8.98296 -13.943 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.98296 -13.943 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_22'>
+        <pose>-8.86955 -17.2033 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.86955 -17.2033 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_23'>
+        <pose>-8.82688 -20.4265 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.82688 -20.4265 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_24'>
+        <pose>-8.76537 -24.2308 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.76537 -24.2308 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_25'>
+        <pose>-8.62776 -27.5526 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.62776 -27.5526 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_26'>
+        <pose>-8.59739 -30.9673 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.59739 -30.9673 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_27'>
+        <pose>-8.28496 -34.4005 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.28496 -34.4005 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_28'>
+        <pose>3.02286 -37.8706 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.02286 -37.8706 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_29'>
+        <pose>2.89684 -41.4047 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.89684 -41.4047 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_3'>
+        <pose>3.3199 -20.1073 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.3199 -20.1073 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_30'>
+        <pose>3.01491 -45.0266 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.01491 -45.0266 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_31'>
+        <pose>2.92508 -48.3982 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.92508 -48.3982 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_32'>
+        <pose>2.73666 -52.2192 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.73666 -52.2192 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_33'>
+        <pose>2.59727 -55.5515 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.59727 -55.5515 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_34'>
+        <pose>-2.35049 -38.2251 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.35049 -38.2251 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_35'>
+        <pose>-2.50089 -41.8038 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.50089 -41.8038 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_36'>
+        <pose>-2.26446 -45.197 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.26446 -45.197 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_37'>
+        <pose>-2.48529 -48.8757 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.48529 -48.8757 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_38'>
+        <pose>-2.30539 -52.0907 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.30539 -52.0907 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_39'>
+        <pose>-2.25107 -55.5922 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.25107 -55.5922 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_4'>
+        <pose>3.41682 -23.3923 -1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.41682 -23.3923 -1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_40'>
+        <pose>-8.31573 -37.3214 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.31573 -37.3214 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_41'>
+        <pose>-8.33365 -40.7563 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.33365 -40.7563 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_42'>
+        <pose>-8.148 -44.4694 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.148 -44.4694 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_43'>
+        <pose>-8.19607 -47.922 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.19607 -47.922 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_44'>
+        <pose>-8.00703 -51.3824 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.00703 -51.3824 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_45'>
+        <pose>-7.89036 -54.4858 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-7.89036 -54.4858 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_46'>
+        <pose>-8.11887 -57.8612 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.11887 -57.8612 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_47'>
+        <pose>-2.21582 -58.8354 -3e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.21582 -58.8354 -3e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_48'>
+        <pose>-2.40059 -62.0631 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.40059 -62.0631 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_49'>
+        <pose>-2.47366 -65.4384 -1e-05 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.47366 -65.4384 -1e-05 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_5'>
+        <pose>3.54573 -26.9041 -3e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.54573 -26.9041 -3e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_50'>
+        <pose>-2.50178 -69.332 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.50178 -69.332 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_51'>
+        <pose>-8.01061 -60.9058 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.01061 -60.9058 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_52'>
+        <pose>-8.13804 -64.6313 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.13804 -64.6313 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_53'>
+        <pose>-8.37991 -68.1127 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.37991 -68.1127 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_54'>
+        <pose>-8.28912 -71.9156 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.28912 -71.9156 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_55'>
+        <pose>2.47018 -58.9364 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.47018 -58.9364 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_56'>
+        <pose>2.65957 -62.1283 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.65957 -62.1283 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_57'>
+        <pose>2.50443 -65.5467 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.50443 -65.5467 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_58'>
+        <pose>2.6526 -68.9815 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.6526 -68.9815 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_59'>
+        <pose>8.2266 -2.87619 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.2266 -2.87619 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_6'>
+        <pose>3.28677 -30.5059 -3e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.28677 -30.5059 -3e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_60'>
+        <pose>8.21206 -6.73657 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.21206 -6.73657 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_61'>
+        <pose>8.1859 -10.5476 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.1859 -10.5476 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_62'>
+        <pose>8.36965 -14.3163 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.36965 -14.3163 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_63'>
+        <pose>8.27927 -18.6549 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.27927 -18.6549 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_64'>
+        <pose>8.21865 -22.549 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.21865 -22.549 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_65'>
+        <pose>8.31038 -25.8153 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.31038 -25.8153 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_66'>
+        <pose>8.01793 -29.2152 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.01793 -29.2152 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_67'>
+        <pose>8.06153 -32.8587 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.06153 -32.8587 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_68'>
+        <pose>8.07066 -36.4092 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.07066 -36.4092 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_69'>
+        <pose>7.85452 -40.0522 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.85452 -40.0522 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_7'>
+        <pose>-2.83903 -3.1966 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.83903 -3.1966 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_71'>
+        <pose>7.75277 -43.9472 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.75277 -43.9472 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_72'>
+        <pose>7.59778 -47.8176 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.59778 -47.8176 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_73'>
+        <pose>7.48571 -51.7755 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.48571 -51.7755 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_75'>
+        <pose>7.27958 -55.6121 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.27958 -55.6121 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_75_clone'>
+        <pose>7.38029 -92.4238 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.38029 -92.4238 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_75_clone_4'>
+        <pose>-8.52063 -79.8085 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.52063 -79.8085 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_75_clone_5'>
+        <pose>-8.45252 -83.7899 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.45252 -83.7899 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_75_clone_6'>
+        <pose>-8.33361 -88.2519 -8e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.33361 -88.2519 -8e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_76'>
+        <pose>7.14691 -59.7463 -3e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.14691 -59.7463 -3e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_77'>
+        <pose>7.29046 -63.3703 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.29046 -63.3703 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_78'>
+        <pose>7.10868 -66.7362 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.10868 -66.7362 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_79'>
+        <pose>7.00196 -69.914 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.00196 -69.914 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_8'>
+        <pose>-2.80009 -6.52573 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.80009 -6.52573 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_80'>
+        <pose>2.67782 -72.7222 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.67782 -72.7222 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_81'>
+        <pose>2.81245 -76.5888 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.81245 -76.5888 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_82'>
+        <pose>-8.5033 -76.0582 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.5033 -76.0582 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_83'>
+        <pose>2.93894 -81.1028 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.93894 -81.1028 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_84'>
+        <pose>2.79342 -85.4619 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.79342 -85.4619 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_85'>
+        <pose>2.88887 -89.0689 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.88887 -89.0689 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_86'>
+        <pose>2.19378 -92.7619 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.19378 -92.7619 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_9'>
+        <pose>-2.87043 -10.0278 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.87043 -10.0278 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_1'>
+        <pose>-2.75307 -72.7123 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.75307 -72.7123 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_14'>
+        <pose>7.30956 -73.1422 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.30956 -73.1422 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_15'>
+        <pose>7.31982 -76.7203 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.31982 -76.7203 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_16'>
+        <pose>7.52685 -80.0683 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.52685 -80.0683 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_17'>
+        <pose>7.38492 -84.1116 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.38492 -84.1116 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_2'>
+        <pose>-2.86187 -76.2703 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.86187 -76.2703 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_3'>
+        <pose>-3.05429 -79.5343 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.05429 -79.5343 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_4'>
+        <pose>-3.07304 -82.7219 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.07304 -82.7219 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_5'>
+        <pose>-3.16181 -86.0506 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.16181 -86.0506 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_6'>
+        <pose>-3.48305 -89.2494 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.48305 -89.2494 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_7'>
+        <pose>-3.11786 -93.1134 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.11786 -93.1134 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_97_clone_9'>
+        <pose>7.17304 -88.3244 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.17304 -88.3244 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Tree 7_clone_clone'>
+        <pose>3.48288 -2.51982 1e-06 1.57079 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.48288 -2.51982 1e-06 1.57079 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>250 250 600 0 -0 0</pose>
+      </light>
+    </state>
+    <model name='Tree 7_clone'>
+      <static>1</static>
+      <pose>4.05586 -6.64851 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_0'>
+      <static>1</static>
+      <pose>4.60494 -9.96966 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_1'>
+      <static>1</static>
+      <pose>4.98343 -13.1908 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_2'>
+      <static>1</static>
+      <pose>3.87025 -16.5643 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_3'>
+      <static>1</static>
+      <pose>3.67914 -20.1073 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_4'>
+      <static>1</static>
+      <pose>3.41682 -23.6497 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_5'>
+      <static>1</static>
+      <pose>3.55103 -27.481 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_6'>
+      <static>1</static>
+      <pose>3.28677 -31.0707 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_7'>
+      <static>1</static>
+      <pose>-2.45248 -3.20765 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_8'>
+      <static>1</static>
+      <pose>-2.80009 -6.52573 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_9'>
+      <static>1</static>
+      <pose>-2.87043 -10.0278 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_10'>
+      <static>1</static>
+      <pose>-2.78929 -13.4307 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_11'>
+      <static>1</static>
+      <pose>-2.62162 -16.4008 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_12'>
+      <static>1</static>
+      <pose>-2.49171 -20.096 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_13'>
+      <static>1</static>
+      <pose>-2.27782 -23.7102 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_14'>
+      <static>1</static>
+      <pose>-2.11831 -27.671 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_15'>
+      <static>1</static>
+      <pose>-2.0843 -31.8253 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_16'>
+      <static>1</static>
+      <pose>2.97047 -34.2131 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_17'>
+      <static>1</static>
+      <pose>-2.2589 -34.9144 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_18'>
+      <static>1</static>
+      <pose>-9.04142 -3.12791 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_19'>
+      <static>1</static>
+      <pose>-9.13972 -6.54933 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_20'>
+      <static>1</static>
+      <pose>-9.25765 -10.2698 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_21'>
+      <static>1</static>
+      <pose>-8.98296 -13.943 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_22'>
+      <static>1</static>
+      <pose>-8.86955 -17.2033 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_23'>
+      <static>1</static>
+      <pose>-8.82688 -20.4265 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_24'>
+      <static>1</static>
+      <pose>-8.76537 -24.2308 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_25'>
+      <static>1</static>
+      <pose>-8.62776 -27.5526 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_26'>
+      <static>1</static>
+      <pose>-8.59739 -30.9673 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_27'>
+      <static>1</static>
+      <pose>-8.28496 -34.4005 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_28'>
+      <static>1</static>
+      <pose>3.02286 -37.8706 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_29'>
+      <static>1</static>
+      <pose>2.89684 -41.4047 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_30'>
+      <static>1</static>
+      <pose>3.01491 -45.0266 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_31'>
+      <static>1</static>
+      <pose>2.92508 -48.3982 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_32'>
+      <static>1</static>
+      <pose>2.73666 -52.2192 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_33'>
+      <static>1</static>
+      <pose>2.59727 -55.5515 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_34'>
+      <static>1</static>
+      <pose>-2.35049 -38.2251 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_35'>
+      <static>1</static>
+      <pose>-2.50089 -41.8038 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Tree 7_clone_36'>
+      <static>1</static>
+      <pose>-2.26446 -45.197 1e-06 1.57079 -0 0</pose>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>5 5 5</scale>
+              <uri>model://tree_7/meshes/tree_7.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+  </world>
+</sdf>

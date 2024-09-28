@@ -1,0 +1,5324 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='gcamp_small_building'>
+      <pose>0.468554 -1.10251 0 0 -0 0</pose>
+      <link name='Wall_11'>
+        <collision name='Wall_11_Collision'>
+          <geometry>
+            <box>
+              <size>12 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_11_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>12 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/CeilingTiled</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>-4.16991 2.00561 0 0 -0 -1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_13'>
+        <collision name='Wall_13_Collision'>
+          <geometry>
+            <box>
+              <size>8.5 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_13_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>8.5 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/CeilingTiled</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>4.29338 -3.92287 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_15'>
+        <collision name='Wall_15_Collision'>
+          <geometry>
+            <box>
+              <size>4.5 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_15_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>4.5 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/CeilingTiled</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>5.8051 1.18826 0 0 -0 -1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_3'>
+        <collision name='Wall_3_Collision'>
+          <geometry>
+            <box>
+              <size>15.75 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_3_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>15.75 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>-8.4449 -0.18674 0 0 -0 -1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_4'>
+        <collision name='Wall_4_Collision'>
+          <geometry>
+            <box>
+              <size>17 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_4_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>17 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>-0.019899 -7.98674 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_5'>
+        <collision name='Wall_5_Collision'>
+          <geometry>
+            <box>
+              <size>11.5 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_5_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>11.5 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>8.4051 -2.31174 0 0 -0 1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_6'>
+        <collision name='Wall_6_Collision'>
+          <geometry>
+            <box>
+              <size>2.75 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_6_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>2.75 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>7.1051 3.36326 0 0 -0 3.14159</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_7'>
+        <collision name='Wall_7_Collision'>
+          <geometry>
+            <box>
+              <size>4.75 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_7_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>4.75 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>5.8051 5.66326 0 0 -0 1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_8'>
+        <collision name='Wall_8_Collision'>
+          <geometry>
+            <box>
+              <size>14.25 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_8_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>14.25 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>-1.2449 7.96326 0 0 -0 3.14159</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_9'>
+        <collision name='Wall_9_Collision'>
+          <geometry>
+            <box>
+              <size>0.530789 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_9_Visual'>
+          <pose>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.530789 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose>-8.3699 7.78826 0 0 -0 -1.97569</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <state world_name='default'>
+      <sim_time>1310 169000000</sim_time>
+      <real_time>31 276212927</real_time>
+      <wall_time>1719394638 649527182</wall_time>
+      <iterations>25177</iterations>
+      <model name='gcamp_small_building'>
+        <pose>36.0461 -1.10251 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Wall_11'>
+          <pose>31.8762 0.9031 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_13'>
+          <pose>40.3395 -5.02538 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_15'>
+          <pose>41.8513 0.08575 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_3'>
+          <pose>27.6013 -1.28925 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_4'>
+          <pose>36.0263 -9.08925 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_5'>
+          <pose>44.4513 -3.41425 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_6'>
+          <pose>43.1513 2.26075 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_7'>
+          <pose>41.8513 4.56075 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_8'>
+          <pose>34.8013 6.86075 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_9'>
+          <pose>27.6763 6.68575 0 0 0 -1.97569</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='person_standing'>
+        <pose>2.47931 2.18653 -1e-06 -2e-06 1e-06 -0.001816</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.47931 2.18653 -1e-06 -2e-06 1e-06 -0.001816</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1.65841 1.16133 -1.30361 1.92033 1.42734 3.10189</acceleration>
+          <wrench>132.673 92.9062 -104.289 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='person_standing_clone'>
+        <pose>-2.20132 0.407226 -1e-06 -1e-06 1e-06 -0.00148</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.20132 0.407226 -1e-06 -1e-06 1e-06 -0.00148</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1.62257 1.13783 -1.45664 1.93224 1.44215 3.09635</acceleration>
+          <wrench>129.806 91.0265 -116.532 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='person_standing_clone_0'>
+        <pose>0.4073 -5.98738 -1e-06 -1e-06 1e-06 -0.00056</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0.4073 -5.98738 -1e-06 -1e-06 1e-06 -0.00056</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1.62751 1.1435 -1.42554 1.92601 1.43677 3.09635</acceleration>
+          <wrench>130.2 91.4803 -114.043 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ragdoll'>
+        <pose>-7.38958 1.13208 1.39991 9.1e-05 0.013922 -0.069327</pose>
+        <scale>1 1 1</scale>
+        <link name='head'>
+          <pose>-7.38814 1.13187 2.62488 -5.3e-05 -0 -5e-06</pose>
+          <velocity>3e-06 5.3e-05 -4e-06 -0.000145 0 0</velocity>
+          <acceleration>-0.000964 -0.010433 0.021835 0.011988 0 2.5e-05</acceleration>
+          <wrench>-0.009645 -0.104333 0.218351 0 -0 0</wrench>
+        </link>
+        <link name='hip'>
+          <pose>-7.38958 1.13208 1.39991 9.1e-05 0.013922 -0.069327</pose>
+          <velocity>-2e-06 -2.6e-05 -2e-06 -3e-05 5e-06 -5.7e-05</velocity>
+          <acceleration>-0.00307 0.006018 0.019648 0.005172 0.020814 -0.002421</acceleration>
+          <wrench>-0.030701 0.06018 0.196483 0 -0 0</wrench>
+        </link>
+        <link name='l_ankle'>
+          <pose>-7.38807 1.35296 0.075 0.001087 4e-06 0.002234</pose>
+          <velocity>-6e-06 -5.8e-05 6e-06 -7e-06 -0.000145 1.5e-05</velocity>
+          <acceleration>0.002793 -0.108912 0.010786 -0.090315 0.089101 -0.024033</acceleration>
+          <wrench>0.002793 -0.108912 0.010786 0 -0 0</wrench>
+        </link>
+        <link name='l_calf'>
+          <pose>-7.38056 1.3523 0.699954 0.001087 0.012007 0.002247</pose>
+          <velocity>1.8e-05 -4.9e-05 -0 -1e-05 4.1e-05 1e-05</velocity>
+          <acceleration>0.001189 -0.052862 0.016436 -0.092483 -0.005047 -0.045105</acceleration>
+          <wrench>0.002378 -0.105724 0.032872 0 -0 0</wrench>
+        </link>
+        <link name='l_foot'>
+          <pose>-7.38807 1.35299 0.05 0 6e-06 0.002234</pose>
+          <velocity>-3e-06 -5.3e-05 1.8e-05 0.001065 -5.1e-05 -0</velocity>
+          <acceleration>0.000475 -0.10811 -0.000648 2.1622 0.009497 -2.5e-05</acceleration>
+          <wrench>0.000475 -0.10811 -0.000648 0 -0 0</wrench>
+        </link>
+        <link name='l_forearm'>
+          <pose>-7.38654 1.46056 1.72281 0.000806 0.002527 -0.069325</pose>
+          <velocity>-0 1e-05 -2.5e-05 -2.6e-05 0 -5.7e-05</velocity>
+          <acceleration>0.002477 -0.001799 0.026625 0.004701 0.005035 -0.002293</acceleration>
+          <wrench>0.002477 -0.001799 0.026625 0 -0 0</wrench>
+        </link>
+        <link name='l_hand'>
+          <pose>-7.38767 1.46102 1.24281 0.000806 0.000272 -0.069327</pose>
+          <velocity>-0 -2e-06 -2.5e-05 -2.6e-05 3e-06 -5.7e-05</velocity>
+          <acceleration>0.000146 0.000331 0.026524 0.004301 -0.000297 -0.002306</acceleration>
+          <wrench>0.000146 0.000331 0.026524 0 -0 0</wrench>
+        </link>
+        <link name='l_shoulder'>
+          <pose>-7.36482 1.45856 2.32241 0.000806 -0.002082 -0.069329</pose>
+          <velocity>2e-05 2.3e-05 -2.5e-05 -2.6e-05 0 -5.7e-05</velocity>
+          <acceleration>0.000856 -0.004064 0.026456 0.003914 -0.002736 -0.00232</acceleration>
+          <wrench>0.000856 -0.004064 0.026456 0 -0 0</wrench>
+        </link>
+        <link name='l_thigh_lift'>
+          <pose>-7.37434 1.35155 1.39993 0.001087 0.00889 0.002243</pose>
+          <velocity>1.1e-05 -2.7e-05 -3e-06 -2.4e-05 -1e-05 8e-06</velocity>
+          <acceleration>-0.002622 0.004735 0.019428 -0.0908 -0.006219 -0.056024</acceleration>
+          <wrench>-0.013109 0.023675 0.097141 0 -0 0</wrench>
+        </link>
+        <link name='l_thigh_pan'>
+          <pose>-7.37434 1.35155 1.39993 0.001087 0.01388 0.002249</pose>
+          <velocity>1.1e-05 -2.7e-05 -3e-06 -2.5e-05 5e-06 7e-06</velocity>
+          <acceleration>-0.002653 0.004593 0.01907 -0.103198 0.020609 -0.05923</acceleration>
+          <wrench>-0.002653 0.004593 0.01907 0 -0 0</wrench>
+        </link>
+        <link name='l_upper_arm'>
+          <pose>-7.36482 1.45856 2.32241 0.000806 0.036346 -0.069298</pose>
+          <velocity>2e-05 2.3e-05 -2.5e-05 -2.4e-05 3.3e-05 -5.7e-05</velocity>
+          <acceleration>0.000869 -0.004046 0.026396 0.003915 -0.001987 -0.00232</acceleration>
+          <wrench>0.001737 -0.008093 0.052792 0 -0 0</wrench>
+        </link>
+        <link name='l_wrist'>
+          <pose>-7.38768 1.46101 1.25781 0.000806 -0.00068 -0.069328</pose>
+          <velocity>-0 -2e-06 -2.5e-05 -2.6e-05 1e-06 -5.7e-05</velocity>
+          <acceleration>0.000146 0.000268 0.026652 0.004352 -8.9e-05 -0.002296</acceleration>
+          <wrench>0.000146 0.000268 0.026652 0 -0 0</wrench>
+        </link>
+        <link name='neck'>
+          <pose>-7.38756 1.13185 2.34988 -5.3e-05 -0.002083 -5e-06</pose>
+          <velocity>1e-06 2.5e-05 -4e-06 -0.00015 9e-06 0</velocity>
+          <acceleration>-2.2e-05 -0.004477 0.022384 0.007797 -0.003331 1.6e-05</acceleration>
+          <wrench>-2.2e-05 -0.004477 0.022384 0 -0 0</wrench>
+        </link>
+        <link name='r_ankle'>
+          <pose>-7.38815 0.91392 0.075 0.001022 6e-06 -0.002453</pose>
+          <velocity>-3e-06 4.3e-05 1.4e-05 6.7e-05 -5.4e-05 2.5e-05</velocity>
+          <acceleration>0.002137 0.107103 0.004815 0.054836 0.070434 -0.015759</acceleration>
+          <wrench>0.002137 0.107103 0.004815 0 -0 0</wrench>
+        </link>
+        <link name='r_calf'>
+          <pose>-7.39368 0.913295 0.699975 0.001022 -0.008844 -0.002462</pose>
+          <velocity>-1.5e-05 4e-06 1.3e-05 6.7e-05 -2e-05 3.7e-05</velocity>
+          <acceleration>0.002763 0.066631 0.00909 0.059029 0.002445 -0.001891</acceleration>
+          <wrench>0.005526 0.133262 0.01818 0 -0 0</wrench>
+        </link>
+        <link name='r_foot'>
+          <pose>-7.38815 0.913946 0.05 -1e-06 8e-06 -0.002453</pose>
+          <velocity>-2e-06 4.5e-05 1.6e-05 -0.000906 -3.9e-05 0</velocity>
+          <acceleration>0.00048 0.100354 -0.004256 -2.00706 0.009606 2.1e-05</acceleration>
+          <wrench>0.00048 0.100354 -0.004256 0 -0 0</wrench>
+        </link>
+        <link name='r_forearm'>
+          <pose>-7.38837 0.805284 1.72275 0.002765 -0.001389 -0.069327</pose>
+          <velocity>-1e-06 6e-06 1.4e-05 -1.7e-05 -3e-06 -5.7e-05</velocity>
+          <acceleration>-0.001832 -0.001746 0.017224 0.003335 -0.003787 -0.002469</acceleration>
+          <wrench>-0.001832 -0.001746 0.017224 0 -0 0</wrench>
+        </link>
+        <link name='r_hand'>
+          <pose>-7.38764 0.806563 1.24275 0.002764 -4e-05 -0.069323</pose>
+          <velocity>-0 -1e-06 1.3e-05 -1.4e-05 0 -5.7e-05</velocity>
+          <acceleration>-3.5e-05 0.000387 0.017514 0.0058 -0.000396 -0.002444</acceleration>
+          <wrench>-3.5e-05 0.000387 0.017514 0 -0 0</wrench>
+        </link>
+        <link name='r_shoulder'>
+          <pose>-7.41019 0.805138 2.32235 0.002765 -0.002082 -0.069329</pose>
+          <velocity>-1.8e-05 1.9e-05 1.5e-05 -1.6e-05 -0 -5.7e-05</velocity>
+          <acceleration>-0.000719 -0.003508 0.016678 0.004141 -0.002793 -0.002412</acceleration>
+          <wrench>-0.000719 -0.003508 0.016678 0 -0 0</wrench>
+        </link>
+        <link name='r_thigh_lift'>
+          <pose>-7.40482 0.912608 1.39989 0.001022 -0.015908 -0.002469</pose>
+          <velocity>-1.4e-05 -2.4e-05 1.3e-05 5.3e-05 1e-06 4.3e-05</velocity>
+          <acceleration>-0.003519 0.007535 0.01116 0.079132 -0.007865 0.00571</acceleration>
+          <wrench>-0.017593 0.037675 0.055801 0 -0 0</wrench>
+        </link>
+        <link name='r_thigh_pan'>
+          <pose>-7.40482 0.912608 1.39989 0.001022 0.013885 -0.002439</pose>
+          <velocity>-1.4e-05 -2.4e-05 1.3e-05 6.6e-05 7e-06 4.4e-05</velocity>
+          <acceleration>-0.003526 0.007764 0.010835 0.08585 0.01962 0.007835</acceleration>
+          <wrench>-0.003526 0.007764 0.010835 0 -0 0</wrench>
+        </link>
+        <link name='r_upper_arm'>
+          <pose>-7.41019 0.805138 2.32235 0.002766 -0.036276 -0.069423</pose>
+          <velocity>-1.8e-05 1.8e-05 1.4e-05 -1.8e-05 -2.7e-05 -5.7e-05</velocity>
+          <acceleration>-0.000744 -0.003779 0.017115 0.004495 0.001537 -0.002421</acceleration>
+          <wrench>-0.001487 -0.007559 0.034229 0 -0 0</wrench>
+        </link>
+        <link name='r_wrist'>
+          <pose>-7.38764 0.806522 1.25775 0.002764 0.000344 -0.069322</pose>
+          <velocity>-0 -1e-06 1.4e-05 -1.5e-05 1e-06 -5.7e-05</velocity>
+          <acceleration>-4.4e-05 0.000281 0.017404 0.005362 -0.000468 -0.002449</acceleration>
+          <wrench>-4.4e-05 0.000281 0.017404 0 -0 0</wrench>
+        </link>
+        <link name='torso'>
+          <pose>-7.38611 1.13182 1.64988 9.1e-05 -0.002082 -0.069329</pose>
+          <velocity>-1e-06 -1.9e-05 -3e-06 -5.4e-05 2e-06 -5.7e-05</velocity>
+          <acceleration>0.002302 0.004418 0.0205 0.011264 -0.003252 -0.00241</acceleration>
+          <wrench>0.069074 0.132538 0.61499 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ragdoll_0'>
+        <pose>6.8471 -5.66604 1.39992 -3.7e-05 -0.002908 -0.063418</pose>
+        <scale>1 1 1</scale>
+        <link name='head'>
+          <pose>6.84613 -5.66593 2.62492 -5.3e-05 -0 -9e-06</pose>
+          <velocity>-3e-06 -2.6e-05 3.4e-05 5.6e-05 -0 0</velocity>
+          <acceleration>0.000549 0.006618 0.00242 0.00647 -0 2e-06</acceleration>
+          <wrench>0.005489 0.066183 0.024197 0 -0 0</wrench>
+        </link>
+        <link name='hip'>
+          <pose>6.8471 -5.66604 1.39992 -3.7e-05 -0.002908 -0.063418</pose>
+          <velocity>8e-06 3e-06 3.2e-05 3e-06 -4.4e-05 -8.2e-05</velocity>
+          <acceleration>0.001434 -0.006607 0.00206 -0.020986 -0.011734 -4.7e-05</acceleration>
+          <wrench>0.014337 -0.066069 0.020604 0 -0 0</wrench>
+        </link>
+        <link name='l_ankle'>
+          <pose>6.84591 -5.44681 0.075 -0.000227 1e-06 0.001924</pose>
+          <velocity>-1e-06 -4.3e-05 2.4e-05 -3.3e-05 3.4e-05 2e-06</velocity>
+          <acceleration>0.000355 -0.091041 -0.00103 -0.050919 0.00416 0.016188</acceleration>
+          <wrench>0.000355 -0.091041 -0.00103 0 -0 0</wrench>
+        </link>
+        <link name='l_calf'>
+          <pose>6.85419 -5.44665 0.699945 -0.000227 0.013249 0.001921</pose>
+          <velocity>2.9e-05 -2.2e-05 2.8e-05 -3.4e-05 4.6e-05 -4e-06</velocity>
+          <acceleration>0.000347 -0.055261 -0.000894 -0.054275 -7e-05 0.007414</acceleration>
+          <wrench>0.000694 -0.110523 -0.001787 0 -0 0</wrench>
+        </link>
+        <link name='l_foot'>
+          <pose>6.84591 -5.44682 0.05 0 4e-06 0.001924</pose>
+          <velocity>-2e-06 -4.1e-05 1.4e-05 0.000823 -4.1e-05 -0</velocity>
+          <acceleration>0.000264 -0.085663 -0.001505 1.71326 0.005272 -6e-06</acceleration>
+          <wrench>0.000264 -0.085663 -0.001505 0 -0 0</wrench>
+        </link>
+        <link name='l_forearm'>
+          <pose>6.84711 -5.33861 1.72273 -0.001269 0.001281 -0.06342</pose>
+          <velocity>4e-06 -6e-06 4.4e-05 1.2e-05 9e-06 -8.2e-05</velocity>
+          <acceleration>0.000138 0.002693 -0.000334 -0.00652 0.000352 -1.1e-05</acceleration>
+          <wrench>0.000138 0.002693 -0.000334 0 -0 0</wrench>
+        </link>
+        <link name='l_hand'>
+          <pose>6.84648 -5.33918 1.24273 -0.001269 -0.000114 -0.063418</pose>
+          <velocity>0 -0 4.4e-05 1.2e-05 -1e-06 -8.2e-05</velocity>
+          <acceleration>-4e-05 -0.000615 -0.00039 -0.006559 0.000417 -1.3e-05</acceleration>
+          <wrench>-4e-05 -0.000615 -0.00039 0 -0 0</wrench>
+        </link>
+        <link name='l_shoulder'>
+          <pose>6.86696 -5.33911 2.32241 -0.001269 -0.000254 -0.063418</pose>
+          <velocity>2.5e-05 -1.6e-05 4.3e-05 1.1e-05 2e-06 -8.2e-05</velocity>
+          <acceleration>0.000188 0.007063 -0.000452 -0.006853 0.001833 -2.2e-05</acceleration>
+          <wrench>0.000188 0.007063 -0.000452 0 -0 0</wrench>
+        </link>
+        <link name='l_thigh_lift'>
+          <pose>6.86104 -5.44648 1.39991 -0.000227 0.009779 0.001922</pose>
+          <velocity>2.6e-05 2e-06 3.1e-05 -3.6e-05 -6e-06 -6e-06</velocity>
+          <acceleration>0.00137 -0.007489 -0.00084 -0.066589 0.001456 0.002835</acceleration>
+          <wrench>0.006851 -0.037443 -0.004198 0 -0 0</wrench>
+        </link>
+        <link name='l_thigh_pan'>
+          <pose>6.86104 -5.44648 1.39991 -0.000227 -0.002899 0.001925</pose>
+          <velocity>2.6e-05 2e-06 3.1e-05 -4.1e-05 -4.4e-05 -7e-06</velocity>
+          <acceleration>0.00134 -0.007556 -0.000806 -0.073251 -0.011865 0.0012</acceleration>
+          <wrench>0.00134 -0.007556 -0.000806 0 -0 0</wrench>
+        </link>
+        <link name='l_upper_arm'>
+          <pose>6.86696 -5.33911 2.32241 -0.00127 0.033075 -0.06346</pose>
+          <velocity>2.5e-05 -1.5e-05 4.3e-05 1.3e-05 3.5e-05 -8.2e-05</velocity>
+          <acceleration>0.000193 0.00709 -0.000484 -0.007015 0.000417 -1.6e-05</acceleration>
+          <wrench>0.000385 0.014181 -0.000967 0 -0 0</wrench>
+        </link>
+        <link name='l_wrist'>
+          <pose>6.84647 -5.33916 1.25774 -0.001269 -0.000256 -0.063418</pose>
+          <velocity>0 -1e-06 4.4e-05 1.2e-05 -2e-06 -8.2e-05</velocity>
+          <acceleration>-3.4e-05 -0.000512 -0.00032 -0.006504 0.000411 -1e-05</acceleration>
+          <wrench>-3.4e-05 -0.000512 -0.00032 0 -0 0</wrench>
+        </link>
+        <link name='neck'>
+          <pose>6.84619 -5.66595 2.34992 -5.3e-05 -0.000251 -9e-06</pose>
+          <velocity>-2e-06 -1.4e-05 3.4e-05 5.5e-05 -1e-06 0</velocity>
+          <acceleration>0.000233 0.007732 0.002519 0.004891 0.000664 1e-06</acceleration>
+          <wrench>0.000233 0.007732 0.002519 0 -0 0</wrench>
+        </link>
+        <link name='r_ankle'>
+          <pose>6.84591 -5.88591 0.075 -0.000214 1e-06 -0.002407</pose>
+          <velocity>-1e-06 -3.9e-05 1.9e-05 -3.3e-05 1.1e-05 -4e-06</velocity>
+          <acceleration>0.00026 -0.084487 0.000771 -0.042776 0.016894 0.021161</acceleration>
+          <wrench>0.00026 -0.084487 0.000771 0 -0 0</wrench>
+        </link>
+        <link name='r_calf'>
+          <pose>6.84254 -5.88577 0.69999 -0.000214 -0.005401 -0.002406</pose>
+          <velocity>-1.6e-05 -1.7e-05 2.2e-05 -3.5e-05 -2.3e-05 -1.1e-05</velocity>
+          <acceleration>0.000112 -0.052872 0.001714 -0.046665 -2.2e-05 0.012023</acceleration>
+          <wrench>0.000225 -0.105745 0.003428 0 -0 0</wrench>
+        </link>
+        <link name='r_foot'>
+          <pose>6.84591 -5.88592 0.05 0 3e-06 -0.002407</pose>
+          <velocity>-2e-06 -3.7e-05 1.3e-05 0.00075 -3.5e-05 0</velocity>
+          <acceleration>-9.3e-05 -0.077827 -0.001311 1.55654 -0.001869 -5e-06</acceleration>
+          <wrench>-9.3e-05 -0.077827 -0.001311 0 -0 0</wrench>
+        </link>
+        <link name='r_forearm'>
+          <pose>6.84563 -5.99425 1.72277 -0.000294 -0.001894 -0.063417</pose>
+          <velocity>-5e-06 -6e-06 2.8e-05 9e-06 -1.1e-05 -8.2e-05</velocity>
+          <acceleration>-0.000337 0.003698 0.006517 -0.010071 -0.000506 -0.000131</acceleration>
+          <wrench>-0.000337 0.003698 0.006517 0 -0 0</wrench>
+        </link>
+        <link name='r_hand'>
+          <pose>6.84649 -5.99445 1.24277 -0.000294 -0.000148 -0.063418</pose>
+          <velocity>0 -2e-06 2.8e-05 1.1e-05 -2e-06 -8.2e-05</velocity>
+          <acceleration>-7.5e-05 -0.000817 0.006159 -0.008509 0.00054 -0.000166</acceleration>
+          <wrench>-7.5e-05 -0.000817 0.006159 0 -0 0</wrench>
+        </link>
+        <link name='r_shoulder'>
+          <pose>6.82545 -5.99279 2.32243 -0.000294 -0.000254 -0.063418</pose>
+          <velocity>-2.9e-05 -8e-06 2.7e-05 1e-05 2e-06 -8.2e-05</velocity>
+          <acceleration>0.00031 0.009791 0.006975 -0.009429 0.002 -4e-05</acceleration>
+          <wrench>0.00031 0.009791 0.006975 0 -0 0</wrench>
+        </link>
+        <link name='r_thigh_lift'>
+          <pose>6.83315 -5.8856 1.39993 -0.000214 -0.01341 -0.002404</pose>
+          <velocity>-1e-05 4e-06 2.3e-05 -3.5e-05 9e-06 -1.5e-05</velocity>
+          <acceleration>0.001353 -0.007501 0.002226 -0.062094 0.002022 0.006952</acceleration>
+          <wrench>0.006763 -0.037504 0.011132 0 -0 0</wrench>
+        </link>
+        <link name='r_thigh_pan'>
+          <pose>6.83315 -5.8856 1.39993 -0.000214 -0.0029 -0.002406</pose>
+          <velocity>-1e-05 4e-06 2.3e-05 -4.2e-05 -4.5e-05 -1.6e-05</velocity>
+          <acceleration>0.001323 -0.007592 0.002005 -0.069274 -0.011621 0.005398</acceleration>
+          <wrench>0.001323 -0.007592 0.002005 0 -0 0</wrench>
+        </link>
+        <link name='r_upper_arm'>
+          <pose>6.82545 -5.99279 2.32243 -0.000294 -0.033731 -0.063408</pose>
+          <velocity>-2.9e-05 -8e-06 2.7e-05 7e-06 -4.1e-05 -8.2e-05</velocity>
+          <acceleration>0.000312 0.009729 0.006646 -0.009447 0.001276 -9.6e-05</acceleration>
+          <wrench>0.000623 0.019459 0.013291 0 -0 0</wrench>
+        </link>
+        <link name='r_wrist'>
+          <pose>6.8465 -5.99444 1.25777 -0.000294 0.000382 -0.063418</pose>
+          <velocity>0 -2e-06 2.8e-05 1e-05 1e-06 -8.2e-05</velocity>
+          <acceleration>-6.9e-05 -0.000701 0.006321 -0.008855 0.000523 -0.00015</acceleration>
+          <wrench>-6.9e-05 -0.000701 0.006321 0 -0 0</wrench>
+        </link>
+        <link name='torso'>
+          <pose>6.84637 -5.66599 1.64992 -3.7e-05 -0.000254 -0.063418</pose>
+          <velocity>-3e-06 3e-06 3.3e-05 2e-05 1e-06 -8.2e-05</velocity>
+          <acceleration>-0.001242 -0.000102 0.002202 -0.014788 0.002333 -6.9e-05</acceleration>
+          <wrench>-0.037253 -0.003074 0.066048 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-0.3907 -11.1863 5.67349 -0 0.725796 1.56102</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='ragdoll'>
+      <pose>-7.38766 1.13344 1.4 0 -0 0</pose>
+      <link name='hip'>
+        <inertial>
+          <inertia>
+            <ixx>0.1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.1</iyy>
+            <iyz>0</iyz>
+            <izz>0.1</izz>
+          </inertia>
+          <mass>10</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='hip_geom'>
+          <pose>0 0 0.125 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.25</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='hip_geom_visual'>
+          <pose>0 0 0.125 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.25</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_thigh_pan'>
+        <pose>0 0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_thigh_pan_geom'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_thigh_pan_geom_visual'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_thigh_lift'>
+        <pose>0 0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.05</iyy>
+            <iyz>0</iyz>
+            <izz>0.05</izz>
+          </inertia>
+          <mass>5</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_thigh_lift_geom'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_thigh_lift_geom_visual'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_calf'>
+        <pose>0 0.22 -0.7 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_calf_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_calf_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_ankle'>
+        <pose>0 0.22 -1.325 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_ankle_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_ankle_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_foot'>
+        <pose>0 0.22 -1.35 0 -0 0</pose>
+        <inertial>
+          <pose>0.1 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <collision name='l_foot_geom'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_foot_geom_visual'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_thigh_pan'>
+        <pose>0 -0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_thigh_pan_geom'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_thigh_pan_geom_visual'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_thigh_lift'>
+        <pose>0 -0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.05</iyy>
+            <iyz>0</iyz>
+            <izz>0.05</izz>
+          </inertia>
+          <mass>5</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_thigh_lift_geom'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_thigh_lift_geom_visual'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_calf'>
+        <pose>0 -0.22 -0.7 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_calf_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_calf_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_ankle'>
+        <pose>0 -0.22 -1.325 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_ankle_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_ankle_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_foot'>
+        <pose>0 -0.22 -1.35 0 -0 0</pose>
+        <inertial>
+          <pose>0.1 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <collision name='r_foot_geom'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_foot_geom_visual'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='torso'>
+        <pose>0 0 0.25 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.3</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.3</iyy>
+            <iyz>0</iyz>
+            <izz>0.3</izz>
+          </inertia>
+          <mass>30</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='torso_geom'>
+          <pose>0 0 0.35 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.6 0.7</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='torso_geom_visual'>
+          <pose>0 0 0.35 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.6 0.7</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_shoulder'>
+        <pose>0 0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_shoulder_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_shoulder_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_upper_arm'>
+        <pose>0 0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_upper_arm_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_upper_arm_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_forearm'>
+        <pose>0 0.3275 0.3225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_forearm_geom'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_forearm_geom_visual'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_wrist'>
+        <pose>0 0.3275 -0.1425 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_wrist_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_wrist_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_hand'>
+        <pose>0 0.3275 -0.1575 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_hand_geom'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_hand_geom_visual'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='neck'>
+        <pose>0 0 0.95 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='neck_geom'>
+          <pose>0 0 0.1 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.075</radius>
+              <length>0.2</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='neck_geom_visual'>
+          <pose>0 0 0.1 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.075</radius>
+              <length>0.2</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='head'>
+        <pose>0 0 1.225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.1</iyy>
+            <iyz>0</iyz>
+            <izz>0.1</izz>
+          </inertia>
+          <mass>10</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='head_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='head_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_shoulder'>
+        <pose>0 -0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_shoulder_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_shoulder_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_upper_arm'>
+        <pose>0 -0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_upper_arm_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_upper_arm_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_forearm'>
+        <pose>0 -0.3275 0.3225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_forearm_geom'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_forearm_geom_visual'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_wrist'>
+        <pose>0 -0.3275 -0.1425 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_wrist_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_wrist_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_hand'>
+        <pose>0 -0.3275 -0.1575 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_hand_geom'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_hand_geom_visual'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <joint name='l_thigh_pan_joint' type='revolute'>
+        <parent>hip</parent>
+        <child>l_thigh_pan</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 0 1</xyz>
+        </axis>
+      </joint>
+      <joint name='l_thigh_lift_joint' type='revolute'>
+        <parent>l_thigh_pan</parent>
+        <child>l_thigh_lift</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_calf_joint' type='revolute'>
+        <parent>l_thigh_lift</parent>
+        <child>l_calf</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_ankle_joint' type='revolute'>
+        <parent>l_calf</parent>
+        <child>l_ankle</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_foot_joint' type='revolute'>
+        <parent>l_ankle</parent>
+        <child>l_foot</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_thigh_pan_joint' type='revolute'>
+        <parent>hip</parent>
+        <child>r_thigh_pan</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 0 1</xyz>
+        </axis>
+      </joint>
+      <joint name='r_thigh_lift_joint' type='revolute'>
+        <parent>r_thigh_pan</parent>
+        <child>r_thigh_lift</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_calf_joint' type='revolute'>
+        <parent>r_thigh_lift</parent>
+        <child>r_calf</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_ankle_joint' type='revolute'>
+        <parent>r_calf</parent>
+        <child>r_ankle</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_foot_joint' type='revolute'>
+        <parent>r_ankle</parent>
+        <child>r_foot</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='torso_joint' type='revolute'>
+        <parent>hip</parent>
+        <child>torso</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_shoulder_joint' type='revolute'>
+        <parent>torso</parent>
+        <child>l_shoulder</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_upper_arm_joint' type='revolute'>
+        <parent>l_shoulder</parent>
+        <child>l_upper_arm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_forearm_joint' type='revolute'>
+        <parent>l_upper_arm</parent>
+        <child>l_forearm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_wrist_joint' type='revolute'>
+        <parent>l_forearm</parent>
+        <child>l_wrist</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_hand_joint' type='revolute'>
+        <parent>l_wrist</parent>
+        <child>l_hand</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='neck_joint' type='revolute'>
+        <parent>torso</parent>
+        <child>neck</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 0 1</xyz>
+        </axis>
+      </joint>
+      <joint name='head_joint' type='revolute'>
+        <parent>neck</parent>
+        <child>head</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_shoulder_joint' type='revolute'>
+        <parent>torso</parent>
+        <child>r_shoulder</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_upper_arm_joint' type='revolute'>
+        <parent>r_shoulder</parent>
+        <child>r_upper_arm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_forearm_joint' type='revolute'>
+        <parent>r_upper_arm</parent>
+        <child>r_forearm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_wrist_joint' type='revolute'>
+        <parent>r_forearm</parent>
+        <child>r_wrist</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_hand_joint' type='revolute'>
+        <parent>r_wrist</parent>
+        <child>r_hand</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <static>0</static>
+    </model>
+    <model name='ragdoll_0'>
+      <pose>6.84645 -5.66642 1.4 0 -0 0</pose>
+      <link name='hip'>
+        <inertial>
+          <inertia>
+            <ixx>0.1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.1</iyy>
+            <iyz>0</iyz>
+            <izz>0.1</izz>
+          </inertia>
+          <mass>10</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='hip_geom'>
+          <pose>0 0 0.125 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.25</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='hip_geom_visual'>
+          <pose>0 0 0.125 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.25</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_thigh_pan'>
+        <pose>0 0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_thigh_pan_geom'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_thigh_pan_geom_visual'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_thigh_lift'>
+        <pose>0 0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.05</iyy>
+            <iyz>0</iyz>
+            <izz>0.05</izz>
+          </inertia>
+          <mass>5</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_thigh_lift_geom'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_thigh_lift_geom_visual'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_calf'>
+        <pose>0 0.22 -0.7 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_calf_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_calf_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_ankle'>
+        <pose>0 0.22 -1.325 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_ankle_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_ankle_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_foot'>
+        <pose>0 0.22 -1.35 0 -0 0</pose>
+        <inertial>
+          <pose>0.1 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <collision name='l_foot_geom'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_foot_geom_visual'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_thigh_pan'>
+        <pose>0 -0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_thigh_pan_geom'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_thigh_pan_geom_visual'>
+          <pose>0 0 -0.03 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.06</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_thigh_lift'>
+        <pose>0 -0.22 0 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.05</iyy>
+            <iyz>0</iyz>
+            <izz>0.05</izz>
+          </inertia>
+          <mass>5</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_thigh_lift_geom'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_thigh_lift_geom_visual'>
+          <pose>0 0 -0.35 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.06</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_calf'>
+        <pose>0 -0.22 -0.7 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_calf_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_calf_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_ankle'>
+        <pose>0 -0.22 -1.325 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_ankle_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_ankle_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_foot'>
+        <pose>0 -0.22 -1.35 0 -0 0</pose>
+        <inertial>
+          <pose>0.1 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <collision name='r_foot_geom'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_foot_geom_visual'>
+          <pose>0.1 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.03 0.05</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='torso'>
+        <pose>0 0 0.25 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.3</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.3</iyy>
+            <iyz>0</iyz>
+            <izz>0.3</izz>
+          </inertia>
+          <mass>30</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='torso_geom'>
+          <pose>0 0 0.35 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.6 0.7</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='torso_geom_visual'>
+          <pose>0 0 0.35 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.6 0.7</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_shoulder'>
+        <pose>0 0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_shoulder_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_shoulder_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_upper_arm'>
+        <pose>0 0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_upper_arm_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_upper_arm_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_forearm'>
+        <pose>0 0.3275 0.3225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_forearm_geom'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_forearm_geom_visual'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_wrist'>
+        <pose>0 0.3275 -0.1425 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_wrist_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_wrist_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='l_hand'>
+        <pose>0 0.3275 -0.1575 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='l_hand_geom'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='l_hand_geom_visual'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='neck'>
+        <pose>0 0 0.95 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='neck_geom'>
+          <pose>0 0 0.1 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.075</radius>
+              <length>0.2</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='neck_geom_visual'>
+          <pose>0 0 0.1 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.075</radius>
+              <length>0.2</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='head'>
+        <pose>0 0 1.225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.1</iyy>
+            <iyz>0</iyz>
+            <izz>0.1</izz>
+          </inertia>
+          <mass>10</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='head_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='head_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_shoulder'>
+        <pose>0 -0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_shoulder_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_shoulder_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.055</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_upper_arm'>
+        <pose>0 -0.3275 0.9225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+          <mass>2</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_upper_arm_geom'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_upper_arm_geom_visual'>
+          <pose>0 0 -0.3 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.6</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_forearm'>
+        <pose>0 -0.3275 0.3225 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_forearm_geom'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_forearm_geom_visual'>
+          <pose>0 0 -0.225 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.05</radius>
+              <length>0.45</length>
+            </cylinder>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_wrist'>
+        <pose>0 -0.3275 -0.1425 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_wrist_geom'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_wrist_geom_visual'>
+          <geometry>
+            <sphere>
+              <radius>0.03</radius>
+            </sphere>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='r_hand'>
+        <pose>0 -0.3275 -0.1575 0 -0 0</pose>
+        <inertial>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+          <mass>1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='r_hand_geom'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>-1</mu>
+                <mu2>-1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>100000</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+12</kp>
+                <kd>1</kd>
+                <max_vel>0</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='r_hand_geom_visual'>
+          <pose>0 0 -0.1 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.03 0.1 0.2</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <laser_retro>0</laser_retro>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <joint name='l_thigh_pan_joint' type='revolute'>
+        <parent>hip</parent>
+        <child>l_thigh_pan</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 0 1</xyz>
+        </axis>
+      </joint>
+      <joint name='l_thigh_lift_joint' type='revolute'>
+        <parent>l_thigh_pan</parent>
+        <child>l_thigh_lift</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_calf_joint' type='revolute'>
+        <parent>l_thigh_lift</parent>
+        <child>l_calf</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_ankle_joint' type='revolute'>
+        <parent>l_calf</parent>
+        <child>l_ankle</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_foot_joint' type='revolute'>
+        <parent>l_ankle</parent>
+        <child>l_foot</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_thigh_pan_joint' type='revolute'>
+        <parent>hip</parent>
+        <child>r_thigh_pan</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 0 1</xyz>
+        </axis>
+      </joint>
+      <joint name='r_thigh_lift_joint' type='revolute'>
+        <parent>r_thigh_pan</parent>
+        <child>r_thigh_lift</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_calf_joint' type='revolute'>
+        <parent>r_thigh_lift</parent>
+        <child>r_calf</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_ankle_joint' type='revolute'>
+        <parent>r_calf</parent>
+        <child>r_ankle</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_foot_joint' type='revolute'>
+        <parent>r_ankle</parent>
+        <child>r_foot</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='torso_joint' type='revolute'>
+        <parent>hip</parent>
+        <child>torso</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_shoulder_joint' type='revolute'>
+        <parent>torso</parent>
+        <child>l_shoulder</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_upper_arm_joint' type='revolute'>
+        <parent>l_shoulder</parent>
+        <child>l_upper_arm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_forearm_joint' type='revolute'>
+        <parent>l_upper_arm</parent>
+        <child>l_forearm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_wrist_joint' type='revolute'>
+        <parent>l_forearm</parent>
+        <child>l_wrist</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='l_hand_joint' type='revolute'>
+        <parent>l_wrist</parent>
+        <child>l_hand</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='neck_joint' type='revolute'>
+        <parent>torso</parent>
+        <child>neck</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 0 1</xyz>
+        </axis>
+      </joint>
+      <joint name='head_joint' type='revolute'>
+        <parent>neck</parent>
+        <child>head</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_shoulder_joint' type='revolute'>
+        <parent>torso</parent>
+        <child>r_shoulder</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>1 0 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_upper_arm_joint' type='revolute'>
+        <parent>r_shoulder</parent>
+        <child>r_upper_arm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_forearm_joint' type='revolute'>
+        <parent>r_upper_arm</parent>
+        <child>r_forearm</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_wrist_joint' type='revolute'>
+        <parent>r_forearm</parent>
+        <child>r_wrist</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <joint name='r_hand_joint' type='revolute'>
+        <parent>r_wrist</parent>
+        <child>r_hand</child>
+        <axis>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>0</effort>
+            <velocity>0</velocity>
+          </limit>
+          <xyz expressed_in='__model__'>0 1 0</xyz>
+        </axis>
+      </joint>
+      <static>0</static>
+    </model>
+
+    <model name='person_standing'>
+      <link name='link'>
+        <inertial>
+          <pose>0 -0.1 0.95 0 -0 0</pose>
+          <mass>80</mass>
+          <inertia>
+            <ixx>24.88</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>25.73</iyy>
+            <iyz>0</iyz>
+            <izz>2.48</izz>
+          </inertia>
+        </inertial>
+        <collision name='bottom'>
+          <pose>0 -0.1 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.5 0.35 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='person'>
+          <pose>0 0 0.02 0.04 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://person_standing/meshes/standing.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0.02 0.04 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://person_standing/meshes/standing.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-4.18342 -2.48756 0 0 -0 0</pose>
+    </model>
+    <model name='person_standing_clone'>
+      <link name='link'>
+        <inertial>
+          <pose>0 -0.1 0.95 0 -0 0</pose>
+          <mass>80</mass>
+          <inertia>
+            <ixx>24.88</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>25.73</iyy>
+            <iyz>0</iyz>
+            <izz>2.48</izz>
+          </inertia>
+        </inertial>
+        <collision name='bottom'>
+          <pose>0 -0.1 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.5 0.35 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='person'>
+          <pose>0 0 0.02 0.04 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://person_standing/meshes/standing.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0.02 0.04 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://person_standing/meshes/standing.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.20143 0.407228 0 0 -1e-06 -0.000413</pose>
+    </model>
+    <model name='person_standing_clone_0'>
+      <link name='link'>
+        <inertial>
+          <pose>0 -0.1 0.95 0 -0 0</pose>
+          <mass>80</mass>
+          <inertia>
+            <ixx>24.88</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>25.73</iyy>
+            <iyz>0</iyz>
+            <izz>2.48</izz>
+          </inertia>
+        </inertial>
+        <collision name='bottom'>
+          <pose>0 -0.1 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.5 0.35 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='person'>
+          <pose>0 0 0.02 0.04 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://person_standing/meshes/standing.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0.02 0.04 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://person_standing/meshes/standing.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.407287 -5.98738 0 0 -1e-06 -0.000413</pose>
+    </model>
+  </world>
+</sdf>
