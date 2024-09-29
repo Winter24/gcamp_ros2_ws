@@ -34,6 +34,7 @@ sudo apt install ros-humble-ouster-driver
 model file
 https://drive.google.com/file/d/1YAregqyx0IYaNxJuJUjsCAcGJp42SQzS/view?usp=sharing
 Extract the model.zip file into your /.gazebo/models/ folder like this:
+![image](https://github.com/user-attachments/assets/df51cfff-b771-44e8-a850-17f2e9e904f9)
 
 
 
