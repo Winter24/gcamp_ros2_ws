@@ -32,7 +32,7 @@ sudo apt install ros-humble-velodyne
 sudo apt install ros-humble-ouster-driver
 ```
 ![image](https://github.com/user-attachments/assets/ceae1fd5-611d-45b1-9619-8537f3d0d0a6)
-Extract the model.zip file into your .gazebo folder like this:
+Extract the model.zip file into your /.gazebo/models/ folder like this:
 ![image](https://github.com/user-attachments/assets/8e611040-4e8d-47e3-8f6d-cdcb2f20e745)
 
 
