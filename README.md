@@ -7,7 +7,7 @@ sudo apt install ros-humble-joint-state-publisher-gui -y
 sudo apt install ros-humble-xacro -y
 sudo apt install -y python3-pip
 pip3 install -U argcomplete
-sudo apt install ros-foxy-gazebo-ros-pkgs -y
+sudo apt install ros-humble-gazebo-ros-pkgs -y
 ```
 - Ros2 control and diff drive (for moving the robot, must bee installed)
 ```
