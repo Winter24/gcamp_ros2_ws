@@ -19,7 +19,7 @@ def generate_launch_description():
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
 
     package_name='gcamp_gazebo' #<--- CHANGE ME 
-    world_file_name = "human.world" #<--- CHANGE ME small_house
+    world_file_name = "small_city.world" #<--- CHANGE ME small_house
     # publish_rate = 
 
     pkg_path = os.path.join(get_package_share_directory(package_name))
