@@ -37,6 +37,8 @@ https://drive.google.com/file/d/1HbcZF1PbvHjKA9ouyBiEGz9wi9cuKsPc/view?usp=shari
 Extract the model.zip file into your /.gazebo/models/ folder like this:
 ![image](https://github.com/user-attachments/assets/df51cfff-b771-44e8-a850-17f2e9e904f9)
 
+launch:
+ros2 launch gcamp_gazebo launch_sim.launch.py 
 
 
 
