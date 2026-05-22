@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<robot name="prius" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="use_ros2_control" default="true"/>
+  <xacro:arg name="sim_mode"         default="false"/>
+
+  <xacro:include filename="$(find gcamp_gazebo)/description/prius_core.xacro"/>
+  <xacro:include filename="$(find gcamp_gazebo)/description/prius_ros2_control.xacro"/>
+  <xacro:include filename="$(find gcamp_gazebo)/description/prius_gazebo.xacro"/>
+
+  <!-- VLP-16 mounted on roof (z=1.5 from base_link ≈ roof of Prius) -->
+  <joint name="velodyne_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 1.5"/>
+    <parent link="base_link"/>
+    <child  link="velodyne"/>
+  </joint>
+
+  <link name="velodyne">
+    <inertial>
+      <mass value="0.01"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
+    </inertial>
+    <visual>
+      <geometry><cylinder radius="0.05" length="0.04"/></geometry>
+      <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
+    </visual>
+  </link>
+
+  <gazebo reference="velodyne">
+    <sensor name="velodyne-VLP16" type="ray">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1875</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.1415926535897931</min_angle>
+            <max_angle>3.1415926535897931</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>16</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.2617993877991494</min_angle>
+            <max_angle>0.2617993877991494</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.055</min>
+          <max>140.0</max>
+          <resolution>0.001</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.0</stddev>
+        </noise>
+      </ray>
+      <plugin filename="libgazebo_ros_velodyne_laser.so" name="gazebo_ros_laser_controller">
+        <topicName>/points_raw</topicName>
+        <frameName>velodyne</frameName>
+        <min_range>0.9</min_range>
+        <max_range>130.0</max_range>
+        <gaussianNoise>0.008</gaussianNoise>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>
