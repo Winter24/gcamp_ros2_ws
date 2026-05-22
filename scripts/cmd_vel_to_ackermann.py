@@ -25,8 +25,14 @@ class CmdVelToAckermann(Node):
 
 def main():
     rclpy.init()
-    rclpy.spin(CmdVelToAckermann())
-    rclpy.shutdown()
+    node = CmdVelToAckermann()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

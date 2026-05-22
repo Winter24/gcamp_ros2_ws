@@ -5,6 +5,8 @@ from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
+from launch.actions import RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 
@@ -106,7 +108,7 @@ def generate_launch_description():
 
 
     # Code for delaying a node (I haven't tested how effective it is)
-    # 
+    #
     # First add the below lines to imports
     # from launch.actions import RegisterEventHandler
     # from launch.event_handlers import OnProcessExit
@@ -121,7 +123,19 @@ def generate_launch_description():
     #
     # Replace the diff_drive_spawner in the final return with delayed_diff_drive_spawner
 
+    delayed_ackermann_spawner = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=spawn_entity,
+            on_exit=[ackermann_spawner],
+        )
+    )
 
+    delayed_joint_broad_spawner = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=spawn_entity,
+            on_exit=[joint_broad_spawner],
+        )
+    )
 
     # Launch them all!
     return LaunchDescription([
@@ -132,7 +146,7 @@ def generate_launch_description():
         start_gazebo_server_cmd,
         start_gazebo_client_cmd,
         spawn_entity,
-        ackermann_spawner,
+        delayed_ackermann_spawner,
         cmd_vel_to_ackermann,
-        joint_broad_spawner
+        delayed_joint_broad_spawner
     ])
