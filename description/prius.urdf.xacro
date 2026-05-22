@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
 <robot name="prius" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:arg name="use_ros2_control" default="true"/>
-  <xacro:arg name="sim_mode"         default="false"/>
-
   <xacro:include filename="$(find gcamp_gazebo)/description/prius_core.xacro"/>
-  <xacro:include filename="$(find gcamp_gazebo)/description/prius_ros2_control.xacro"/>
   <xacro:include filename="$(find gcamp_gazebo)/description/prius_gazebo.xacro"/>
 
   <!-- VLP-16 mounted on roof (z=1.5 from base_link ≈ roof of Prius) -->
