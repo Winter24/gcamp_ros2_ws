@@ -92,6 +92,12 @@ def generate_launch_description():
         arguments=["ackermann_cont"],
     )
 
+    cmd_vel_to_ackermann = Node(
+        package='gcamp_gazebo',
+        executable='cmd_vel_to_ackermann.py',
+        output='screen',
+    )
+
     joint_broad_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -127,5 +133,6 @@ def generate_launch_description():
         start_gazebo_client_cmd,
         spawn_entity,
         ackermann_spawner,
+        cmd_vel_to_ackermann,
         joint_broad_spawner
     ])
