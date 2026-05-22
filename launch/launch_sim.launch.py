@@ -86,10 +86,10 @@ def generate_launch_description():
         output='screen')
 
 
-    diff_drive_spawner = Node(
+    ackermann_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["diff_cont"],
+        arguments=["ackermann_cont"],
     )
 
     joint_broad_spawner = Node(
@@ -126,6 +126,6 @@ def generate_launch_description():
         start_gazebo_server_cmd,
         start_gazebo_client_cmd,
         spawn_entity,
-        diff_drive_spawner,
+        ackermann_spawner,
         joint_broad_spawner
     ])
