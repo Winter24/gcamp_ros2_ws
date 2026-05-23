@@ -61,7 +61,7 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Color: 255; 255; 255
-      Color Transformer: AxisColor
+      Color Transformer: Intensity
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -87,6 +87,12 @@ Visualization Manager:
       Image Rendering: background and overlay
       Name: Front Camera (RGB)
       Overlay Alpha: 0.5
+      Camera Info Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /front_camera/camera_info
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -131,7 +137,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10
+      Distance: 15
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
