@@ -27,11 +27,11 @@
   </joint>
 
   <link name="chassis">
-    <!-- SDF chassis pose (0,-0.266,0.48) → URDF (0.266,0,0.48); mesh rotated +90° Z -->
+    <!-- Original Prius SDF mesh has no visual pose; rotate only to map SDF Y-forward to ROS X-forward. -->
     <visual>
-      <origin xyz="0.266 0 0.48" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 0" rpy="0 0 1.5708"/>
       <geometry>
-        <mesh filename="package://gcamp_gazebo/meshes/Hybrid.obj" scale="0.01 0.01 0.01"/>
+        <mesh filename="file://$(find gcamp_gazebo)/meshes/Hybrid.obj" scale="0.01 0.01 0.01"/>
       </geometry>
     </visual>
     <collision>
@@ -70,9 +70,7 @@
 
   <link name="front_left_wheel">
     <visual>
-      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
-      <geometry><cylinder radius="${wheel_radius}" length="${wheel_width}"/></geometry>
-      <material name="dark_grey"><color rgba="0.2 0.2 0.2 1"/></material>
+      <geometry><sphere radius="0.001"/></geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
@@ -109,9 +107,7 @@
 
   <link name="front_right_wheel">
     <visual>
-      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
-      <geometry><cylinder radius="${wheel_radius}" length="${wheel_width}"/></geometry>
-      <material name="dark_grey"/>
+      <geometry><sphere radius="0.001"/></geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
@@ -133,9 +129,7 @@
 
   <link name="rear_left_wheel">
     <visual>
-      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
-      <geometry><cylinder radius="${wheel_radius}" length="${wheel_width}"/></geometry>
-      <material name="dark_grey"/>
+      <geometry><sphere radius="0.001"/></geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
@@ -157,9 +151,7 @@
 
   <link name="rear_right_wheel">
     <visual>
-      <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
-      <geometry><cylinder radius="${wheel_radius}" length="${wheel_width}"/></geometry>
-      <material name="dark_grey"/>
+      <geometry><sphere radius="0.001"/></geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>

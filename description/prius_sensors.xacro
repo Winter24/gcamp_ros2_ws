@@ -32,7 +32,11 @@
     <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
 
-  <link name="front_camera_link_optical"/>
+  <link name="front_camera_link_optical">
+    <visual>
+      <geometry><sphere radius="0.001"/></geometry>
+    </visual>
+  </link>
 
   <gazebo reference="front_camera_link">
     <sensor name="front_camera" type="camera">
@@ -98,7 +102,11 @@
     <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
   </joint>
 
-  <link name="depth_camera_link_optical"/>
+  <link name="depth_camera_link_optical">
+    <visual>
+      <geometry><sphere radius="0.001"/></geometry>
+    </visual>
+  </link>
 
   <gazebo reference="depth_camera_link">
     <sensor name="depth_camera" type="depth">
