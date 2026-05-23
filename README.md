@@ -42,3 +42,8 @@ Extract the model.zip file into your /.gazebo/models/ folder like this:
 
 
 
+
+
+
+
+
