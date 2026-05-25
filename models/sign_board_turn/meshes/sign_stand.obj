@@ -1,0 +1,18 @@
+# sign stand - thin vertical post
+mtllib sign_stand.mtl
+o sign_stand
+usemtl None
+v -0.025 -0.025 0.0
+v  0.025 -0.025 0.0
+v  0.025  0.025 0.0
+v -0.025  0.025 0.0
+v -0.025 -0.025 2.5
+v  0.025 -0.025 2.5
+v  0.025  0.025 2.5
+v -0.025  0.025 2.5
+f 4 3 2 1
+f 5 6 7 8
+f 1 2 6 5
+f 2 3 7 6
+f 3 4 8 7
+f 4 1 5 8
