@@ -119,13 +119,13 @@ def generate_launch_description():
 
     # Launch them all!
     return LaunchDescription([
-        rsp,
-        joystick,
+        # rsp,
+        # joystick,
         # twist_mux,
         # gazebo,
         start_gazebo_server_cmd,
         start_gazebo_client_cmd,
-        spawn_entity,
-        diff_drive_spawner,
-        joint_broad_spawner
+        # spawn_entity,
+        # diff_drive_spawner,
+        # joint_broad_spawner
     ])
