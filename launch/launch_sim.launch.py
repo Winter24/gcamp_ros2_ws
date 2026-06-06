@@ -4,7 +4,7 @@ from ament_index_python.packages import get_package_share_directory
 
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 
@@ -19,12 +19,35 @@ def generate_launch_description():
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
 
     package_name='gcamp_gazebo' #<--- CHANGE ME 
-    world_file_name = "small_city.world" #<--- CHANGE ME small_house
+    world_file_name = "small_city_sdc_prius.world" #<--- CHANGE ME small_house
     # publish_rate = 
 
     pkg_path = os.path.join(get_package_share_directory(package_name))
     world_path = os.path.join(pkg_path, "worlds", world_file_name)
+
+    # Make Gazebo prefer the Prius model bundled with this package.
+    # This model has the VLP-16 3D LiDAR mounted on the roof.
+    gcamp_model_path = os.path.join(pkg_path, "models")
+    existing_model_path = os.environ.get('GAZEBO_MODEL_PATH', '')
+    gazebo_model_path = gcamp_model_path + (os.pathsep + existing_model_path if existing_model_path else '')
+
+    # Ensure Gazebo can find libgazebo_ros_velodyne_laser.so from the workspace install.
+    ws_install_path = os.path.abspath(os.path.join(pkg_path, '..', '..', '..'))
+    velodyne_plugin_path = os.path.join(ws_install_path, 'velodyne_gazebo_plugins', 'lib')
+    existing_plugin_path = os.environ.get('GAZEBO_PLUGIN_PATH', '')
+    gazebo_plugin_path = velodyne_plugin_path + (os.pathsep + existing_plugin_path if existing_plugin_path else '')
+
     pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')
+
+    set_gazebo_model_path = SetEnvironmentVariable(
+        name='GAZEBO_MODEL_PATH',
+        value=gazebo_model_path
+    )
+
+    set_gazebo_plugin_path = SetEnvironmentVariable(
+        name='GAZEBO_PLUGIN_PATH',
+        value=gazebo_plugin_path
+    )
 
     # Start Gazebo server
     start_gazebo_server_cmd = IncludeLaunchDescription(
@@ -99,6 +122,22 @@ def generate_launch_description():
     )
 
 
+    # Static TF for the VLP-16 LiDAR mounted on the Prius roof.
+    # Gazebo publishes /points_raw with frame_id=velodyne, but it does not
+    # publish the chassis -> velodyne transform for this SDF-only model.
+    velodyne_tf_pub = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='chassis_to_velodyne_tf',
+        arguments=[
+            '0', '0.25', '1.58',      # x y z: same pose as velodyne link in model.sdf
+            '0', '0', '0',           # roll pitch yaw
+            'chassis', 'velodyne'
+        ],
+        output='screen'
+    )
+
+
     # Code for delaying a node (I haven't tested how effective it is)
     # 
     # First add the below lines to imports
@@ -119,6 +158,9 @@ def generate_launch_description():
 
     # Launch them all!
     return LaunchDescription([
+        set_gazebo_model_path,
+        set_gazebo_plugin_path,
+        velodyne_tf_pub,
         # rsp,
         # joystick,
         # twist_mux,
