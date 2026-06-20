@@ -137,6 +137,18 @@ def generate_launch_description():
         output='screen'
     )
 
+    base_to_chassis_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='base_to_chassis_tf',
+        arguments=[
+            '0', '0', '0',   # X, Y, Z (Giả sử chassis và base_link trùng nhau)
+            '0', '0', '0',   # Roll, Pitch, Yaw
+            'base_link', 'chassis'  # <--- Nếu Bước 1 ra 'base_footprint', hãy thay 'base_link' bằng 'base_footprint'
+        ],
+        output='screen'
+    )
+
 
     # Code for delaying a node (I haven't tested how effective it is)
     # 
@@ -161,6 +173,7 @@ def generate_launch_description():
         set_gazebo_model_path,
         set_gazebo_plugin_path,
         velodyne_tf_pub,
+        # base_to_chassis_tf,
         # rsp,
         # joystick,
         # twist_mux,

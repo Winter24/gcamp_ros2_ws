@@ -37,4 +37,13 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(DIRECTORY maps
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  launch/dynamic_tf_broadcaster.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()
