@@ -43,6 +43,7 @@ install(DIRECTORY maps
 
 install(PROGRAMS
   launch/dynamic_tf_broadcaster.py
+  launch/detect.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

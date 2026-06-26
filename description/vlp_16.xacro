@@ -4,7 +4,7 @@
   <!-- <xacro:macro name="VLP-16" params="*origin parent:=base_link name:=velodyne topic:=/velodyne_points hz:=10 lasers:=16 samples:=1875 collision_range:=0.3 min_range:=0.9 max_range:=130.0 noise:=0.008 min_angle:=-${M_PI} max_angle:=${M_PI} vehicle_name:=vehicle"> -->
 
     <joint name="velodyne_joint" type="fixed">
-        <origin rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="0 0 0" xyz="0 0.25 1.58"/>
         <parent link="base_link"/>
         <child link="velodyne"/>
     </joint>
@@ -90,12 +90,12 @@
             </noise>
           </ray>
           
-          <plugin filename="libgazebo_ros_velodyne_laser.so" name="gazebo_ros_laser_controller">
-            <topicName>/points_raw</topicName>
-            <frameName>velodyne</frameName>
-            <min_range>0.9</min_range>
-            <max_range>130.0</max_range>
-            <gaussianNoise>0.008</gaussianNoise>
+          <plugin filename="libgazebo_ros_ray_sensor.so" name="gazebo_ros_laser_controller">
+            <ros>
+              <remapping>~/out:=/points_raw</remapping>
+            </ros>
+            <output_type>sensor_msgs/PointCloud2</output_type>
+            <frame_name>velodyne</frame_name>
           </plugin>
         </sensor>
     </gazebo>
