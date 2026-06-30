@@ -82,6 +82,12 @@ class LiDARPedestrianDetection(Node):
 
         self.process_times = []
         
+        # Tracker initialization
+        self.trackers = {}
+        self.next_id = 0
+        self.max_missed_frames = 5
+        self.distance_threshold = 2.5 # meters
+        
     def load_model(self, config_name, model_name, dataset_type):
         self.dataset_type = dataset_type
         config_path = os.path.join(launch_dir, config_name)
@@ -143,37 +149,101 @@ class LiDARPedestrianDetection(Node):
         pred_array.header = header
         pred_array.header.frame_id = header.frame_id
 
-        for idx, box in enumerate(boxes):
-            center_x, center_y = box[2], box[3]
-            length, width = box[4], box[5]
-            yaw = float(box[6])
-            
-            # Distance filter
-            distance = (center_x**2 + center_y**2)**0.5
-            if self.dataset_type == 'kitti':
-                if distance > 70.0 or distance < 3.0:
-                    continue
-            else:
-                if distance > 12.0:
-                    continue
+        valid_boxes = []
+        if boxes is not None and len(boxes) > 0:
+            for box in boxes:
+                center_x, center_y = float(box[2]), float(box[3])
+                distance = (center_x**2 + center_y**2)**0.5
+                if self.dataset_type == 'kitti':
+                    if distance > 70.0 or distance < 3.0:
+                        continue
+                else:
+                    if distance > 12.0:
+                        continue
+                valid_boxes.append(box)
 
+        matched_ids = set()
+        tracked_boxes = []
+
+        import math
+
+        for box in valid_boxes:
+            center_x, center_y = float(box[2]), float(box[3])
+            best_id = None
+            best_dist = self.distance_threshold
+
+            for tid, tracker in self.trackers.items():
+                if tid in matched_ids:
+                    continue
+                dist = ((center_x - tracker['x'])**2 + (center_y - tracker['y'])**2)**0.5
+                if dist < best_dist:
+                    best_dist = dist
+                    best_id = tid
+
+            if best_id is not None:
+                alpha = 0.5  # Smoothing factor
+                self.trackers[best_id]['x'] = alpha * center_x + (1 - alpha) * self.trackers[best_id]['x']
+                self.trackers[best_id]['y'] = alpha * center_y + (1 - alpha) * self.trackers[best_id]['y']
+                
+                length, width = float(box[4]), float(box[5])
+                self.trackers[best_id]['length'] = alpha * length + (1 - alpha) * self.trackers[best_id]['length']
+                self.trackers[best_id]['width'] = alpha * width + (1 - alpha) * self.trackers[best_id]['width']
+                
+                yaw = float(box[6])
+                old_yaw = self.trackers[best_id]['yaw']
+                diff = (yaw - old_yaw + math.pi) % (2 * math.pi) - math.pi
+                new_yaw = old_yaw + alpha * diff
+                self.trackers[best_id]['yaw'] = (new_yaw + math.pi) % (2 * math.pi) - math.pi
+                
+                self.trackers[best_id]['missed'] = 0
+                matched_ids.add(best_id)
+                tracked_boxes.append((best_id, box))
+            else:
+                new_id = self.next_id
+                self.next_id += 1
+                length, width = float(box[4]), float(box[5])
+                yaw = float(box[6])
+                self.trackers[new_id] = {
+                    'x': center_x, 'y': center_y,
+                    'length': length, 'width': width, 'yaw': yaw,
+                    'missed': 0
+                }
+                matched_ids.add(new_id)
+                tracked_boxes.append((new_id, box))
+
+        to_delete = []
+        for tid in self.trackers:
+            if tid not in matched_ids:
+                self.trackers[tid]['missed'] += 1
+                if self.trackers[tid]['missed'] > self.max_missed_frames:
+                    to_delete.append(tid)
+        for tid in to_delete:
+            del self.trackers[tid]
+
+        for tid, box in tracked_boxes:
+            center_x = self.trackers[tid]['x']
+            center_y = self.trackers[tid]['y']
+            length = self.trackers[tid]['length']
+            width = self.trackers[tid]['width']
+            yaw = self.trackers[tid]['yaw']
+            
             pred = Detection3D()
             pred.header.frame_id = header.frame_id
-            pred.bbox.center.position.x, pred.bbox.center.position.y, \
-            pred.bbox.center.position.z = float(center_x), float(center_y), -1.0
+            pred.bbox.center.position.x = center_x
+            pred.bbox.center.position.y = center_y
+            pred.bbox.center.position.z = -1.0
             
-            # Fix swapped length/width based on model output coordinates
-            pred.bbox.size.x, pred.bbox.size.y, pred.bbox.size.z = float(length), float(width), 2.0
+            pred.bbox.size.x = length
+            pred.bbox.size.y = width
+            pred.bbox.size.z = 2.0
             
-            # Apply yaw orientation around Z-axis
-            import math
             pred.bbox.center.orientation.w = math.cos(yaw / 2.0)
             pred.bbox.center.orientation.x = 0.0
             pred.bbox.center.orientation.y = 0.0
             pred.bbox.center.orientation.z = math.sin(yaw / 2.0)
 
             result = ObjectHypothesisWithPose()
-            result.hypothesis.class_id = str(int(box[0]))
+            result.hypothesis.class_id = f"{int(box[0])}_{tid}"
             result.hypothesis.score = float(box[1])
             pred.results.append(result)
 
