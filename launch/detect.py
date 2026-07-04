@@ -65,7 +65,12 @@ class LiDARPedestrianDetection(Node):
             Detection3DArray,
             "/preds",
             10)
-        
+
+        self.stats_pub = self.create_publisher(
+            String,
+            "/model/inference_stats",
+            10)
+
         if torch.cuda.is_available():
             self.get_logger().info("Using CUDA GPU for inference")
             self.device = torch.device("cuda")
@@ -85,8 +90,8 @@ class LiDARPedestrianDetection(Node):
         # Tracker initialization
         self.trackers = {}
         self.next_id = 0
-        self.max_missed_frames = 5
-        self.distance_threshold = 2.5 # meters
+        self.max_missed_frames = 2
+        self.distance_threshold = 10.0 # meters
         
     def load_model(self, config_name, model_name, dataset_type):
         self.dataset_type = dataset_type
@@ -142,7 +147,7 @@ class LiDARPedestrianDetection(Node):
         config = self.config['data'][self.dataset_type]
         out_size_factor = self.config['data']['out_size_factor']
         thres = 0.5 if self.dataset_type == 'kitti' else 0.1
-        nms_thres = 0.5  # NMS threshold
+        nms_thres = 0.1  # Aggressive NMS threshold to prevent duplicate model outputs
         
         boxes = filter_pred(predictions, config, out_size_factor, thres, nms_thres)
         pred_array = Detection3DArray()
@@ -161,6 +166,39 @@ class LiDARPedestrianDetection(Node):
                     if distance > 12.0:
                         continue
                 valid_boxes.append(box)
+
+        # Spatial filter: The model often predicts 2 disjoint boxes for the front and rear of a car's side.
+        # We use longitudinal (dl) and lateral (dw) distance to merge boxes on the SAME car,
+        # while PREVENTING the deletion of cars in adjacent lanes.
+        filtered_valid_boxes = []
+        import math
+        for box in valid_boxes:
+            is_dup = False
+            cx, cy = float(box[2]), float(box[3])
+            for kbox in filtered_valid_boxes:
+                kx, ky = float(kbox[2]), float(kbox[3])
+                
+                if self.dataset_type == 'kitti':
+                    # Calculate local longitudinal and lateral distance
+                    dx = cx - kx
+                    dy = cy - ky
+                    kyaw = float(kbox[6])
+                    dl = abs(dx * math.cos(kyaw) + dy * math.sin(kyaw))
+                    dw = abs(-dx * math.sin(kyaw) + dy * math.cos(kyaw))
+                    
+                    # Merge if within 6.0m length-wise and 2.0m width-wise (same car)
+                    # Adjacent lanes are ~3.7m width-wise, so they will NOT be merged.
+                    if dl < 6.0 and dw < 2.0:
+                        is_dup = True
+                        break
+                else:
+                    if ((cx - kx)**2 + (cy - ky)**2)**0.5 < 1.0:
+                        is_dup = True
+                        break
+                        
+            if not is_dup:
+                filtered_valid_boxes.append(box)
+        valid_boxes = filtered_valid_boxes
 
         matched_ids = set()
         tracked_boxes = []
@@ -181,16 +219,26 @@ class LiDARPedestrianDetection(Node):
                     best_id = tid
 
             if best_id is not None:
-                alpha = 0.5  # Smoothing factor
+                alpha = 1.0  # Set to 1.0 to snap instantly to the detection (removes rubber-banding lag)
                 self.trackers[best_id]['x'] = alpha * center_x + (1 - alpha) * self.trackers[best_id]['x']
                 self.trackers[best_id]['y'] = alpha * center_y + (1 - alpha) * self.trackers[best_id]['y']
                 
+                # Keep orientation and size smoothing to prevent jitter
+                alpha_dim = 0.85
                 length, width = float(box[4]), float(box[5])
-                self.trackers[best_id]['length'] = alpha * length + (1 - alpha) * self.trackers[best_id]['length']
-                self.trackers[best_id]['width'] = alpha * width + (1 - alpha) * self.trackers[best_id]['width']
+                self.trackers[best_id]['length'] = alpha_dim * length + (1 - alpha_dim) * self.trackers[best_id]['length']
+                self.trackers[best_id]['width'] = alpha_dim * width + (1 - alpha_dim) * self.trackers[best_id]['width']
                 
                 yaw = float(box[6])
                 old_yaw = self.trackers[best_id]['yaw']
+                
+                # Handle 180-degree ambiguity in model yaw output
+                diff = (yaw - old_yaw + math.pi) % (2 * math.pi) - math.pi
+                if diff > math.pi / 2:
+                    yaw -= math.pi
+                elif diff < -math.pi / 2:
+                    yaw += math.pi
+                    
                 diff = (yaw - old_yaw + math.pi) % (2 * math.pi) - math.pi
                 new_yaw = old_yaw + alpha * diff
                 self.trackers[best_id]['yaw'] = (new_yaw + math.pi) % (2 * math.pi) - math.pi
@@ -233,6 +281,7 @@ class LiDARPedestrianDetection(Node):
             pred.bbox.center.position.y = center_y
             pred.bbox.center.position.z = -1.0
             
+            # Revert to standard size mapping based on coordinate analysis
             pred.bbox.size.x = length
             pred.bbox.size.y = width
             pred.bbox.size.z = 2.0
@@ -300,12 +349,30 @@ class LiDARPedestrianDetection(Node):
         self.process_times.append(process_time)
         current_fps = 1/process_time
         self.get_logger().info(f"Processing time: {process_time:.4f}s FPS: {current_fps:.2f}")
+        
+        display_fps = current_fps
         if len(self.process_times) == 10:
             avg_time_per_frame = np.mean(self.process_times)
-            fps = 1 / avg_time_per_frame if avg_time_per_frame != 0 else 0  # Calculate FPS
-            self.get_logger().info(f"Average FPS for the last 10 frames: {fps:.2f}")
+            display_fps = 1 / avg_time_per_frame if avg_time_per_frame != 0 else 0  # Calculate FPS
+            self.get_logger().info(f"Average FPS for the last 10 frames: {display_fps:.2f}")
             self.process_times.pop(0)
-        
+            
+        gpu_memory = 0.0
+        if torch.cuda.is_available():
+            gpu_memory = torch.cuda.memory_allocated(self.device) / (1024 ** 2) # MB
+
+        stats = {
+            "fps": float(display_fps),
+            "process_time_ms": float(process_time * 1000),
+            "points_time_ms": float((t1-t0) * 1000),
+            "voxel_time_ms": float((t2-t1) * 1000),
+            "infer_time_ms": float((t3-t2) * 1000),
+            "gpu_memory_mb": float(gpu_memory)
+        }
+        stats_msg = String()
+        stats_msg.data = json.dumps(stats)
+        self.stats_pub.publish(stats_msg)
+
 def main(args=None):
     rclpy.init(args=args)
     detector = LiDARPedestrianDetection()
