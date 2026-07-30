@@ -97,14 +97,14 @@ class Nav2PurePursuitPID(Node):
 
         # GIỮ NGUYÊN
         self.kdd = 0.7
-        self.min_ld = 0.8
-        self.max_ld = 2.0
+        self.min_ld = 1.5
+        self.max_ld = 8.0
         self.goal_tolerance = 1.5
         self.waypoint_reach_dist = 1.0
 
         # GIỮ NGUYÊN
-        self.target_speed = 1.0
-        self.max_speed = 1.5
+        self.target_speed = 6.0
+        self.max_speed = 7.0
         self.max_omega = 0.8
 
         self.speed_pid = PID(
@@ -437,12 +437,12 @@ class Nav2PurePursuitPID(Node):
 
         # GIỮ NGUYÊN logic giảm tốc cũ
         if abs(alpha) > 0.6:
-            cmd_speed = min(cmd_speed, 0.25)
+            cmd_speed = min(cmd_speed, 1.2)
         else:
-            cmd_speed = min(cmd_speed, 0.55)
+            cmd_speed = min(cmd_speed, 6.0)
 
-        if dist_to_goal < 4.0:
-            cmd_speed = min(cmd_speed, 0.25)
+        if dist_to_goal < 8.0:
+            cmd_speed = min(cmd_speed, 1.2)
 
         sharp_turn = abs(alpha) > self.reverse_trigger_alpha
 
