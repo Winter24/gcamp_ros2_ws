@@ -1,87 +1,87 @@
 {
-    "date": "2023-09-13",
-    "ver": 3,
-    "note": "human-det",
-    "multi_gpu": false,
-    "device": "mps",
-    "experiments": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/experiments/mobilepixor_gaussian_human-det_2023-09-13_3",
-    "resume_training": false,
-    "resume_from": 1,
-    "data": {
-        "num_classes": 3,
-        "out_size_factor": 4,
-        "gaussian_overlap": 0.1,
-        "min_radius": 4,
-        "jrdb": {
-            "location": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/data-3d/jrdb",
-            "geometry": {
-                "y_min": -12.0,
-                "y_max": 12.0,
-                "x_min": -12.0,
-                "x_max": 12.0,
-                "z_min": -1.5,
-                "z_max": 2.0,
-                "x_res": 0.05,
-                "y_res": 0.05,
-                "z_res": 0.1
-            },
-            "objects": {
-                "Pedestrian": 0,
-                "Bicycle": 1,
-                "Motorcycle": 2,
-                "Scooter": 3
-            }
-        }
-    },
-    "model": {
-        "backbone": "mobilepixor",
-        "backbone_out_dim": 16,
-        "cls_encoding": "gaussian"
-    },
-    "train": {
-        "data_type": "voxel",
-        "batch_size": 4,
-        "learning_rate": 0.0003,
-        "use_differential_learning": false,
-        "differential_learning_rate": [
-            0.00001,
-            0.000001
-        ],
-        "epochs": 20,
-        "momentum": 0.9,
-        "weight_decay": 0.0005,
-        "lr_decay_at": [
-            25,
-            50,
-            75
-        ],
-        "save_every": 1,
-        "data": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/data-3d/list/human_train.txt"
-    },
-    "val": {
-        "batch_size": 4,
-        "data": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/data-3d/list/human_val.txt",
-        "val_every": 1
-    },
-    "augmentation": {
-        "p": 0.5,
-        "rotation": {
-            "use": true,
-            "limit_angle": 20,
-            "p": 1
-        },
-        "scaling": {
-            "use": true,
-            "range": [
-                0.95,
-                1.05
-            ],
-            "p": 1
-        },
-        "translation": {
-            "use": true,
-            "scale": 0.4,
-            "p": 1
-        }
+  "date": "2023-09-13",
+  "ver": 3,
+  "note": "human-det",
+  "multi_gpu": false,
+  "device": "mps",
+  "experiments": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/experiments/mobilepixor_gaussian_human-det_2023-09-13_3",
+  "resume_training": false,
+  "resume_from": 1,
+  "data": {
+    "num_classes": 3,
+    "out_size_factor": 4,
+    "gaussian_overlap": 0.1,
+    "min_radius": 4,
+    "jrdb": {
+      "location": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/data-3d/jrdb",
+      "geometry": {
+        "y_min": -16.0,
+        "y_max": 16.0,
+        "x_min": -16.0,
+        "x_max": 16.0,
+        "z_min": -1.5,
+        "z_max": 2.0,
+        "x_res": 0.05,
+        "y_res": 0.05,
+        "z_res": 0.1
+      },
+      "objects": {
+        "Pedestrian": 0,
+        "Bicycle": 1,
+        "Motorcycle": 2,
+        "Scooter": 3
+      }
     }
+  },
+  "model": {
+    "backbone": "mobilepixor",
+    "backbone_out_dim": 16,
+    "cls_encoding": "gaussian"
+  },
+  "train": {
+    "data_type": "voxel",
+    "batch_size": 4,
+    "learning_rate": 0.0003,
+    "use_differential_learning": false,
+    "differential_learning_rate": [
+      1e-05,
+      1e-06
+    ],
+    "epochs": 20,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_decay_at": [
+      25,
+      50,
+      75
+    ],
+    "save_every": 1,
+    "data": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/data-3d/list/human_train.txt"
+  },
+  "val": {
+    "batch_size": 4,
+    "data": "/Users/hoangtran/miniforge3/envs/lidar-perception-master/data-3d/list/human_val.txt",
+    "val_every": 1
+  },
+  "augmentation": {
+    "p": 0.5,
+    "rotation": {
+      "use": true,
+      "limit_angle": 20,
+      "p": 1
+    },
+    "scaling": {
+      "use": true,
+      "range": [
+        0.95,
+        1.05
+      ],
+      "p": 1
+    },
+    "translation": {
+      "use": true,
+      "scale": 0.4,
+      "p": 1
+    }
+  }
 }

@@ -44,6 +44,7 @@ install(DIRECTORY maps
 install(PROGRAMS
   launch/dynamic_tf_broadcaster.py
   launch/detect.py
+  launch/hybrid_pure_pursuit.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

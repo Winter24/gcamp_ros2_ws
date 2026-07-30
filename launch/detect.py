@@ -143,13 +143,97 @@ class LiDARPedestrianDetection(Node):
             1)
         self.get_logger().info(f"Successfully subscribed to new point cloud topic: {new_topic}")
 
-    def extract_bboxes(self, predictions, header):
-        config = self.config['data'][self.dataset_type]
-        out_size_factor = self.config['data']['out_size_factor']
-        thres = 0.5 if self.dataset_type == 'kitti' else 0.1
-        nms_thres = 0.1  # Aggressive NMS threshold to prevent duplicate model outputs
-        
-        boxes = filter_pred(predictions, config, out_size_factor, thres, nms_thres)
+    def cluster_boxes(self, raw_points):
+        # Geometric BEV clustering for sim mode. The jrdb checkpoint is
+        # out-of-distribution on Gazebo LiDAR (max confidence ~0.04-0.13
+        # anywhere, junk outranking real cars), so instead we cluster the
+        # occupancy grid and keep car-sized clusters.
+        from collections import deque
+        R = 16.0     # BEV range (matches sim distance filter)
+        res = 0.2    # cell size in meters
+        W = int(round(2 * R / res))
+
+        pts = raw_points[(raw_points[:, 2] > -1.2) & (raw_points[:, 2] < 1.0)]
+        pts = pts[(np.abs(pts[:, 0]) < R) & (np.abs(pts[:, 1]) < R)]
+        d = np.hypot(pts[:, 0], pts[:, 1])
+        pts = pts[d > 2.8]  # drop ego body
+        if len(pts) == 0:
+            return []
+
+        gx = np.clip(((pts[:, 0] + R) / res).astype(np.int32), 0, W - 1)
+        gy = np.clip(((pts[:, 1] + R) / res).astype(np.int32), 0, W - 1)
+        grid = np.zeros((W, W), dtype=np.int32)
+        np.add.at(grid, (gx, gy), 1)
+        occ = grid >= 2  # noise gate: need >=2 points per cell
+
+        labels = np.full((W, W), -1, dtype=np.int32)
+        cell_of_point = gx * W + gy
+        boxes = []
+        nlab = 0
+        nbrs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        for cx, cy in np.argwhere(occ):
+            if labels[cx, cy] != -1:
+                continue
+            comp = []
+            q = deque([(cx, cy)])
+            labels[cx, cy] = nlab
+            while q:
+                x, y = q.popleft()
+                comp.append((x, y))
+                for dx, dy in nbrs:
+                    nx2, ny2 = x + dx, y + dy
+                    if 0 <= nx2 < W and 0 <= ny2 < W and occ[nx2, ny2] and labels[nx2, ny2] == -1:
+                        labels[nx2, ny2] = nlab
+                        q.append((nx2, ny2))
+            nlab += 1
+            comp = np.array(comp)
+            cells = set((comp[:, 0] * W + comp[:, 1]).tolist())
+            mask = np.isin(cell_of_point, list(cells))
+            cpts = pts[mask]
+            if len(cpts) < 40:
+                continue
+            # Oriented box via minimum-area bounding rectangle. PCA is biased
+            # on partial views (LiDAR sees an L-shaped 1-2 face cluster, so the
+            # principal axis runs diagonally -> visibly tilted boxes); the
+            # min-area rect aligns with the visible faces instead.
+            xy = cpts[:, :2]
+            mean = xy.mean(axis=0)
+            thetas = np.deg2rad(np.arange(0.0, 90.0, 0.5))
+            ct, st = np.cos(thetas), np.sin(thetas)
+            rx = (xy[:, 0] - mean[0])[None, :] * ct[:, None] + (xy[:, 1] - mean[1])[None, :] * st[:, None]
+            ry = -(xy[:, 0] - mean[0])[None, :] * st[:, None] + (xy[:, 1] - mean[1])[None, :] * ct[:, None]
+            ext_x = rx.max(axis=1) - rx.min(axis=1)
+            ext_y = ry.max(axis=1) - ry.min(axis=1)
+            best = int((ext_x * ext_y).argmin())
+            yaw = float(thetas[best])
+            length = float(ext_x[best])
+            width = float(ext_y[best])
+            if width > length:
+                length, width = width, length
+                yaw += np.pi / 2.0
+            ztop = float(cpts[:, 2].max())
+            zbot = float(cpts[:, 2].min())
+            height = ztop - zbot
+            # Car gate. Footprint alone is not enough: pine trees/poles have
+            # car-sized footprints. Cars top out near z~0 (roof ~1.5m above
+            # ground, sensor at ~1.5m), while trees/poles/fences reach the
+            # z=1.0 clip. Grounded check rejects floating foliage clusters.
+            if not (2.0 < length < 6.5 and 0.8 < width < 3.0 and height > 0.5
+                    and ztop < 0.6 and zbot < -0.8):
+                continue
+            score = min(1.0, len(cpts) / 300.0)
+            boxes.append([0.0, score, float(mean[0]), float(mean[1]), length, width, yaw])
+        return boxes
+
+    def extract_bboxes(self, predictions, header, raw_points=None):
+        if self.dataset_type == 'kitti':
+            config = self.config['data'][self.dataset_type]
+            out_size_factor = self.config['data']['out_size_factor']
+            thres = 0.5
+            nms_thres = 0.1  # Aggressive NMS threshold to prevent duplicate model outputs
+            boxes = filter_pred(predictions, config, out_size_factor, thres, nms_thres)
+        else:
+            boxes = self.cluster_boxes(raw_points)
         pred_array = Detection3DArray()
         pred_array.header = header
         pred_array.header.frame_id = header.frame_id
@@ -164,7 +248,7 @@ class LiDARPedestrianDetection(Node):
                         continue
                 else:
                     # Min 2.8m: ignore the ego vehicle's own body (self-detection)
-                    if distance > 12.0 or distance < 2.8:
+                    if distance > 16.0 or distance < 2.8:
                         continue
                 valid_boxes.append(box)
 
@@ -325,25 +409,31 @@ class LiDARPedestrianDetection(Node):
         
         t1 = time.time()
 
-        # Convert to bev 
-        voxel = voxelize(raw_points, geometry) 
-        voxel_tensor = torch.tensor(voxel).float().unsqueeze(0).to(self.device)
-        voxel_tensor = voxel_tensor.permute(0, 3, 1, 2)
-        
-        target_channels = self.model.backbone.conv1.weight.shape[1]
-        if voxel_tensor.shape[1] != target_channels:
-            voxel_tensor = voxel_tensor[:, :target_channels, :, :]
-        t2 = time.time()
-        
-        # Predict and extract to bbox
-        with torch.no_grad():
-            predictions = self.model(voxel_tensor)
-        t3 = time.time()
-            
-        cls_probs = torch.sigmoid(predictions["cls"].squeeze().detach())
-        self.get_logger().info(f"Conf: {torch.max(cls_probs):.3f} | Times: points={t1-t0:.3f}s, voxel={t2-t1:.3f}s, infer={t3-t2:.3f}s")
-            
-        pred_array = self.extract_bboxes(predictions, msg.header)
+        if self.dataset_type == 'kitti':
+            # Convert to bev
+            voxel = voxelize(raw_points, geometry)
+            voxel_tensor = torch.tensor(voxel).float().unsqueeze(0).to(self.device)
+            voxel_tensor = voxel_tensor.permute(0, 3, 1, 2)
+
+            target_channels = self.model.backbone.conv1.weight.shape[1]
+            if voxel_tensor.shape[1] != target_channels:
+                voxel_tensor = voxel_tensor[:, :target_channels, :, :]
+            t2 = time.time()
+
+            # Predict and extract to bbox
+            with torch.no_grad():
+                predictions = self.model(voxel_tensor)
+            t3 = time.time()
+
+            cls_probs = torch.sigmoid(predictions["cls"].squeeze().detach())
+            self.get_logger().info(f"Conf: {torch.max(cls_probs):.3f} | Times: points={t1-t0:.3f}s, voxel={t2-t1:.3f}s, infer={t3-t2:.3f}s")
+        else:
+            # Sim mode uses geometric clustering, not the network
+            predictions = None
+            t2 = time.time()
+            t3 = time.time()
+
+        pred_array = self.extract_bboxes(predictions, msg.header, raw_points)
         self.get_logger().info(f"Detected {len(pred_array.detections)} objects")
         self.pred_pub.publish(pred_array)
         process_time = time.time() - start_time
