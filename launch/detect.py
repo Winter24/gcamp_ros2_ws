@@ -163,7 +163,8 @@ class LiDARPedestrianDetection(Node):
                     if distance > 70.0 or distance < 3.0:
                         continue
                 else:
-                    if distance > 12.0:
+                    # Min 2.8m: ignore the ego vehicle's own body (self-detection)
+                    if distance > 12.0 or distance < 2.8:
                         continue
                 valid_boxes.append(box)
 
