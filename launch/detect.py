@@ -90,7 +90,7 @@ class LiDARPedestrianDetection(Node):
         # Tracker initialization
         self.trackers = {}
         self.next_id = 0
-        self.max_missed_frames = 2
+        self.max_missed_frames = 8
         self.distance_threshold = 10.0 # meters
         
     def load_model(self, config_name, model_name, dataset_type):
@@ -190,27 +190,24 @@ class LiDARPedestrianDetection(Node):
             cells = set((comp[:, 0] * W + comp[:, 1]).tolist())
             mask = np.isin(cell_of_point, list(cells))
             cpts = pts[mask]
-            if len(cpts) < 40:
+            if len(cpts) < 25:
                 continue
-            # Oriented box via minimum-area bounding rectangle. PCA is biased
-            # on partial views (LiDAR sees an L-shaped 1-2 face cluster, so the
-            # principal axis runs diagonally -> visibly tilted boxes); the
-            # min-area rect aligns with the visible faces instead.
+            # All cars in this world are parked axis-aligned (yaw = 0 or ±π/2).
+            # Min-area rect fitting is noisy on nearly-square footprints and
+            # returns diagonal angles. Just check which span is longer.
             xy = cpts[:, :2]
-            mean = xy.mean(axis=0)
-            thetas = np.deg2rad(np.arange(0.0, 90.0, 0.5))
-            ct, st = np.cos(thetas), np.sin(thetas)
-            rx = (xy[:, 0] - mean[0])[None, :] * ct[:, None] + (xy[:, 1] - mean[1])[None, :] * st[:, None]
-            ry = -(xy[:, 0] - mean[0])[None, :] * st[:, None] + (xy[:, 1] - mean[1])[None, :] * ct[:, None]
-            ext_x = rx.max(axis=1) - rx.min(axis=1)
-            ext_y = ry.max(axis=1) - ry.min(axis=1)
-            best = int((ext_x * ext_y).argmin())
-            yaw = float(thetas[best])
-            length = float(ext_x[best])
-            width = float(ext_y[best])
-            if width > length:
-                length, width = width, length
-                yaw += np.pi / 2.0
+            # Use bbox midpoint, not point mean — the mean is biased toward the
+            # near face (far face occluded), which places the box behind the car.
+            center = np.array([(xy[:, 0].min() + xy[:, 0].max()) / 2.0,
+                               (xy[:, 1].min() + xy[:, 1].max()) / 2.0])
+            x_span = float(xy[:, 0].max() - xy[:, 0].min())
+            y_span = float(xy[:, 1].max() - xy[:, 1].min())
+            if y_span >= x_span:
+                length, width = y_span, x_span
+                yaw = np.pi / 2.0   # car long axis along Y
+            else:
+                length, width = x_span, y_span
+                yaw = 0.0           # car long axis along X
             ztop = float(cpts[:, 2].max())
             zbot = float(cpts[:, 2].min())
             height = ztop - zbot
@@ -218,11 +215,11 @@ class LiDARPedestrianDetection(Node):
             # car-sized footprints. Cars top out near z~0 (roof ~1.5m above
             # ground, sensor at ~1.5m), while trees/poles/fences reach the
             # z=1.0 clip. Grounded check rejects floating foliage clusters.
-            if not (2.0 < length < 6.5 and 0.8 < width < 3.0 and height > 0.5
-                    and ztop < 0.6 and zbot < -0.8):
+            if not (2.0 < length < 6.5 and 0.8 < width < 3.0 and height > 0.4
+                    and ztop < 0.8 and zbot < -0.6):
                 continue
             score = min(1.0, len(cpts) / 300.0)
-            boxes.append([0.0, score, float(mean[0]), float(mean[1]), length, width, yaw])
+            boxes.append([0.0, score, float(center[0]), float(center[1]), length, width, yaw])
         return boxes
 
     def extract_bboxes(self, predictions, header, raw_points=None):
