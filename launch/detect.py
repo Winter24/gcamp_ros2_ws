@@ -86,6 +86,8 @@ class LiDARPedestrianDetection(Node):
             self.load_model("base_demo.json", "88epoch", "jrdb")
 
         self.process_times = []
+        self.last_cb_time = None   # for real callback-rate FPS
+        self.frame_intervals = []  # rolling window of inter-arrival times
         
         # Tracker initialization
         self.trackers = {}
@@ -435,14 +437,22 @@ class LiDARPedestrianDetection(Node):
         self.pred_pub.publish(pred_array)
         process_time = time.time() - start_time
         self.process_times.append(process_time)
-        current_fps = 1/process_time
-        self.get_logger().info(f"Processing time: {process_time:.4f}s FPS: {current_fps:.2f}")
-        
-        display_fps = current_fps
+        self.get_logger().info(f"Processing time: {process_time:.4f}s ({1/process_time:.2f} fps throughput)")
+
+        # Real pipeline FPS: measure time between successive callbacks
+        now = time.time()
+        if self.last_cb_time is not None:
+            self.frame_intervals.append(now - self.last_cb_time)
+            if len(self.frame_intervals) > 10:
+                self.frame_intervals.pop(0)
+        self.last_cb_time = now
+
+        display_fps = (1.0 / np.mean(self.frame_intervals)) if self.frame_intervals else 0.0
+        self.get_logger().info(f"Pipeline FPS (callback rate): {display_fps:.2f}")
+
         if len(self.process_times) == 10:
-            avg_time_per_frame = np.mean(self.process_times)
-            display_fps = 1 / avg_time_per_frame if avg_time_per_frame != 0 else 0  # Calculate FPS
-            self.get_logger().info(f"Average FPS for the last 10 frames: {display_fps:.2f}")
+            avg_proc = np.mean(self.process_times)
+            self.get_logger().info(f"Avg processing time last 10 frames: {avg_proc*1000:.1f} ms")
             self.process_times.pop(0)
             
         gpu_memory = 0.0
