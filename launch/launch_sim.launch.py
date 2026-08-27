@@ -4,8 +4,10 @@ from ament_index_python.packages import get_package_share_directory
 
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable
+from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition
 from launch_ros.substitutions import FindPackageShare
 
 from launch_ros.actions import Node
@@ -18,7 +20,13 @@ def generate_launch_description():
     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
 
-    package_name='gcamp_gazebo' #<--- CHANGE ME 
+    package_name='gcamp_gazebo' #<--- CHANGE ME
+
+    declare_gui = DeclareLaunchArgument(
+        'gui',
+        default_value='false',
+        description='Open the Gazebo 3D client window (gzclient). Default false = headless (saves RAM/VRAM for the webapp).'
+    )
     world_file_name = "small_city_sdc_prius.world" #<--- CHANGE ME small_house
     # publish_rate = 
 
@@ -58,11 +66,11 @@ def generate_launch_description():
         }.items()
     )
 
-    # Start Gazebo client    
+    # Start Gazebo client (3D window) — only when gui:=true.
     start_gazebo_client_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(pkg_gazebo_ros, 'launch', 'gzclient.launch.py')),
+        condition=IfCondition(LaunchConfiguration('gui')),
         launch_arguments={
-            # 'publish_rate': publish_rate
         }.items()
     )
 
@@ -130,9 +138,9 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='chassis_to_velodyne_tf',
         arguments=[
-            '0', '0.25', '1.58',      # x y z: same pose as velodyne link in model.sdf
-            '0', '0', '0',           # roll pitch yaw
-            'chassis', 'velodyne'
+            '--x', '0', '--y', '0.40', '--z', '2.0',
+            '--roll', '0', '--pitch', '0', '--yaw', '-1.57079632679',
+            '--frame-id', 'chassis', '--child-frame-id', 'velodyne'
         ],
         output='screen'
     )
@@ -170,6 +178,7 @@ def generate_launch_description():
 
     # Launch them all!
     return LaunchDescription([
+        declare_gui,
         set_gazebo_model_path,
         set_gazebo_plugin_path,
         velodyne_tf_pub,

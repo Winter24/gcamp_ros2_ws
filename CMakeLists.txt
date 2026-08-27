@@ -33,7 +33,7 @@ if(BUILD_TESTING)
 endif()
 
 install(
-  DIRECTORY config description launch worlds models
+  DIRECTORY config description launch worlds models behavior_trees
   DESTINATION share/${PROJECT_NAME}
 )
 
@@ -43,6 +43,17 @@ install(DIRECTORY maps
 
 install(PROGRAMS
   launch/dynamic_tf_broadcaster.py
+  launch/detect.py
+  launch/lane_detect.py
+  launch/hybrid_pure_pursuit.py
+  launch/goal_pose_nav2_bridge.py
+  launch/small_city_route_planner.py
+  launch/sq_dataset_playback.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(FILES
+  launch/small_city_lane_planner_core.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

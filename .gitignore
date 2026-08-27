@@ -1,0 +1,25 @@
+# ROS 2 workspace output
+/build/
+/install/
+/log/
+
+# Python bytecode and test output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+tempCodeRunnerFile.py
+.DS_Store
+
+# Local backups
+*.bak
+
+# Node.js dependencies (optional tooling only)
+node_modules/

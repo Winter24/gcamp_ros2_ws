@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-07",
+  "ver": 2,
+  "note": "SQ1/SQ2 right-120 x=-30..40.4 epoch-16 finetune from KITTI teacher for /fused_points",
+  "device": "cuda",
+  "data": {
+    "num_classes": 3,
+    "out_size_factor": 4,
+    "gaussian_overlap": 0.1,
+    "min_radius": 4,
+    "unitree": {
+      "coordinate_transform": "right_120",
+      "coordinate_transform_degrees": 120.0,
+      "inverse_prediction_transform": "right_120_to_lidar",
+      "geometry": {
+        "x_min": -30.0,
+        "x_max": 40.4,
+        "y_min": -40.0,
+        "y_max": 40.0,
+        "z_min": -2.5,
+        "z_max": 1.0,
+        "x_res": 0.1,
+        "y_res": 0.1,
+        "z_res": 0.1
+      },
+      "objects": {
+        "Car": 0,
+        "Pedestrian": 1,
+        "Cyclist": 2
+      }
+    }
+  },
+  "model": {
+    "backbone": "mobilepixor_CA",
+    "backbone_out_dim": 16,
+    "cls_encoding": "gaussian"
+  }
+}

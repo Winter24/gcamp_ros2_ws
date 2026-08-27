@@ -1,0 +1,82 @@
+{
+    "date": "2026-06-03",
+    "ver": 1,
+    "note": "augmentation",
+    "multi_gpu": false,
+    "device": "cuda",
+    "experiments": "experiments",
+    "resume_training": false,
+    "resume_from": 1,
+    "data":
+    {
+        "num_classes": 3,
+        "out_size_factor": 4,
+        "gaussian_overlap" : 0.1,
+        "min_radius": 4,
+        "kitti":
+        {
+            "location": "../data-kitti/training",
+            "geometry":
+            {
+                "x_min": 0.0,
+                "x_max": 70.4,
+                "y_min": -40.0,
+                "y_max": 40.0,
+                "z_min": -2.5,
+                "z_max": 1.0,
+                "x_res": 0.1,
+                "y_res": 0.1,
+                "z_res": 0.1
+            },
+            "objects":
+            {
+                "Car": 0,
+                "Pedestrian": 1,
+                "Cyclist": 2
+            }
+        }
+    },
+    "model":
+    {
+        "backbone": "mobilepixor_triplet",
+        "backbone_out_dim": 16,
+        "cls_encoding": "gaussian"
+    },
+    "train":
+    {
+        "data_type": "voxel",
+        "batch_size": 4,
+        "learning_rate": 0.0003,
+        "use_differential_learning": false,
+        "epochs": 101,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "lr_decay_at": [40, 80],
+        "save_every": 5,
+        "data": "train.txt"
+    },
+    "val":
+    {
+        "batch_size": 4,
+        "data": "val.txt",
+        "val_every": 1
+    },
+    "augmentation":
+    {
+        "p": 0.5,
+        "rotation": { "use": true, "limit_angle": 20, "p": 1 },
+        "scaling": { "use": true, "range": [0.95, 1.05], "p": 1 },
+        "translation": { "use": true, "scale": 0.4, "p": 1 },
+        "raug": {
+            "use": true,
+            "database_info_path": "gt_database/gt_database_info.json",
+            "db_classes": ["Pedestrian", "Cyclist"],
+            "sample_groups": {
+                "Pedestrian": 8,
+                "Cyclist": 4
+            },
+            "das_enabled": true,
+            "parp_enabled": true
+        }
+    }
+}
