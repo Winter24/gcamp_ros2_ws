@@ -3576,7 +3576,7 @@
       0
       0
       </pose>
-      <uri>model://hatchback_red</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -4191,7 +4191,7 @@
       0
       -1.57
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
     <include>
@@ -5474,7 +5474,7 @@
       0
       1.5707963267948966
       </pose>
-      <uri>model://hatchback_blue</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5487,7 +5487,7 @@
       0
       1.5707963267948966
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -5501,7 +5501,7 @@
       0
       -1.5707963267948966
       </pose>
-      <uri>model://suv</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5514,7 +5514,7 @@
       0
       -1.5707963267948966
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -5528,7 +5528,7 @@
       0
       1.5707963267948966
       </pose>
-      <uri>model://hatchback_blue</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5541,7 +5541,7 @@
       0
       1.5707963267948966
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -5555,7 +5555,7 @@
       0
       -1.5707963267948966
       </pose>
-      <uri>model://hatchback</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5568,7 +5568,7 @@
       0
       -1.5707963267948966
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -5584,7 +5584,7 @@
       0
       0
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5597,7 +5597,7 @@
       0
       0
       </pose>
-      <uri>model://hatchback</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -5611,7 +5611,7 @@
       0
       0
       </pose>
-      <uri>model://suv</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5624,7 +5624,7 @@
       0
       0
       </pose>
-      <uri>model://hatchback_blue</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
 
@@ -5638,7 +5638,7 @@
       0
       0
       </pose>
-      <uri>model://pickup</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
           <include>
@@ -5651,7 +5651,7 @@
       0
       0
       </pose>
-      <uri>model://suv</uri>
+      <uri>model://prius_parked</uri>
     </include>
 
     <model name='prius_hybrid'>
@@ -6432,7 +6432,7 @@
       </joint>
 
       <link name='velodyne'>
-        <pose>0 0.25 1.58 0 0 0</pose>
+        <pose>0 0.40 2.0 0 0 -1.57079632679</pose>
         <inertial>
           <pose>0 0 0 0 -0 0</pose>
           <mass>0.83</mass>
@@ -6475,24 +6475,24 @@
             </script>
           </material>
         </visual>
-        <sensor name='velodyne-VLP16' type='ray'>
+        <sensor name='velodyne-VLP16' type='gpu_ray'>
           <pose>0 0 0 0 -0 0</pose>
           <always_on>true</always_on>
           <visualize>false</visualize>
-          <update_rate>5</update_rate>
+          <update_rate>10</update_rate>
           <ray>
             <scan>
               <horizontal>
-                <samples>1440</samples>
+                <samples>1200</samples>
                 <resolution>1</resolution>
                 <min_angle>-3.1415926535897931</min_angle>
                 <max_angle>3.1415926535897931</max_angle>
               </horizontal>
               <vertical>
-                <samples>48</samples>
+                <samples>32</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.2617993877991494</min_angle>
-                <max_angle>0.2617993877991494</max_angle>
+                <min_angle>-0.434586983089577</min_angle>
+                <max_angle>0.0349065850398866</max_angle>
               </vertical>
             </scan>
             <range>
@@ -6533,21 +6533,5 @@
       <map_size_x>400.0</map_size_x> <map_size_y>140.0</map_size_y> <init_robot_x>0.0</init_robot_x>
       <init_robot_y>0.0</init_robot_y>
     </plugin>
-
-    <include>
-      <uri>model://person_standing</uri>
-      <name>person_1</name>
-      <pose>5.0 0 0.0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://person_walking</uri>
-      <name>person_2</name>
-      <pose>5.0 -2.0 0.0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://person_standing</uri>
-      <name>person_3</name>
-      <pose>7.0 2.0 0.0 0 0 0</pose>
-    </include>
   </world>
 </sdf>

@@ -93,27 +93,18 @@ controller_server:
     FollowPath:
       plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
       use_rotate_to_heading: False
-      # Thông số điều khiển cốt lõi
       desired_linear_vel: 1.0
       lookahead_dist: 1.5
       max_robot_pose_search_dist: 10.0
-      
-      # Tự động điều chỉnh khoảng cách nhìn xa theo vận tốc
       use_velocity_scaled_lookahead_dist: True
       min_lookahead_dist: 0.5
       max_lookahead_dist: 3.0
       lookahead_time: 1.5
-      
-      # Ràng buộc điều khiển
       regulated_linear_vel_scaling: True
       use_external_velocity_limits: False
       allow_reversing: True
-      
-      # Các tham số quan trọng để tránh lỗi TF và ổn định
       transform_tolerance: 1.0
       control_frequency: 10.0
-      
-      # Ràng buộc vận tốc của xe
       max_linear_velocity: 3.0
       min_linear_velocity: 0.0
       max_angular_velocity: 1.0
@@ -138,14 +129,14 @@ local_costmap:
       plugins: ["voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 2.0
-        inflation_radius: 1.5
+        cost_scaling_factor: 0.8
+        inflation_radius: 2.2
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
         publish_voxel_map: True
         origin_z: 0.0
-        z_resolution: 0.1
+        z_resolution: 0.2
         z_voxels: 16
         max_obstacle_height: 2.0
         mark_threshold: 0
@@ -182,7 +173,7 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 0.7
-        inflation_radius: 1.5
+        inflation_radius: 2.2
       always_send_full_costmap: True
 
 map_server:
@@ -217,7 +208,8 @@ planner_server:
       downsampling_factor: 1
       tolerance: 0.5
       allow_unknown: false
-      max_iterations: 1000000
+      # ~5-7 s on the current machine; max_planning_time remains the hard cap.
+      max_iterations: 2500000
       max_on_approach_iterations: 1000
       max_planning_time: 10.0
       motion_model_for_search: "REEDS_SHEPP"

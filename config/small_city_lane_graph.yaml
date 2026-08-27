@@ -1,0 +1,115 @@
+map_frame: map
+minimum_turning_radius: 3.7
+waypoint_spacing: 0.25
+max_turn_deg: 150.0
+start_heading_limit_deg: 90.0
+snap_max_distance: 4.2
+turn_penalty: 1.0
+lateral_offsets: [-0.75, -0.50, -0.25, 0.0, 0.25, 0.50, 0.75]
+
+nodes:
+  - {id: x_m45_s, x: -45.0, y: -48.7}
+  - {id: x_m45_m45, x: -45.0, y: -45.0}
+  - {id: x_m45_0, x: -45.0, y: 0.0}
+  - {id: x_m45_45, x: -45.0, y: 45.0}
+  - {id: x_m45_n, x: -45.0, y: 49.2}
+  - {id: x_m15_s, x: -15.0, y: -48.7}
+  - {id: x_m15_m45, x: -15.0, y: -45.0}
+  - {id: x_m15_0, x: -15.0, y: 0.0}
+  - {id: x_m15_45, x: -15.0, y: 45.0}
+  - {id: x_m15_n, x: -15.0, y: 49.2}
+  - {id: x_45_s, x: 45.0, y: -48.7}
+  - {id: x_45_m45, x: 45.0, y: -45.0}
+  - {id: x_45_0, x: 45.0, y: 0.0}
+  - {id: x_45_45, x: 45.0, y: 45.0}
+  - {id: x_45_n, x: 45.0, y: 49.2}
+  - {id: x_110_s, x: 110.0, y: -48.7}
+  - {id: x_110_m45, x: 110.0, y: -45.0}
+  - {id: x_110_0, x: 110.0, y: 0.0}
+  - {id: x_110_45, x: 110.0, y: 45.0}
+  - {id: x_110_n, x: 110.0, y: 49.2}
+  - {id: x_120_s, x: 120.0, y: -48.7}
+  - {id: x_120_n, x: 120.0, y: 49.2}
+  - {id: h_m45_e, x: 116.3, y: -45.0}
+  - {id: h_0_e, x: 116.3, y: 0.0}
+  - {id: h_45_e, x: 116.3, y: 45.0}
+
+# Each directed edge joins adjacent intersections/endpoints.  "auto" expands
+# to every connected outgoing edge except a direct U-turn during strict load.
+edges:
+  - {id: v_m45_n_0, from: x_m45_s, to: x_m45_m45, width: 7.4, successors: auto}
+  - {id: v_m45_n_1, from: x_m45_m45, to: x_m45_0, width: 7.4, successors: auto}
+  - {id: v_m45_n_2, from: x_m45_0, to: x_m45_45, width: 7.4, successors: auto}
+  - {id: v_m45_n_3, from: x_m45_45, to: x_m45_n, width: 7.4, successors: auto}
+  - {id: v_m45_s_0, from: x_m45_m45, to: x_m45_s, width: 7.4, successors: auto}
+  - {id: v_m45_s_1, from: x_m45_0, to: x_m45_m45, width: 7.4, successors: auto}
+  - {id: v_m45_s_2, from: x_m45_45, to: x_m45_0, width: 7.4, successors: auto}
+  - {id: v_m45_s_3, from: x_m45_n, to: x_m45_45, width: 7.4, successors: auto}
+  - {id: v_m15_n_0, from: x_m15_s, to: x_m15_m45, width: 7.4, successors: auto}
+  - {id: v_m15_n_1, from: x_m15_m45, to: x_m15_0, width: 7.4, successors: auto}
+  - {id: v_m15_n_2, from: x_m15_0, to: x_m15_45, width: 7.4, successors: auto}
+  - {id: v_m15_n_3, from: x_m15_45, to: x_m15_n, width: 7.4, successors: auto}
+  - {id: v_m15_s_0, from: x_m15_m45, to: x_m15_s, width: 7.4, successors: auto}
+  - {id: v_m15_s_1, from: x_m15_0, to: x_m15_m45, width: 7.4, successors: auto}
+  - {id: v_m15_s_2, from: x_m15_45, to: x_m15_0, width: 7.4, successors: auto}
+  - {id: v_m15_s_3, from: x_m15_n, to: x_m15_45, width: 7.4, successors: auto}
+  - {id: v_45_n_0, from: x_45_s, to: x_45_m45, width: 7.4, successors: auto}
+  - {id: v_45_n_1, from: x_45_m45, to: x_45_0, width: 7.4, successors: auto}
+  - {id: v_45_n_2, from: x_45_0, to: x_45_45, width: 7.4, successors: auto}
+  - {id: v_45_n_3, from: x_45_45, to: x_45_n, width: 7.4, successors: auto}
+  - {id: v_45_s_0, from: x_45_m45, to: x_45_s, width: 7.4, successors: auto}
+  - {id: v_45_s_1, from: x_45_0, to: x_45_m45, width: 7.4, successors: auto}
+  - {id: v_45_s_2, from: x_45_45, to: x_45_0, width: 7.4, successors: auto}
+  - {id: v_45_s_3, from: x_45_n, to: x_45_45, width: 7.4, successors: auto}
+  - {id: v_110_n_0, from: x_110_s, to: x_110_m45, width: 7.4, successors: auto}
+  - {id: v_110_n_1, from: x_110_m45, to: x_110_0, width: 7.4, successors: auto}
+  - {id: v_110_n_2, from: x_110_0, to: x_110_45, width: 7.4, successors: auto}
+  - {id: v_110_n_3, from: x_110_45, to: x_110_n, width: 7.4, successors: auto}
+  - {id: v_110_s_0, from: x_110_m45, to: x_110_s, width: 7.4, successors: auto}
+  - {id: v_110_s_1, from: x_110_0, to: x_110_m45, width: 7.4, successors: auto}
+  - {id: v_110_s_2, from: x_110_45, to: x_110_0, width: 7.4, successors: auto}
+  - {id: v_110_s_3, from: x_110_n, to: x_110_45, width: 7.4, successors: auto}
+  - {id: v_120_n, from: x_120_s, to: x_120_n, width: 7.4, successors: auto}
+  - {id: v_120_s, from: x_120_n, to: x_120_s, width: 7.4, successors: auto}
+  - {id: h_m45_e_0, from: x_m45_m45, to: x_m15_m45, width: 8.4, successors: auto}
+  - {id: h_m45_e_1, from: x_m15_m45, to: x_45_m45, width: 8.4, successors: auto}
+  - {id: h_m45_e_2, from: x_45_m45, to: x_110_m45, width: 8.4, successors: auto}
+  - {id: h_m45_e_3, from: x_110_m45, to: h_m45_e, width: 8.4, successors: auto}
+  - {id: h_m45_w_0, from: x_m15_m45, to: x_m45_m45, width: 8.4, successors: auto}
+  - {id: h_m45_w_1, from: x_45_m45, to: x_m15_m45, width: 8.4, successors: auto}
+  - {id: h_m45_w_2, from: x_110_m45, to: x_45_m45, width: 8.4, successors: auto}
+  - {id: h_m45_w_3, from: h_m45_e, to: x_110_m45, width: 8.4, successors: auto}
+  - {id: h_0_e_0, from: x_m45_0, to: x_m15_0, width: 8.4, successors: auto}
+  - {id: h_0_e_1, from: x_m15_0, to: x_45_0, width: 8.4, successors: auto}
+  - {id: h_0_e_2, from: x_45_0, to: x_110_0, width: 8.4, successors: auto}
+  - {id: h_0_e_3, from: x_110_0, to: h_0_e, width: 8.4, successors: auto}
+  - {id: h_0_w_0, from: x_m15_0, to: x_m45_0, width: 8.4, successors: auto}
+  - {id: h_0_w_1, from: x_45_0, to: x_m15_0, width: 8.4, successors: auto}
+  - {id: h_0_w_2, from: x_110_0, to: x_45_0, width: 8.4, successors: auto}
+  - {id: h_0_w_3, from: h_0_e, to: x_110_0, width: 8.4, successors: auto}
+  - {id: h_45_e_0, from: x_m45_45, to: x_m15_45, width: 8.4, successors: auto}
+  - {id: h_45_e_1, from: x_m15_45, to: x_45_45, width: 8.4, successors: auto}
+  - {id: h_45_e_2, from: x_45_45, to: x_110_45, width: 8.4, successors: auto}
+  - {id: h_45_e_3, from: x_110_45, to: h_45_e, width: 8.4, successors: auto}
+  - {id: h_45_w_0, from: x_m15_45, to: x_m45_45, width: 8.4, successors: auto}
+  - {id: h_45_w_1, from: x_45_45, to: x_m15_45, width: 8.4, successors: auto}
+  - {id: h_45_w_2, from: x_110_45, to: x_45_45, width: 8.4, successors: auto}
+  - {id: h_45_w_3, from: h_45_e, to: x_110_45, width: 8.4, successors: auto}
+
+parked_obstacles:
+  - {id: hatchback_red_75, x: 61.9, y: -12.36, yaw: 0.0, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_147, x: -36.72, y: 21.02, yaw: -1.57, half_length: 2.7, half_width: 1.2}
+  - {id: hatchback_blue_241, x: -17.55, y: -32.5226077364148, yaw: 1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_242, x: -12.45, y: -20.895284503516816, yaw: 1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: suv_243, x: 42.45, y: -34.740594758017295, yaw: -1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_244, x: 47.55, y: -27.542267791140933, yaw: -1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: hatchback_blue_245, x: -17.55, y: 32.93096512811481, yaw: 1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_246, x: -12.45, y: 30.68746326605413, yaw: 1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: hatchback_247, x: 42.45, y: 28.0591330819157, yaw: -1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_248, x: 47.55, y: 13.81490462229628, yaw: -1.5707963267948966, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_249, x: -24.995741773170444, y: -2.55, yaw: 0.0, half_length: 2.7, half_width: 1.2}
+  - {id: hatchback_250, x: -21.605234819116983, y: 2.55, yaw: 0.0, half_length: 2.7, half_width: 1.2}
+  - {id: suv_251, x: 21.43928977325851, y: -2.55, yaw: 0.0, half_length: 2.7, half_width: 1.2}
+  - {id: hatchback_blue_252, x: 7.088345356237102, y: 2.55, yaw: 0.0, half_length: 2.7, half_width: 1.2}
+  - {id: pickup_253, x: 81.52668900386297, y: -2.55, yaw: 0.0, half_length: 2.7, half_width: 1.2}
+  - {id: suv_254, x: 91.14288982830527, y: 2.55, yaw: 0.0, half_length: 2.7, half_width: 1.2}

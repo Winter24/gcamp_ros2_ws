@@ -9,6 +9,176 @@ import json
 
 import torch.nn.functional as F
 
+
+UNITREE_INFERENCE_YAW_RAD = -np.pi / 2.0
+
+
+class TorchVoxelizer:
+    """Build binary occupancy with filtering and indexing on one Torch device.
+
+    CUDA execution stages the complete XYZ cloud through a reusable pinned host
+    buffer. Finite checks, ROI filtering, voxel address arithmetic, and writes
+    then stay on the GPU; only the ready model tensor remains after the call.
+    """
+
+    _GEOMETRY_NAMES = (
+        "x_min", "x_max", "x_res",
+        "y_min", "y_max", "y_res",
+        "z_min", "z_max", "z_res",
+    )
+
+    def __init__(self, device):
+        self.device = torch.device(device)
+        self._voxel_buffers = {}
+        self._geometry_cache = {}
+        self._pinned_points = {}
+        self._staging_events = {}
+
+    @classmethod
+    def _geometry_key(cls, geometry):
+        return tuple(float(geometry[name]) for name in cls._GEOMETRY_NAMES)
+
+    def _get_geometry(self, key):
+        cached = self._geometry_cache.get(key)
+        if cached is not None:
+            return cached
+
+        x_min, x_max, x_res, y_min, y_max, y_res, z_min, z_max, z_res = key
+        x_size = int((x_max - x_min) / x_res)
+        y_size = int((y_max - y_min) / y_res)
+        z_size = int((z_max - z_min) / z_res)
+        cached = {
+            "x_min": x_min, "x_max": x_max, "x_res": x_res,
+            "y_min": y_min, "y_max": y_max, "y_res": y_res,
+            "z_min": z_min, "z_max": z_max, "z_res": z_res,
+            "x_size": x_size, "y_size": y_size, "z_size": z_size,
+            "stride_y": x_size, "stride_z": y_size * x_size,
+        }
+        self._geometry_cache[key] = cached
+        return cached
+
+    def _get_voxel_buffer(self, key, geo):
+        shape = (1, geo["z_size"], geo["y_size"], geo["x_size"])
+        buffer = self._voxel_buffers.get(key)
+        if buffer is None or tuple(buffer.shape) != shape:
+            buffer = torch.zeros(shape, dtype=torch.float32, device=self.device)
+            self._voxel_buffers[key] = buffer
+        else:
+            buffer.zero_()
+        return buffer
+
+    def _stage_full_cloud(self, key, points):
+        """Enqueue the complete XYZ cloud from reusable pinned memory."""
+        point_count = len(points)
+        event = self._staging_events.get(key)
+        if event is not None:
+            # Do not let the CPU refill pinned pages while their prior DMA is active.
+            event.synchronize()
+
+        pinned = self._pinned_points.get(key)
+        if pinned is None or pinned.shape[0] < point_count:
+            capacity = max(point_count * 2, 4096)
+            pinned = torch.empty(
+                (capacity, 3), dtype=torch.float32, pin_memory=True
+            )
+            self._pinned_points[key] = pinned
+
+        source = torch.from_numpy(points)
+        pinned[:point_count].copy_(source)
+        gpu_points = pinned[:point_count].to(self.device, non_blocking=True)
+
+        if event is None:
+            event = torch.cuda.Event()
+        event.record(torch.cuda.current_stream(self.device))
+        self._staging_events[key] = event
+        return gpu_points
+
+    def voxelize(self, points, geometry, yaw_rad=None):
+        """Return a contiguous ``(1, Z, Y, X)`` binary occupancy tensor."""
+        key = self._geometry_key(geometry)
+        geo = self._get_geometry(key)
+        voxels = self._get_voxel_buffer(key, geo)
+        if len(points) == 0:
+            return voxels
+
+        points = np.asarray(points[:, :3], dtype=np.float32)
+        if self.device.type == "cuda":
+            gpu_points = self._stage_full_cloud(key, points)
+        else:
+            gpu_points = torch.from_numpy(points).to(self.device)
+
+        if yaw_rad is not None:
+            cosine = math.cos(yaw_rad)
+            sine = math.sin(yaw_rad)
+            x = gpu_points[:, 0].clone()
+            y = gpu_points[:, 1].clone()
+            gpu_points[:, 0] = cosine * x - sine * y
+            gpu_points[:, 1] = sine * x + cosine * y
+
+        eps = 0.001
+        finite = torch.isfinite(gpu_points).all(dim=1)
+        inside = (
+            finite
+            & (gpu_points[:, 0] > geo["x_min"] + eps)
+            & (gpu_points[:, 0] < geo["x_max"] - eps)
+            & (gpu_points[:, 1] > geo["y_min"] + eps)
+            & (gpu_points[:, 1] < geo["y_max"] - eps)
+            & (gpu_points[:, 2] > geo["z_min"] + eps)
+            & (gpu_points[:, 2] < geo["z_max"] - eps)
+        )
+
+        valid = gpu_points[inside]
+        # Keep address arithmetic in INT32, then widen once because PyTorch's
+        # scatter API requires int64 indices.
+        x_index = torch.floor(
+            (valid[:, 0] - geo["x_min"]) / geo["x_res"]
+        ).to(torch.int32)
+        y_index = torch.floor(
+            (valid[:, 1] - geo["y_min"]) / geo["y_res"]
+        ).to(torch.int32)
+        z_index = torch.floor(
+            (valid[:, 2] - geo["z_min"]) / geo["z_res"]
+        ).to(torch.int32)
+        flat_index = (
+            z_index * geo["stride_z"]
+            + y_index * geo["stride_y"]
+            + x_index
+        )
+        voxels.view(-1).scatter_(0, flat_index.long(), 1.0)
+        return voxels
+
+def rotate_points_z(points, angle):
+    """Return XYZ points rotated around Z without modifying the input."""
+    points = np.asarray(points)
+    rotated = points.copy()
+    cosine = math.cos(angle)
+    sine = math.sin(angle)
+    rotated[:, 0] = cosine * points[:, 0] - sine * points[:, 1]
+    rotated[:, 1] = sine * points[:, 0] + cosine * points[:, 1]
+    return rotated
+
+
+def rotate_detection_boxes_z(boxes, angle):
+    """Rotate box centers/headings; box rows are cls, score, x, y, l, w, yaw."""
+    boxes = np.asarray(boxes)
+    rotated = boxes.copy()
+    cosine = math.cos(angle)
+    sine = math.sin(angle)
+    rotated[:, 2] = cosine * boxes[:, 2] - sine * boxes[:, 3]
+    rotated[:, 3] = sine * boxes[:, 2] + cosine * boxes[:, 3]
+    rotated[:, 6] = (boxes[:, 6] + angle + math.pi) % (2 * math.pi) - math.pi
+    return rotated
+
+
+def map_right_facing_unitree_roi_to_model(points):
+    """Map LiDAR x=-40..40,y=-70.4..0 into checkpoint coordinates."""
+    points = np.asarray(points)
+    mapped = points.copy()
+    mapped[:, 0] = -points[:, 1]
+    mapped[:, 1] = points[:, 0]
+    return mapped
+
+
 def voxelize(points, geometry):
     x_min = geometry["x_min"]
     x_max = geometry["x_max"]

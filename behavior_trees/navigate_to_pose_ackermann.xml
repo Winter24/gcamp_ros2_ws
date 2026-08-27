@@ -1,0 +1,14 @@
+<!-- Replan continuously without any rotate-in-place recovery action. -->
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <PipelineSequence name="NavigateAckermannWithReplanning">
+      <RateController hz="1.0">
+        <ComputePathToPose
+          goal="{goal}"
+          path="{path}"
+          planner_id="SmacPlannerHybrid"/>
+      </RateController>
+      <FollowPath path="{path}" controller_id="FollowPath"/>
+    </PipelineSequence>
+  </BehaviorTree>
+</root>

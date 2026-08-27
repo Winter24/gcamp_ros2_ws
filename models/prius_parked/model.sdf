@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="prius_parked">
+    <static>true</static>
+    <pose>0 0 0.03 0 0 0</pose>
+    <link name="body">
+      <!-- Match the +90 degree internal yaw used by the hatchback models that
+           these parked cars replace, so the existing world poses stay valid. -->
+      <pose>0 0 0 0 0 1.57079632679</pose>
+
+      <visual name="chassis_visual">
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Hybrid</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name="interior_visual">
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Hybrid_Interior</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name="windows_visual">
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Hybrid_Windows</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name="front_left_wheel_visual">
+        <pose>0.80 -1.41 0.3 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Wheel_Front_Left_</name>
+              <center>true</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name="front_right_wheel_visual">
+        <pose>-0.76 -1.41 0.3 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Wheel_Front_Right</name>
+              <center>true</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name="rear_left_wheel_visual">
+        <pose>0.826 1.45 0.3 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Wheel_Front_Left_</name>
+              <center>true</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <visual name="rear_right_wheel_visual">
+        <pose>-0.826 1.45 0.3 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://prius_hybrid/meshes/Hybrid.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <submesh>
+              <name>Wheel_Front_Right</name>
+              <center>true</center>
+            </submesh>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <collision name="chassis">
+        <pose>0 0.05 0.625 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.7526 2.1 0.95</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="front_bumper">
+        <pose>0 -2.0 0.458488 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.337282 0.48 0.566691</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="hood">
+        <pose>0 -1.900842 0.676305 0.341247 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.597968 0.493107 0.265468</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="windshield">
+        <pose>0 -0.875105 1.032268 0.335476 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.168381 1.654253 0.272347</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="top_front">
+        <pose>0 0.161236 1.386042 0.135030 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.279154 0.625988 0.171868</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="top_rear">
+        <pose>0 0.817696 1.360069 -0.068997 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.285130 0.771189 0.226557</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="rear_window">
+        <pose>0 1.640531 1.175126 -0.262017 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.267845 1.116344 0.244286</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="trunk">
+        <pose>0 1.637059 0.888180 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.788064 1.138988 0.482746</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="back_bumper">
+        <pose>0 2.054454 0.577870 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.781650 0.512093 0.581427</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

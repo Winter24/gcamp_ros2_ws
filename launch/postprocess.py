@@ -5,6 +5,11 @@ import json
 
 import torch.nn.functional as F
 
+try:
+    from torchvision.ops import nms_rotated as _torchvision_nms_rotated
+except (ImportError, RuntimeError):
+    _torchvision_nms_rotated = None
+
 def convert_format(boxes_array):
     """
 
@@ -104,14 +109,14 @@ def filter_pred(pred, config, out_size_factor, thres, nms_thres = None):
             return np.array([])
     else:
         pooled = F.max_pool2d(cls_probs.unsqueeze(0), 3, 1, 1).squeeze()
-        idxs = torch.logical_and(cls_probs == pooled, cls_probs > thres)
-        if not idxs.any():
+        candidate_mask = torch.logical_and(cls_probs == pooled, cls_probs > thres)
+        if not candidate_mask.any():
             return np.array([])
-        cls_ids = cls_ids[idxs]
-        cls_probs = cls_probs[idxs]
         cos_t = torch.cos(yaw)
         sin_t = torch.sin(yaw)
 
+        # Keep decode and candidate selection on CUDA. Only the final small
+        # index vector crosses to CPU for ROS message construction.
         rear_left_x = center_x - l/2 * cos_t - w/2 * sin_t
         rear_left_y = center_y - l/2 * sin_t + w/2 * cos_t
         rear_right_x = center_x - l/2 * cos_t + w/2 * sin_t
@@ -122,19 +127,34 @@ def filter_pred(pred, config, out_size_factor, thres, nms_thres = None):
         front_left_y = center_y + l/2 * sin_t + w/2 * cos_t
 
 
-        decoded_reg = torch.cat([rear_left_x.unsqueeze(0), rear_left_y.unsqueeze(0), rear_right_x.unsqueeze(0), rear_right_y.unsqueeze(0),
-                                front_right_x.unsqueeze(0), front_right_y.unsqueeze(0), front_left_x.unsqueeze(0), front_left_y.unsqueeze(0)], axis=0)
-        
-        decoded_reg = decoded_reg.permute(1, 2, 0)
-        decoded_reg = decoded_reg[idxs]
-        corners = np.reshape(decoded_reg.cpu().numpy(), (-1, 4, 2))
-        selected_idxs = non_max_suppression(corners, cls_probs.cpu().numpy(), nms_thres)
+        if (pred["cls"].is_cuda and _torchvision_nms_rotated is not None):
+            candidate_boxes = torch.stack(
+                [center_x[candidate_mask], center_y[candidate_mask],
+                 w[candidate_mask], l[candidate_mask],
+                 torch.rad2deg(yaw[candidate_mask])], dim=1
+            )
+            selected_idxs = _torchvision_nms_rotated(
+                candidate_boxes, cls_probs[candidate_mask], nms_thres
+            ).cpu().numpy()
+        else:
+            decoded_reg = torch.cat([
+                rear_left_x.unsqueeze(0), rear_left_y.unsqueeze(0),
+                rear_right_x.unsqueeze(0), rear_right_y.unsqueeze(0),
+                front_right_x.unsqueeze(0), front_right_y.unsqueeze(0),
+                front_left_x.unsqueeze(0), front_left_y.unsqueeze(0)], axis=0)
+            decoded_reg = decoded_reg.permute(1, 2, 0)[candidate_mask]
+            corners = np.reshape(decoded_reg.cpu().numpy(), (-1, 4, 2))
+            selected_idxs = non_max_suppression(
+                corners, cls_probs[candidate_mask].cpu().numpy(), nms_thres
+            )
 
-        center_x = center_x[idxs]
-        center_y = center_y[idxs]
-        l = l[idxs]
-        w = w[idxs]
-        yaw = yaw[idxs]
+        cls_ids = cls_ids[candidate_mask]
+        cls_probs = cls_probs[candidate_mask]
+        center_x = center_x[candidate_mask]
+        center_y = center_y[candidate_mask]
+        l = l[candidate_mask]
+        w = w[candidate_mask]
+        yaw = yaw[candidate_mask]
 
         
 
